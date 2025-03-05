@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-03-05T06:37:18.836Z</updated>
+  <updated>2025-03-05T07:49:50.118Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搜索相关</title>
+    <link href="http://example.com/2025/03/05/arith01/"/>
+    <id>http://example.com/2025/03/05/arith01/</id>
+    <published>2025-03-05T07:48:17.000Z</published>
+    <updated>2025-03-05T07:49:50.118Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h1><pre><code class="hljs">本帖将持续更新搜索算法相关内容，重点更新BFS和DFS的写法</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;算法相关&quot;&gt;&lt;a href=&quot;#算法相关&quot; class=&quot;headerlink&quot; title=&quot;算法相关&quot;&gt;&lt;/a&gt;算法相关&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;本帖将持续更新搜索算法相关内容，重点更新BFS和DFS的写法
+&lt;/code&gt;&lt;/p</summary>
+      
+    
+    
+    
+    <category term="算法相关" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>PHP知识汇总页</title>
