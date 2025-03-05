@@ -1,5 +1,5 @@
-http://example.com/2025/03/05/arith01/
 http://example.com/2025/03/05/php01/
+http://example.com/2025/03/05/arith01/
 http://example.com/categories/index.html
 http://example.com/about/index.html
 http://example.com/
