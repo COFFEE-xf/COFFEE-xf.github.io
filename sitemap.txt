@@ -1,3 +1,4 @@
+http://example.com/2025/03/08/03/
 http://example.com/2025/03/08/note02/
 http://example.com/2025/03/05/md01/
 http://example.com/2025/03/05/php01/
