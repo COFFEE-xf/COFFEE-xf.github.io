@@ -27,11 +27,12 @@
 <meta property="og:description" content="本次笔记将分为两部分，Python练习和PHP语法学习">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-03-12T01:05:29.000Z">
-<meta property="article:modified_time" content="2025-03-12T07:47:55.752Z">
+<meta property="article:modified_time" content="2025-03-12T09:02:59.269Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="dfs">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="php">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -226,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          1.7k 字
         
       </span>
     
@@ -237,7 +238,7 @@
         
         
         
-          13 分钟
+          15 分钟
         
       </span>
     
@@ -313,8 +314,11 @@
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$errors</span> = []; <span class="hljs-comment">//创建一个error数组用来存储错误信息</span><br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;submit&#x27;</span>]))<br>&#123;<br>    <span class="hljs-variable">$fname</span> = <span class="hljs-title function_ invoke__">trim</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;fname&#x27;</span>]??<span class="hljs-string">&#x27;&#x27;</span>); <span class="hljs-comment">// 在不输入特定字符的情况下，trim()函数用来删除字符串两侧的空格</span><br>    <span class="hljs-keyword">if</span>(<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$fname</span>) == <span class="hljs-number">0</span>)<br>    &#123;<br>        <span class="hljs-variable">$errors</span>[<span class="hljs-string">&#x27;fname&#x27;</span>] = <span class="hljs-string">&#x27;Missing the first name!&#x27;</span>;<br>    &#125;<br>    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!<span class="hljs-title function_ invoke__">ctype_alpha</span>(<span class="hljs-variable">$fname</span>)) <span class="hljs-comment">// Ctype是PHP中实现判断字符串类型的函数</span><br>    &#123;<br>        <span class="hljs-variable">$errors</span>[<span class="hljs-string">&#x27;fname&#x27;</span>] = <span class="hljs-string">&#x27;Please enter alpha charactors!&#x27;</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>在实际应用中我们可以将PHP嵌入到HTML当中：<br></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>First Name:<br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;error&quot;</span>&gt;</span><br>        &lt;?=$errors[&#x27;fname&#x27;]??&#x27;&#x27;;?&gt;<br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fname&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&lt;?=$fname??&#x27;&#x27;;?&gt;&quot;</span> /&gt;</span><br>// 在HTML当中，input标签中的value属性的用法是与type属性紧密相关的<br>// 详细用法请移步Reference中给出的友情链接<br></code></pre></td></tr></table></figure>
+<p>这样一来，当用户输入不合规范的内容之后，网页将会输出报错信息。<br></p>
+<h3 id="可选择的表单控件的实现"><a href="#可选择的表单控件的实现" class="headerlink" title="可选择的表单控件的实现"></a>可选择的表单控件的实现</h3><h4 id="可下拉菜单的实现"><a href="#可下拉菜单的实现" class="headerlink" title="可下拉菜单的实现"></a>可下拉菜单的实现</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs php">&lt;label&gt;请选择你的校区：&lt;/label&gt;<br>&lt;small <span class="hljs-class"><span class="hljs-keyword">class</span>=&#x27;<span class="hljs-title">error</span>&#x27;&gt;</span><br><span class="hljs-class">    &lt;?= $<span class="hljs-title">errors</span>[&#x27;<span class="hljs-title">campus</span>&#x27;]??&#x27;&#x27;; ?&gt;</span><br><span class="hljs-class">&lt;/<span class="hljs-title">small</span>&gt;</span><br><span class="hljs-class">&lt;<span class="hljs-title">select</span> <span class="hljs-title">name</span>=&quot;<span class="hljs-title">campus</span>&quot;&gt;</span><br><span class="hljs-class">    &lt;?<span class="hljs-title">php</span></span><br><span class="hljs-class">    $<span class="hljs-title">campuses</span> = [&quot;&quot;, &quot;明伦校区&quot;, &quot;金明校区&quot;, &quot;龙子湖校区&quot;];</span><br><span class="hljs-class">    <span class="hljs-title">foreach</span> ($<span class="hljs-title">campuses</span> <span class="hljs-title">as</span> $<span class="hljs-title">value</span>)</span><br><span class="hljs-class">    </span>&#123;<br>        <span class="hljs-variable">$campus</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;campus&#x27;</span>] ?? <span class="hljs-string">&#x27;&#x27;</span>;<br>        <span class="hljs-variable">$select</span> = (<span class="hljs-variable">$value</span> == <span class="hljs-variable">$campus</span>) ? <span class="hljs-string">&#x27;selected&#x27;</span> : <span class="hljs-string">&#x27;&#x27;</span>;<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;option value=&#x27;<span class="hljs-subst">$value</span>&#x27; <span class="hljs-subst">$select</span>&gt;<span class="hljs-subst">$value</span>&lt;/option&gt;&quot;</span>;<br>    &#125;<br>    <span class="hljs-meta">?&gt;</span><br>&lt;/select&gt;<br></code></pre></td></tr></table></figure>
 
-<h4 id="ClassActivity-3："><a href="#ClassActivity-3：" class="headerlink" title="ClassActivity 3："></a>ClassActivity 3：</h4>
+<h4 id="单选按钮的实现"><a href="#单选按钮的实现" class="headerlink" title="单选按钮的实现"></a>单选按钮的实现</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs php">&lt;label&gt;年级：<br>    &lt;span <span class="hljs-class"><span class="hljs-keyword">class</span>=&#x27;<span class="hljs-title">error</span>&#x27;&gt;</span><br><span class="hljs-class">        &lt;?= $<span class="hljs-title">errors</span>[&#x27;<span class="hljs-title">grade</span>&#x27;] ?? &#x27;&#x27;; ?&gt;</span><br><span class="hljs-class">    &lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-class">&lt;/<span class="hljs-title">label</span>&gt;</span><br><span class="hljs-class">&lt;?<span class="hljs-title">php</span></span><br><span class="hljs-class">$<span class="hljs-title">grades</span> = [&quot;大一&quot;, &quot;大二&quot;, &quot;大三&quot;, &quot;大四&quot;];</span><br><span class="hljs-class"><span class="hljs-title">foreach</span> ($<span class="hljs-title">grades</span> <span class="hljs-title">as</span> $<span class="hljs-title">g</span>)</span><br><span class="hljs-class"></span>&#123;<br>    <span class="hljs-variable">$grade</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;grade&#x27;</span>] ?? <span class="hljs-string">&#x27;&#x27;</span>;<br>    <span class="hljs-variable">$checked</span> = (<span class="hljs-variable">$g</span> == <span class="hljs-variable">$grade</span>) ? <span class="hljs-string">&#x27;checked&#x27;</span> : <span class="hljs-string">&#x27;&#x27;</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;label class=radio-inline&gt;&lt;input type=&#x27;radio&#x27; name=&#x27;grade&#x27; value=&#x27;<span class="hljs-subst">$g</span>&#x27; <span class="hljs-subst">$checked</span>&gt;<span class="hljs-subst">$g</span>&lt;/label&gt;&quot;</span>;<br>&#125;<br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -352,6 +356,8 @@
         <a href="/tags/python/" class="print-no-link">#python</a>
       
         <a href="/tags/%E6%B4%9B%E8%B0%B7/" class="print-no-link">#洛谷</a>
+      
+        <a href="/tags/php/" class="print-no-link">#php</a>
       
     </div>
   
@@ -407,6 +413,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2025/03/13/note06/" title="计算机三级网络技术相关知识点整理">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">计算机三级网络技术相关知识点整理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
