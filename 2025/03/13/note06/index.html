@@ -28,8 +28,9 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2025/03/13/note06/note06_pic01.png">
 <meta property="og:image" content="http://example.com/2025/03/13/note06/note06_pic02.png">
+<meta property="og:image" content="http://example.com/2025/03/13/note06/note06_pic03.png">
 <meta property="article:published_time" content="2025-03-13T12:28:14.000Z">
-<meta property="article:modified_time" content="2025-03-13T13:11:15.383Z">
+<meta property="article:modified_time" content="2025-03-13T13:59:28.895Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="计算机网络">
 <meta property="article:tag" content="计算机等级考试">
@@ -228,7 +229,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          613 字
+          1.2k 字
         
       </span>
     
@@ -239,7 +240,7 @@
         
         
         
-          6 分钟
+          11 分钟
         
       </span>
     
@@ -292,10 +293,12 @@
 </style>
 
 <h1 id="计算机三级网络技术相关知识点整理"><a href="#计算机三级网络技术相关知识点整理" class="headerlink" title="计算机三级网络技术相关知识点整理"></a>计算机三级网络技术相关知识点整理</h1><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1F5411a76A?spm_id_from=333.788.videopod.episodes&vd_source=d2a4fcb87f01b1e635c2de07e4f9fb34">(Bilibili)[合集] 这些技巧助你一周通过计算机三级网络技术（无基础）</a></li>
 <li><a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/BGP.html">什么是BGP</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/keith6785753/article/details/107088632">BGP协议总结（比较详细，好理解）</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43941364/article/details/105509724">路由选择协议 RIP、OSPF、BGP 详解</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44827418/article/details/106545050">RIP协议及距离向量算法（详解）</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/keith6785753/article/details/107031390">路由协议之OSPF总结（比较详细，好理解）</a></li>
 </ul>
 <h2 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h2><h3 id="一、路由选择协议"><a href="#一、路由选择协议" class="headerlink" title="一、路由选择协议"></a>一、路由选择协议</h3><p>首先我们需要了解路由选择域的概念，其是指一组使用相同路由协议或策略进行路由决策的网络设备集合，我们通常将其称之为一个自治系统AS(Autonomous System)，可以简要地理解为就是几个路由器组成了一个小团体。<br><br>而不论是小团体内部还是不同的小团体之间都显然需要有一种规则来进行通信，于是我们得到了内部网关协议和外部网关协议的概念。<br></p>
 <blockquote>
@@ -308,11 +311,49 @@
 <li>路由器会定期与邻居路由器交换路由信息（即距离向量），并以此来更新自己的路由表。</li>
 <li>用跳数来表示数据包从出发地到目的地之间经过的路由器数量。特别地，从一路由器到直接连接的跳数为1。</li>
 </ul>
-<style>.qgqiikuqdxim{}</style><img src="/2025/03/13/note06/note06_pic01.png" srcset="/img/loading.gif" lazyload class="qgqiikuqdxim">
-<style>.wuxhisgbbwtz{}</style><img src="/2025/03/13/note06/note06_pic02.png" srcset="/img/loading.gif" lazyload class="wuxhisgbbwtz">
+<style>.qtacjzxknxsn{}</style><img src="/2025/03/13/note06/note06_pic01.png" srcset="/img/loading.gif" lazyload class="qtacjzxknxsn">
+<style>.lzgbiauuwzfb{}</style><img src="/2025/03/13/note06/note06_pic02.png" srcset="/img/loading.gif" lazyload class="lzgbiauuwzfb">
+<p>但是需要注意的是，在RIP中一条路由最多只能包含15个路由器，因此距离为16表示网络不可达。这也就意味着RIP协议只适用于小型互联网。</p>
+<h5 id="2-开放最短路径优先OSPF-Open-Shortest-Path-First"><a href="#2-开放最短路径优先OSPF-Open-Shortest-Path-First" class="headerlink" title="2) 开放最短路径优先OSPF(Open Shortest Path First)"></a>2) 开放最短路径优先OSPF(Open Shortest Path First)</h5><p>为了克服RIP只能应用于小型互联网的缺点，开放最短路径优先协议得以被开发，所谓“最短路径优先”即意味着该协议采用最短路径算法。<br><br>为了更好地管理大型互联网，OSPF将一个AS继续划分为了若干个更小的范围，即<strong>区域</strong>，这使得路由更新收敛速度得以提高。而每一个区域都有一个32位的用点分十进制表示的区域标识符。此外，<strong>每个区域内路由器的数量不超过200个</strong>。</p>
+<style>.ourqrwfdywyk{}</style><img src="/2025/03/13/note06/note06_pic03.png" srcset="/img/loading.gif" lazyload class="ourqrwfdywyk">
+<p>其中主干区域的标识符规定为0.0.0.0。<br><br>和RIP的距离向量算法不同的是，OSPF采用的是<strong>分布式的链路状态协议</strong>，主要具有以下几个特点：</p>
+<ul>
+<li>一个OSPF区域内的每个路由器都会在本地存储一个链路状态数据库，其中包含着<strong>本区域内</strong>的所有路由器的链路状态信息（拓扑结构图，而非一张完整的路由表），这使得路由器可以独立地计算出到达任意目的地的路径，而不是像RIP一样走一步看一步。</li>
+<li>当链路状态发生变化时，路由器通过<strong>洪泛法</strong>向<strong>所有的</strong>（不是相邻的）路由器发送更新信息。</li>
+</ul>
+<p>此外，我们在使用OSPF计算最短路径的时候，需要引入链路状态度量来衡量成本，那么我们可以考虑的就有<strong>费用、距离、延时和带宽</strong>等，但是没有路径。</p>
+<h4 id="2-外部网关协议EGP-External-Gateway-Protocol"><a href="#2-外部网关协议EGP-External-Gateway-Protocol" class="headerlink" title="2. 外部网关协议EGP(External Gateway Protocol)"></a>2. 外部网关协议EGP(External Gateway Protocol)</h4><p>而EGP一般我们强调的就是BGP，且目前最常用的是BGP-4。<br></p>
+<h5 id="1-边界网关协议BGP-Boreder-Gateway-Protocol"><a href="#1-边界网关协议BGP-Boreder-Gateway-Protocol" class="headerlink" title="1) 边界网关协议BGP(Boreder Gateway Protocol)"></a>1) 边界网关协议BGP(Boreder Gateway Protocol)</h5><p>众所周知的是，在计算机通信协议栈中，ICP和UDP的一大区别就在于前者是有连接的而后者是无连接的，从这一角度出发，<strong>一个BGP发言人（即运行BGP协议的路由器）应使用TCP而不是UDP与其他AS的BGP发言人交换路由信息</strong>。<br><br>而和RIP的距离向量协议、OSPF的链路状态协议不同的是，BGP采用<strong>路由向量协议</strong>。<br>在BGP-4中规定了以下4种消息类型：</p>
+<div class="center">
 
-<h5 id="2-开放最短路径优先OSPF-Open-Shortest-Path-First"><a href="#2-开放最短路径优先OSPF-Open-Shortest-Path-First" class="headerlink" title="2) 开放最短路径优先OSPF(Open Shortest Path First)"></a>2) 开放最短路径优先OSPF(Open Shortest Path First)</h5><h4 id="2-外部网关协议EGP-External-Gateway-Protocol"><a href="#2-外部网关协议EGP-External-Gateway-Protocol" class="headerlink" title="2. 外部网关协议EGP(External Gateway Protocol)"></a>2. 外部网关协议EGP(External Gateway Protocol)</h4><p>而EGP一般我们强调的就是BGP，且目前最常用的是BGP-4。<br></p>
-<h5 id="1-边界网关协议BGP-Boreder-Gateway-Protocol"><a href="#1-边界网关协议BGP-Boreder-Gateway-Protocol" class="headerlink" title="1) 边界网关协议BGP(Boreder Gateway Protocol)"></a>1) 边界网关协议BGP(Boreder Gateway Protocol)</h5><p>众所周知的是，在计算机通信协议栈中，ICP和UDP的一大区别就在于前者是有连接的而后者是无连接的，从这一角度出发，<strong>一个BGP发言人应使用TCP而不是UDP与其他AS的BGP发言人交换路由信息</strong>。<br></p>
+<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">报文名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">OPEN（打开）</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">UPDATE（更新）</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">NOTIFICATION（通知）</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">KEEPALIVE（保活）</td>
+</tr>
+</tbody></table>
+</div>
+以下是关于这几中消息类型的注意事项：
+
+
 <h2 id="综合题"><a href="#综合题" class="headerlink" title="综合题"></a>综合题</h2><h2 id="应用题"><a href="#应用题" class="headerlink" title="应用题"></a>应用题</h2>
                 
               </div>
