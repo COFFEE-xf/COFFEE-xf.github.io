@@ -27,7 +27,7 @@
 <meta property="og:description" content="洛谷习题知识点整理">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-03-14T07:37:11.000Z">
-<meta property="article:modified_time" content="2025-03-14T07:50:57.121Z">
+<meta property="article:modified_time" content="2025-03-14T07:52:31.169Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="洛谷">
 <meta property="article:tag" content="数学问题">
@@ -47,6 +47,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -226,7 +228,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          598 字
+          597 字
         
       </span>
     
@@ -279,25 +281,35 @@
             
               <div class="markdown-body">
                 
-                <h1 id="学习笔记-25-03-14"><a href="#学习笔记-25-03-14" class="headerlink" title="学习笔记_25_03_14"></a>学习笔记_25_03_14</h1><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+                <h1>学习笔记_25_03_14</h1>
+<h2 id="Reference">Reference</h2>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/9l7bstz8">题解 P3913 【车的攻击】</a></li>
 </ul>
-<h2 id="P3913-车的攻击"><a href="#P3913-车的攻击" class="headerlink" title="P3913 车的攻击"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3913">P3913 车的攻击</a></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>$N \times N$ 的国际象棋棋盘上有$K$ 个车，第$i$个车位于第$R_i$行，第$C_i$ 列。求至少被一个车攻击的格子数量。</p>
+<h2 id="P3913-车的攻击"><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3913">P3913 车的攻击</a></h2>
+<h3 id="题目描述">题目描述</h3>
+<p>$N \times N$ 的国际象棋棋盘上有$K$ 个车，第$i$个车位于第$R_i$行，第$C_i$ 列。求至少被一个车攻击的格子数量。</p>
 <p>车可以攻击所有同一行或者同一列的地方。</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第1 行，2 个整数$N,K$。</p>
+<h3 id="输入格式">输入格式</h3>
+<p>第1 行，2 个整数$N,K$。</p>
 <p>接下来K 行，每行2 个整数$R_i,C_i$。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>1 个整数，表示被攻击的格子数量。</p>
-<h3 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h3><h4 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs txt">3 2<br>1 2<br>2 2<br></code></pre></td></tr></table></figure>
-
-<h4 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">7<br></code></pre></td></tr></table></figure>
-
-<h3 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h3><p>• 对于30% 的数据，$1 \le N \le 10^3; 1 \le K \le 10^3$；</p>
+<h3 id="输出格式">输出格式</h3>
+<p>1 个整数，表示被攻击的格子数量。</p>
+<h3 id="输入输出样例-1">输入输出样例 #1</h3>
+<h4 id="输入-1">输入 #1</h4>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs txt">3 2<br>1 2<br>2 2<br></code></pre></td></tr></table></figure>
+<h4 id="输出-1">输出 #1</h4>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">7<br></code></pre></td></tr></table></figure>
+<h3 id="说明-提示">说明/提示</h3>
+<p>• 对于30% 的数据，$1 \le N \le 10^3; 1 \le K \le 10^3$；</p>
 <p>• 对于60% 的数据，$1 \le N \le 10^6; 1 \le K \le 10^6$；</p>
 <p>• 对于100% 的数据，$1 \le N \le 10^9; 1 \le K \le 10^6; 1 \le R_i , C_i \le N$。</p>
-<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>笔者的第一版代码是在硬抗庞大的数据规模的情况下头铁按照模拟棋盘的思路写出的，因此喜提10分…</p>
+<h3 id="解决方案">解决方案</h3>
+<p>笔者的第一版代码是在硬抗庞大的数据规模的情况下头铁按照模拟棋盘的思路写出的，因此喜提10分…</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    n, k = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, <span class="hljs-built_in">input</span>().split())<br>    cars = []<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(k):<br>        x, y = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, <span class="hljs-built_in">input</span>().split())<br>        cars.append((x, y))<br><br>    <span class="hljs-comment"># 创建棋盘</span><br>    Map = [[<span class="hljs-number">0</span> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n)] <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n)]<br><br>    <span class="hljs-keyword">for</span> x, y <span class="hljs-keyword">in</span> cars:<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            Map[x][i] += <span class="hljs-number">1</span><br>            Map[i][y] += <span class="hljs-number">1</span><br><br>    count = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n):<br>            <span class="hljs-keyword">if</span> Map[i][j] != <span class="hljs-number">0</span>:<br>                count += <span class="hljs-number">1</span><br><br>    <span class="hljs-built_in">print</span>(count)<br></code></pre></td></tr></table></figure>
-
-<p>因此显然这道题需要换一种角度思考，不妨就按Reference中题解给出的思路去理解。即使在不向一个方向平移<code>车</code>的情况下，我们依旧能够想象出其盲区的小格子的大致样子。与其尝试移动<code>车</code>，不如尝试将所有的零碎小格子拼成一块矩形，其面积与棋盘面积的差就是我们所要的答案。<br><br>两个相同的<code>x</code>值或<code>y</code>值显然只能对同一列造成影响，那么我们只需要统计一共有多少种不同的<code>x</code>值和<code>y</code>值即可。<br><br>那么最后要求的答案即为<code>n * n - (n - count_x) * (n - count_y)</code>。<br></p>
+<p>因此显然这道题需要换一种角度思考，不妨就按Reference中题解给出的思路去理解。即使在不向一个方向平移<code>车</code>的情况下，我们依旧能够想象出其盲区的小格子的大致样子。与其尝试移动<code>车</code>，不如尝试将所有的零碎小格子拼成一块矩形，其面积与棋盘面积的差就是我们所要的答案。<br><br>
+两个相同的<code>x</code>值或<code>y</code>值显然只能对同一列造成影响，那么我们只需要统计一共有多少种不同的<code>x</code>值和<code>y</code>值即可。<br><br>
+那么最后要求的答案即为<code>n * n - (n - count_x) * (n - count_y)</code>。<br></p>
 <p>c++题解如下所示（Python版本似乎由于语言的限制还是会爆TLE）：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;algorithm&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-type">const</span> <span class="hljs-type">int</span> K = <span class="hljs-number">1000010</span>;<br><br><span class="hljs-type">long</span> <span class="hljs-type">long</span> xs[K], ys[K];<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> n, k;<br>    cin &gt;&gt; n &gt;&gt; k;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; k; i++)<br>    &#123;<br>        cin &gt;&gt; xs[i] &gt;&gt; ys[i];<br>    &#125;<br><br>    <span class="hljs-comment">// 开始计算坐标中不重复的点的个数</span><br>    <span class="hljs-built_in">sort</span>(xs, xs + k);<br>    <span class="hljs-built_in">sort</span>(ys, ys + k);<br><br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> count_x = <span class="hljs-number">0</span>, count_y = <span class="hljs-number">0</span>;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; k; i++)<br>    &#123;<br>        <span class="hljs-keyword">if</span> (xs[i] != xs[i<span class="hljs-number">+1</span>])<br>        &#123;<br>            count_x++;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (ys[i] != ys[i<span class="hljs-number">+1</span>])<br>        &#123;<br>            count_y++;<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-type">long</span> <span class="hljs-type">long</span> count = n * n - (n - count_x) * (n - count_y);<br>    cout &lt;&lt; count;<br><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
@@ -456,6 +468,11 @@
 
 
   
+
+
+  
+  
+
 
 
 
