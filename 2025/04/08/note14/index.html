@@ -29,11 +29,12 @@
 <meta property="og:image" content="http://example.com/2025/04/08/note14/note14_pic02.png">
 <meta property="og:image" content="http://example.com/2025/04/08/note14/note14_pic03.png">
 <meta property="article:published_time" content="2025-04-08T06:35:50.318Z">
-<meta property="article:modified_time" content="2025-04-08T12:53:33.185Z">
+<meta property="article:modified_time" content="2025-04-08T13:38:42.658Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="洛谷">
 <meta property="article:tag" content="蓝桥杯">
 <meta property="article:tag" content="图论">
+<meta property="article:tag" content="最短路径">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/08/note14/note14_pic02.png">
   
@@ -231,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          558 字
+          569 字
         
       </span>
     
@@ -284,7 +285,16 @@
             
               <div class="markdown-body">
                 
-                <h1>基础图论_Floyd算法的Python实现</h1>
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>基础图论_Floyd算法的Python实现</h1>
 <p>Floyd算法和Dijkstra算法是图论中最经典的两种求最短路径的算法，但亦有所不同。前者主要聚焦与一个确定的起点与不同的终点之间的最短路径，而后者则可以求出任意两点间的最短路径。<br><br>
 下面我们就以两道蓝桥杯真题为例。</p>
 <h2 id="蓝桥公园"><a target="_blank" rel="noopener" href="https://www.lanqiao.cn/problems/1121/learning/?problem_list_id=30&amp;page=1">蓝桥公园</a></h2>
@@ -296,7 +306,7 @@
 <p>第 2 到 M+1 行每行包含三个正整数 u,v,w，表示 u↔v 之间存在一条距离为 w 的路。</p>
 <p>第 M+2 到 M+Q−1 行每行包含两个正整数 st,ed，其含义如题所述。</p>
 <div class="center">
-<style>.dphjvvwscmsp{}</style><img src="/2025/04/08/note14/note14_pic02.png" srcset="/img/loading.gif" lazyload class="dphjvvwscmsp">
+<style>.fegzelinoysy{}</style><img src="/2025/04/08/note14/note14_pic02.png" srcset="/img/loading.gif" lazyload class="fegzelinoysy">
 </div>
 <h3 id="输出描述">输出描述</h3>
 <p>输出共 Q 行，对应输入数据中的查询。</p>
@@ -321,7 +331,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs python">INF = <span class="hljs-built_in">float</span>(<span class="hljs-string">&#x27;inf&#x27;</span>)<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">Floyd</span>(<span class="hljs-params">arr, n</span>):<br>    <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>):<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>):<br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, n+<span class="hljs-number">1</span>):<br>                arr[i][j] = <span class="hljs-built_in">min</span>(arr[i][j], arr[i][k] + arr[k][j])<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    n, m, q = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, <span class="hljs-built_in">input</span>().split())<br><br>    arr = [[INF <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n+<span class="hljs-number">1</span>)] <span class="hljs-keyword">for</span> __ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(n+<span class="hljs-number">1</span>)]<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(m):<br>        u, v, w = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, <span class="hljs-built_in">input</span>().split())<br>        arr[u][v] = arr[v][u] = <span class="hljs-built_in">min</span>(arr[u][v], w)<br><br>    Floyd(arr, n)<br><br><span class="hljs-comment">##    for i in range(n+1):</span><br><span class="hljs-comment">##        for j in range(n+1):</span><br><span class="hljs-comment">##            print(arr[i][j], end=&quot; &quot;)</span><br><span class="hljs-comment">##        print(&quot;\n&quot;)</span><br><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(q):<br>        st, ed = <span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, <span class="hljs-built_in">input</span>().split())<br>        <span class="hljs-keyword">if</span> arr[st][ed] == INF:<br>            <span class="hljs-built_in">print</span>(-<span class="hljs-number">1</span>)<br>        <span class="hljs-keyword">elif</span> st == ed:<br>            <span class="hljs-built_in">print</span>(<span class="hljs-number">0</span>)<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-built_in">print</span>(arr[st][ed])<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    main()<br></code></pre></td></tr></table></figure>
 <p>Bingo!</p>
 <div class="center">
-<style>.gdsftspoipsx{}</style><img src="/2025/04/08/note14/note14_pic03.png" srcset="/img/loading.gif" lazyload class="gdsftspoipsx">
+<style>.ptfvypuxmswr{}</style><img src="/2025/04/08/note14/note14_pic03.png" srcset="/img/loading.gif" lazyload class="ptfvypuxmswr">
 </div>
 
                 
@@ -361,6 +371,8 @@
         <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/" class="print-no-link">#蓝桥杯</a>
       
         <a href="/tags/%E5%9B%BE%E8%AE%BA/" class="print-no-link">#图论</a>
+      
+        <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/" class="print-no-link">#最短路径</a>
       
     </div>
   
@@ -416,6 +428,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2025/04/08/note15/" title="基础图论_Prim算法和Kruskal算法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">基础图论_Prim算法和Kruskal算法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
