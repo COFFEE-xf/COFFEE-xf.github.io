@@ -1,0 +1,831 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="谢斐">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="关于VUC上Topic 1, 2, 3 - Revision Quiz的错题总结和相关知识点的整理。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记_25_03_08">
+<meta property="og:url" content="http://example.com/2025/03/08/note03/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="关于VUC上Topic 1, 2, 3 - Revision Quiz的错题总结和相关知识点的整理。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/03/08/note03/pic01.png">
+<meta property="article:published_time" content="2025-03-08T13:11:00.000Z">
+<meta property="article:modified_time" content="2025-03-11T10:26:17.822Z">
+<meta property="article:author" content="谢斐">
+<meta property="article:tag" content="PHP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/03/08/note03/pic01.png">
+  
+  
+  
+  <title>学习笔记_25_03_08 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>My Loquat Tree</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="学习笔记_25_03_08"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-03-08 21:11" pubdate>
+          2025年3月8日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          16 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">学习笔记_25_03_08</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>学习笔记_25_03_08</h1>
+<p>  关于VUC上<a target="_blank" rel="noopener" href="https://vucollaborate.vu.edu.au/d2l/lms/quizzing/user/quiz_summary.d2l?qi=517533&amp;ou=2139027">Topic 1 - Reviosn Quiz</a>, <a target="_blank" rel="noopener" href="https://vucollaborate.vu.edu.au/d2l/lms/quizzing/user/quiz_summary.d2l?qi=517534&amp;ou=2139027">Topic 2 - Reviosn Quiz</a>和<a target="_blank" rel="noopener" href="https://vucollaborate.vu.edu.au/d2l/lms/quizzing/user/quiz_summary.d2l?qi=517535&amp;ou=2139027">Topic 3 - Reviosn Quiz</a>的错题总结和相关知识点的整理。<br></p>
+<h2 id="number-format-函数">number_format()函数</h2>
+<p class="note note-light">
+&emsp;&emsp;Qus 01:<br>
+&emsp;&emsp;To round and format the value of a variable named $number to 3 decimal places anostore it in a variable named $number formatted, you code ...<br>
+&emsp;&emsp;a) \$number_formatted = number_format(\$number, 3);<br>
+&emsp;&emsp;b) \$number_formatted = number_format($number, 3, round);<br>
+&emsp;&emsp;c) \$number_formatted = format_number(\$number, 3);<br>
+&emsp;&emsp;d) \$number_formatted = format_number(\$number, 3, round);<br>
+</p>
+<hr>
+&emsp;&emsp;这道题涉及到了PHP中的number_format()函数，其语法为：<br>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">number_format(number,decimals,decimalpoint,separator)<br></code></pre></td></tr></table></figure>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">number</td>
+<td style="text-align:center">必需，用来填充需要被格式化的变量或数字。</td>
+</tr>
+<tr>
+<td style="text-align:center">decimals</td>
+<td style="text-align:center">可选，规定保留几位小数</td>
+</tr>
+<tr>
+<td style="text-align:center">decimalpoint</td>
+<td style="text-align:center">可选，规定用作小数点的字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">separator</td>
+<td style="text-align:center">可选，规定用作千位分隔符的字符串</td>
+</tr>
+</tbody>
+</table>
+</div>
+&emsp;&emsp;综上所述，这道题的答案为a）<br>
+<br><br>
+<h2 id="PHP中的转义字符">PHP中的转义字符</h2>
+<p class="note note-light">
+&emsp;&emsp;Qus 02:<br>
+&emsp;&emsp;lf you need to print the following line using the echo statement with **double quotes**.<br>
+&emsp;&emsp;I paid a "ransom" of $rent for my \'landlord \'<br>
+&emsp;&emsp;What should be the 3rd line in the following code fragment?<br>
+</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-variable">$rent</span> = <span class="hljs-number">5000</span>;<br><br></code></pre></td></tr></table></figure>
+<p class="note note-light">
+&emsp;&emsp;a) echo "l paid a "ransom" of \\$rent for my \\'landlord \\'";<br>
+&emsp;&emsp;b) echo "l paid a \\"ransom\\" of \\$rent for my \\'landlord \\'";<br>
+&emsp;&emsp;c) echo "l paid a \\"ransom" of $rent for my \\'landlord \\'";<br>
+&emsp;&emsp;d) echo "l paid a \\"ransom\\" of $rent for my \\\\'landlord \\\\'";<br>
+</p>
+<hr>
+&emsp;&emsp;首先需要明确的是在PHP中双引号和单引号用法上的区别：<br>
+&emsp;&emsp;单引号中的内容会被识别为纯文本，即PHP不会解析其中的变量或者特殊字符。<br>
+&emsp;&emsp;双引号则相反，它将允许PHP解析字符串中的特殊字符。<br>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$name</span> = <span class="hljs-string">&quot;world&quot;</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">&#x27;Hello $name!&#x27;</span>; <span class="hljs-comment">//输出：Hello $name!</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Hello <span class="hljs-subst">$name</span>!&quot;</span>; <span class="hljs-comment">//输出：Hello world！</span><br></code></pre></td></tr></table></figure>
+<p>  因此，在题目中要求我们采用双引号进行输出的时候，为了避免PHP解析其中的变量和特殊字符，我们需要使用转义字符，即<code>\</code>。即在需要输出的语句中的<code>$</code>,<code>'</code>,<code>&quot;</code>等特殊字符前依次添加一个<code>\</code>即可。<br><br>
+  综上所述，这道题的答案为b）<br></p>
+<p><br><br></p>
+<h2 id="foreach循环">foreach循环</h2>
+<p class="note note-light">
+&emsp;&emsp;Qus 03:<br> 
+&emsp;&emsp;Which of the following loop constructs in PHP will print out each team in the array $nbaTeams<br> 
+&emsp;&emsp;a) for ($i= 0; $i< count($nbaTeams); $i++) echo $nbaTeams[ ]."< br>";<br> 
+&emsp;&emsp;b) foreach ($team as $nbaTeams) echo $team."< br>";<br> 
+&emsp;&emsp;c) foreach ($nbaTeams as $team) echo $team."< br>";<br> 
+&emsp;&emsp;d) for ($i= 0; $i< count(nbaTeams); $i++) echo $nbaTeams[ $i]."< br>";<br> 
+</p>
+<hr>
+&emsp;&emsp;foreach循环只适用于数组，并用于遍历数组中的每个键值对，其语法为：<br> 
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs txt">foreach($array as $value)<br>&#123;<br>    code to be executed;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>  其有以下几种基本用法：<br><br>
+  <strong>一、遍历数组的值</strong><br></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$xvs</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;GCC&quot;</span>, <span class="hljs-string">&quot;ZBN&quot;</span>, <span class="hljs-string">&quot;YZY&quot;</span>, <span class="hljs-string">&quot;JYH&quot;</span>, <span class="hljs-string">&quot;XF&quot;</span>);<br><span class="hljs-keyword">foreach</span>(<span class="hljs-variable">$cars</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$value</span>)<br>&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$value</span>&lt;br&gt;&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>  输出：<br></p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs txt">GCC<br>ZBN<br>YZY<br>JYH<br>XF<br></code></pre></td></tr></table></figure>
+<p>  此处的语法和Python中的For循环就很像，可以辅助理解：<br></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">xvs = [<span class="hljs-string">&quot;GCC&quot;</span>, <span class="hljs-string">&quot;ZBN&quot;</span>, <span class="hljs-string">&quot;YZY&quot;</span>, <span class="hljs-string">&quot;JYH&quot;</span>, <span class="hljs-string">&quot;XF&quot;</span>]<br><span class="hljs-keyword">for</span> xv <span class="hljs-keyword">in</span> xvs:<br>    <span class="hljs-built_in">print</span>(xv)<br></code></pre></td></tr></table></figure>
+<p>  <strong>二、遍历数组的键值对</strong><br></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$xvs</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;GCC&quot;</span> =&gt; <span class="hljs-string">&quot;8&quot;</span>, <span class="hljs-string">&quot;ZBN&quot;</span> =&gt; <span class="hljs-string">&quot;8&quot;</span>, <span class="hljs-string">&quot;YZY&quot;</span> =&gt; <span class="hljs-string">&quot;8&quot;</span>, <span class="hljs-string">&quot;JYH&quot;</span> =&gt; <span class="hljs-string">&quot;8&quot;</span>, <span class="hljs-string">&quot;XF&quot;</span> =&gt; <span class="hljs-string">&quot;19&quot;</span>);<br><span class="hljs-keyword">foreach</span>(<span class="hljs-variable">$xvs</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$name</span> =&gt; <span class="hljs-variable">$age</span>)<br>&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Name=<span class="hljs-subst">$name</span>, Age=<span class="hljs-subst">$age</span>&quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>  输出：<br></p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs txt">Name=GCC, Age=8<br>Name=ZBN, Age=8<br>Name=YZY, Age=8<br>Name=JYH, Age=8<br>Name=XF, Age=19<br></code></pre></td></tr></table></figure>
+<p>  <strong>三、反过来修改数组中的值</strong><br><br>
+  从PHP5开始，可以通过在<code>$value</code>前加一个<code>&amp;</code>来实现修改原数组中的值。<br></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$array</span> = <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br><span class="hljs-keyword">foreach</span>(<span class="hljs-variable">$array</span> <span class="hljs-keyword">as</span> &amp;<span class="hljs-variable">$value</span>)<br>&#123;<br>    <span class="hljs-variable">$value</span> *= <span class="hljs-number">2</span>;<br>&#125;<br><span class="hljs-keyword">foreach</span>(<span class="hljs-variable">$array</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$value</span>)<br>&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$value</span> &quot;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>  输出：<br></p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">2 4 6 8 10<br></code></pre></td></tr></table></figure>
+<p>  综上所述，答案选c)<br></p>
+<p><br> <br></p>
+<h2 id="GET函数的用法">$_GET函数的用法</h2>
+<p>  Questions in this section uses the following URL:<br><br>
+  <a target="_blank" rel="noopener" href="http://localhost/Day2/day2lecture.php?name=John&amp;lname=Smith&amp;title=Mr">http://localhost/Day2/day2lecture.php?name=John&amp;lname=Smith&amp;title=Mr</a><br></p>
+<p class="note note-light">
+&emsp;&emsp;Qus 04:<br> 
+&emsp;&emsp;When the URL contains a query string, an HTTP GET request is generated.<br> 
+&emsp;&emsp;With the GET request, the super global array $_GET gets populated with keys andvalues of the URL parameters.<br> 
+&emsp;&emsp;a) True<br> 
+&emsp;&emsp;b) False<br> 
+</p>
+<br> 
+<p class="note note-light">
+&emsp;&emsp;Qus 05:<br>
+&emsp;&emsp;Consider the URL:<br>
+&emsp;&emsp;localhost/Day3/index.php?fname=John&name=Smith&title=Mr<br>
+&emsp;&emsp;What the values in the URL could be retrieved as?<br>
+</p>
+<br> 
+<p class="note note-light">
+&emsp;&emsp;Qus 06:<br>
+&emsp;&emsp;Select all correct answers.<br>
+&emsp;&emsp;Value 'John' can be retrieved using the keys and values in super global array:<br>
+&emsp;&emsp;a) $_REQUEST<br>
+&emsp;&emsp;b) $_GET<br>
+&emsp;&emsp;c) $_POST<br>
+&emsp;&emsp;d) $_SERVER<br>
+</p>
+<hr>
+&emsp;&emsp;在 PHP 中，预定义的 $_GET 变量用于收集来自 method="get" 的表单中的值。此外，使用这种方法进行传递的信息是对任何人都可见的。这是因为其信息都被包含在URL（Unifrom Resource Locator, 统一资源定位符，会显示在浏览器的地址栏中）里，任何人都可以进行解读。由于URL的限制，GET方法能够传递的信息量是有限的。<br>
+&emsp;&emsp;在URL被发送到服务器端之后，PHP就可以对其进行解读，表单域的名称及其对应的值就会自动成为$_GET数组中的键值对。<br>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-keyword">if</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;get&#x27;</span>])<br>&#123;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$_GET</span>[&#x27;id&#x27;]&lt;br&gt;&quot;</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$_GET</span>[&#x27;password&#x27;]&lt;br&gt;&quot;</span>; <br>&#125;<br><span class="hljs-meta">?&gt;</span><br>&lt;form action=<span class="hljs-string">&quot;get.php&quot;</span>&gt; <span class="hljs-comment">// action选项中填入get.php意味着这份表单将被发送到此文件中进行处理。</span><br>                        <span class="hljs-comment">// 此外，form表单中的method变量默认为get</span><br>    &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;账号：&lt;/label&gt;&lt;input type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;id&quot;</span>&gt; <span class="hljs-comment">// for属性规定标签绑定到哪个表单元素</span><br>    &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">&quot;password&quot;</span>&gt;密码：&lt;/label&gt;&lt;input type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;password&quot;</span>&gt;<br>    &lt;input type=<span class="hljs-string">&quot;submit&quot;</span> name=<span class="hljs-string">&quot;get&quot;</span> value=<span class="hljs-string">&quot;提交&quot;</span>&gt;<br>&lt;/form&gt;<br></code></pre></td></tr></table></figure>
+<p>  和$_GET相对的，PHP中还有$_POST的用法。前者通常用于从服务器中检索信息，而后者则是用于向服务器中发送数据。特别要注意的是，POST请求会把数据放在HTTP请求的主体当中，故其传递的信息不会在URL中显示。在没有了URL的限制之后，可传递的信息量及其安全性都显著提高。<br></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-keyword">if</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;post&#x27;</span>]) &#123;<br><span class="hljs-keyword">foreach</span>(<span class="hljs-variable">$_POST</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$index</span> = &gt; <span class="hljs-variable">$value</span>) <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$_POST</span>[<span class="hljs-subst">$index</span>] = <span class="hljs-subst">$value</span>&quot;</span>, <span class="hljs-string">&quot;&lt;BR&gt;&quot;</span>;<br>&#125;<br><span class="hljs-meta">?&gt;</span><br>&lt;form action=<span class="hljs-string">&quot;post.php&quot;</span> method=<span class="hljs-string">&quot;post&quot;</span>&gt; <span class="hljs-comment">// 在这里明确了要采用POST的方法</span><br>    &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;账号：&lt;/label&gt;&lt;input type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;id&quot;</span>&gt;<br>    &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">&quot;password&quot;</span>&gt;密码：&lt;/label&gt;&lt;input type=<span class="hljs-string">&quot;text&quot;</span> name=<span class="hljs-string">&quot;password&quot;</span>&gt;<br>    &lt;input type=<span class="hljs-string">&quot;submit&quot;</span> name=<span class="hljs-string">&quot;post&quot;</span> value=<span class="hljs-string">&quot;提交&quot;</span>&gt;<br>&lt;/form&gt;<br></code></pre></td></tr></table></figure>
+<p>  此外，PHP中还有一种$_REQUEST数组，其默认包含了$_GET, $_POST,$_COOKIE数组的内容，即其可以访问GET和POST方法以及Cookie传递的数据。但是，$_RESQUET数组的安全性并不可靠，应当谨慎使用。<br><br>
+  综上所述，问题456的答案依次为：<br><br>
+  Q4：True<br><br>
+  Q5：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$first_name</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;fname&#x27;</span>];<br><span class="hljs-variable">$last_name</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;lname&#x27;</span>];<br><span class="hljs-variable">$title</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">&#x27;title&#x27;</span>];<br></code></pre></td></tr></table></figure>
+<p>  Q6：$_REQUEST和$_GET<br></p>
+<p><br><br></p>
+<h2 id="PHP中的表格">PHP中的表格</h2>
+<p class="note note-light">
+&emsp;&emsp;Qus 07:<br>
+&emsp;&emsp;Study the following code:<br>
+</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-variable">$html</span> = <span class="hljs-string">&quot;&lt;table&gt;&quot;</span>;<br><span class="hljs-variable">$html</span> .= <span class="hljs-string">&quot;&lt;tr&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;/tr&gt;&quot;</span>;<br><span class="hljs-variable">$html</span> .= <span class="hljs-string">&quot;&lt;tr&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;&quot;</span>;<br><span class="hljs-variable">$html</span> 》= <span class="hljs-string">&quot;&lt;/table&gt;&quot;</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$html</span>;<br></code></pre></td></tr></table></figure>
+<p>  What will be the output?<br><br>
+  a) Error MEssage<br><br>
+  b) Jack<br>   Smith<br><br>
+  c) Jack Smith<br><br>
+  d) <img src="/2025/03/08/note03/pic01.png" srcset="/img/loading.gif" lazyload class=""></p>
+<hr>
+<p>  首先是在php中<code>.=</code>的含义大概相当于<code>+=</code><br><br>
+  其次是这段代码显然将要输出一个表格，但其没有边框线。这是由于HTML表格默认是没有边框的，如果想要添加边框还需要做进一步的修改。<br><br>
+  综上所述，这一题的答案为b）<br></p>
+<p><br><br></p>
+<h2 id="PHP中的数据类型">PHP中的数据类型</h2>
+<p class="note note-light">
+&emsp;&emsp;Which of the following is NOT a supported Data Type in PHP?<br>
+&emsp;&emsp;a) Resource<br>
+&emsp;&emsp;b) String<br>
+&emsp;&emsp;c) Char<br>
+&emsp;&emsp;d) Boolean<br>
+&emsp;&emsp;e) Float<br>
+</p>
+<hr>
+<p>  事实上，由于PHP是一种弱类型语言，其中并没有专门的<code>char</code>数据类型。如果要实现类C语言中的<code>char</code>数据类型的功能，在PHP中可以使用<code>string</code>数据类型来代替。此外，PHP存在一种比较少见的<code>resource</code>数据类型，其用来表示外部资源。PHP本身无法直接操作这些资源，但可以通过<code>resource</code>类型的变量来引用它们。<br></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-variable">$file</span> = <span class="hljs-title function_ invoke__">fopen</span>(<span class="hljs-string">&quot;example.txt&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>); <span class="hljs-comment">// $file是一个文件资源</span><br><span class="hljs-variable">$conn</span> = <span class="hljs-title function_ invoke__">mysqli_connect</span>(<span class="hljs-string">&quot;localhost&quot;</span>, <span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>, <span class="hljs-string">&quot;database&quot;</span>); <span class="hljs-comment">// coon是一个数据库连接资源</span><br><span class="hljs-comment">// .......</span><br></code></pre></td></tr></table></figure>
+<p>  综上所述，这道题的答案为c）<br></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/PHP/" class="print-no-link">#PHP</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>学习笔记_25_03_08</div>
+      <div>http://example.com/2025/03/08/note03/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>谢斐</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年3月8日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/03/11/note04/" title="学习笔记_25_03_11">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">学习笔记_25_03_11</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/03/06/note01/" title="学习笔记_25_03_05">
+                        <span class="hidden-mobile">学习笔记_25_03_05</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
