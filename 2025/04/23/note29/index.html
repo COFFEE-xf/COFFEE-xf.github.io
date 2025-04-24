@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://example.com/2025/04/23/note29/note29_pic02.png">
 <meta property="og:image" content="http://example.com/2025/04/23/note29/note29_pic03.png">
 <meta property="article:published_time" content="2025-04-23T13:01:43.000Z">
-<meta property="article:modified_time" content="2025-04-23T14:36:13.596Z">
+<meta property="article:modified_time" content="2025-04-24T06:43:26.663Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/23/note29/note29_pic01.png">
@@ -229,7 +229,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          453 字
+          562 字
         
       </span>
     
@@ -240,7 +240,7 @@
         
         
         
-          4 分钟
+          5 分钟
         
       </span>
     
@@ -295,32 +295,36 @@
 <h2 id="一、问题一">一、问题一</h2>
 <p>问题一一般考察的内容就是ER图中缺失的联系，如下图所示：</p>
 <div class="center">
-<style>.gycvzudccyau{}</style><img src="/2025/04/23/note29/note29_pic01.png" srcset="/img/loading.gif" lazyload class="gycvzudccyau">
+<style>.youfqddocdib{}</style><img src="/2025/04/23/note29/note29_pic01.png" srcset="/img/loading.gif" lazyload class="youfqddocdib">
 </div>
 <p>以《软件设计师考试同步辅导（下午科目）》中的例题为例：</p>
 <div class="center">
-<style>.mqvhchcukkxv{}</style><img src="/2025/04/23/note29/note29_pic02.png" srcset="/img/loading.gif" lazyload class="mqvhchcukkxv">
+<style>.klnqtlvksppr{}</style><img src="/2025/04/23/note29/note29_pic02.png" srcset="/img/loading.gif" lazyload class="klnqtlvksppr">
 </div>
 <p>答：<strong>配送员-配送-地点，多对多联系</strong>。</p>
 <h2 id="二、问题二">二、问题二</h2>
 <p>问题二一般考察的是补充关系模式中缺失的属性，依旧以例1为例：</p>
 <div class="center">
-<style>.diydgnvohvdy{}</style><img src="/2025/04/23/note29/note29_pic03.png" srcset="/img/loading.gif" lazyload class="diydgnvohvdy">
+<style>.awpnuyelpele{}</style><img src="/2025/04/23/note29/note29_pic03.png" srcset="/img/loading.gif" lazyload class="awpnuyelpele">
 </div>
 <p>答：<br>
 （a）<strong>商品数量，仓库信息</strong>；<br>
 （b）<strong>支付凭证号码</strong>；<br>
 （c）<strong>商品条码，订单ID</strong>；<br>
+<br><br>
 作答此题时不能仅仅看ER图进行回答，还要通读题干中的【需求描述】，否则很容易遗失属性信息。此外每一空中不一定只缺失一个属性，需要将所有缺失的属性都补充完整。例如<code>仓库信息</code>的出处就是（5）中的<code>商品所在的仓库信息</code>。</p>
 <h2 id="三、问题三">三、问题三</h2>
 <p>问题三的考察内容不固定，但是一般需要掌握以下知识点，以应对除了修改ER图之外的考点：</p>
 <ol>
 <li>弱实体：弱实体是不能单独存在，必须依赖于其它实体才能存在的实体。弱实体用双线矩形框表示，其与实体的关系用双线菱形表示。</li>
 <li>简单属性：简单属性是指​​不能再分解​​为更小组成部分的属性，它是数据库中最基本的数据单元。简单属性也称为​​原子属性​​，表示一个实体的单一特征。</li>
-<li>规范性问题（2016下半年）：</li>
-<li>传递依赖（2019下）</li>
-<li>2020下</li>
-<li>2021下</li>
+<li>规范性问题：按第一范式到第三范式的标准逐一检查是否符合规范，下面来复习一下各个范式的要求：
+<ol>
+<li>第一范式：表中所有属性都应该是简单属性。</li>
+<li>第二范式：表中不允许存在部分依赖，即非主属性不能依赖于组合主键的一部分。</li>
+<li>第三范式：表中不允许存在传递依赖，即一个非主属性不能依赖于另一个非主属性。</li>
+</ol>
+</li>
 </ol>
 <p>除此之外，最主要的考察内容就是对ER图进行补充和修改，具体情况具体分析即可。</p>
 
