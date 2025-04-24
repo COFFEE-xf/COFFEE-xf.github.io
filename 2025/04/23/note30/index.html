@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic05.png">
 <meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic06.png">
 <meta property="article:published_time" content="2025-04-23T02:28:49.000Z">
-<meta property="article:modified_time" content="2025-04-24T07:52:33.574Z">
+<meta property="article:modified_time" content="2025-04-24T12:26:25.790Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/23/note30/note30_pic01.png">
@@ -232,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          589 字
+          596 字
         
       </span>
     
@@ -302,22 +302,22 @@ UML的词汇表中包含了3种构造块：事物、关系和图。事物是对�
 <h4 id="1-结构事物">1. 结构事物</h4>
 <p>结构事物通常是模型中的静态部分，用来描述概念或者物理元素，各种结构事物的图形化表示如下图所示：</p>
 <div class="center">
-<style>.tqwznpfdiufa{}</style><img src="/2025/04/23/note30/note30_pic01.png" srcset="/img/loading.gif" lazyload class="tqwznpfdiufa">
+<style>.dboxczcrwlct{}</style><img src="/2025/04/23/note30/note30_pic01.png" srcset="/img/loading.gif" lazyload class="dboxczcrwlct">
 </div>
 <h4 id="2-行为事物">2. 行为事物</h4>
 <p>行为事物通常是模型中的动态部分，用来描述跨越时间和空间的行为，其图形化表示如下图所示：</p>
 <div class="center">
-<style>.pvqueodbwgtg{}</style><img src="/2025/04/23/note30/note30_pic02.png" srcset="/img/loading.gif" lazyload class="pvqueodbwgtg">
+<style>.uciopvfpksey{}</style><img src="/2025/04/23/note30/note30_pic02.png" srcset="/img/loading.gif" lazyload class="uciopvfpksey">
 </div>
 <h4 id="3-分组事物">3. 分组事物</h4>
 <p>分组事物是UML模型中的组织部分，是一些由模型分解成的“盒子”。在应用中最主要的分组事物是包(Package)，它能够将元素组织起来，绝大分事物都可以放进包内。包的图形化表示如下图所示：</p>
 <div class="center">
-<style>.xvgrnqonuddk{}</style><img src="/2025/04/23/note30/note30_pic03.png" srcset="/img/loading.gif" lazyload class="xvgrnqonuddk">
+<style>.ksrdjuhfcbox{}</style><img src="/2025/04/23/note30/note30_pic03.png" srcset="/img/loading.gif" lazyload class="ksrdjuhfcbox">
 </div>
 <h4 id="4-注释事物">4. 注释事物</h4>
 <p>这种事物的概念不难理解，而注解(Note)是其中比较重要的一种注释事物，其图形化表示如下图所示：</p>
 <div class="center">
-<style>.exusqdnuwhxy{}</style><img src="/2025/04/23/note30/note30_pic04.png" srcset="/img/loading.gif" lazyload class="exusqdnuwhxy">
+<style>.xncjjvwvsxxv{}</style><img src="/2025/04/23/note30/note30_pic04.png" srcset="/img/loading.gif" lazyload class="xncjjvwvsxxv">
 </div>
 <h2 id="二、关系">二、关系</h2>
 <p>UML当中有四种关系：依赖、关联、泛化和实现。</p>
@@ -325,15 +325,18 @@ UML的词汇表中包含了3种构造块：事物、关系和图。事物是对�
 <h4 id="1-依赖">1. 依赖</h4>
 <p>在依赖关系中，一个事物（独立事物）发生变化会影响另一个事物（依赖事物）的语义，其图形化表示如下图所示：</p>
 <div class="center">
-<style>.lofilvqbfwif{}</style><img src="/2025/04/23/note30/note30_pic05.png" srcset="/img/loading.gif" lazyload class="lofilvqbfwif">
+<style>.xnkhmxxgnfkb{}</style><img src="/2025/04/23/note30/note30_pic05.png" srcset="/img/loading.gif" lazyload class="xnkhmxxgnfkb">
 </div>
 <p>当出现<code>A --------&gt; B</code>时，A是<code>依赖事物</code>，B是<code>独立事物</code>。</p>
 <h4 id="2-关联">2. 关联</h4>
 <p>当两个对象之间被连接起来，它们就构成了关联关系，如下图所示：</p>
 <div class="center">
-<style>.goshiwytmhav{}</style><img src="/2025/04/23/note30/note30_pic06.png" srcset="/img/loading.gif" lazyload class="goshiwytmhav">
+<style>.tofgauhwnbyd{}</style><img src="/2025/04/23/note30/note30_pic06.png" srcset="/img/loading.gif" lazyload class="tofgauhwnbyd">
 </div>
-<p>不难发现，在关联上还可以标注重复度(Multiplicity)和角色(Role)，其中重复度指的就是参与关联的对象数量关系。而其中的<code>..</code>一般表示的是<code>或</code>的意思。</p>
+<p>不难发现，在关联上还可以标注重复度(Multiplicity)和角色(Role)，其中重复度指的就是参与关联的对象数量关系。<br><br>
+此外，还有两种特殊的关联需要注意：<br>
+i.  聚集：<br>
+ii. 组合：</p>
 <h4 id="3-泛化">3. 泛化</h4>
 <h4 id="4-实现">4. 实现</h4>
 <h3 id="Ⅱ-真题赏析">Ⅱ 真题赏析</h3>
