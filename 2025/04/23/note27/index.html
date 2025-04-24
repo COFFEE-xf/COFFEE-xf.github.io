@@ -306,7 +306,7 @@
 <h2 id="一、数据库的三级模式结构">一、数据库的三级模式结构</h2>
 <p>尽管数据库的产品很多，但其体系结构基本上都具有相同的特征，都采用“三级模式和两级映像”。</p>
 <div class="center">
-<style>.obpjswiueqlx{}</style><img src="/2025/04/23/note27/note27_pic01.png" srcset="/img/loading.gif" lazyload class="obpjswiueqlx">
+<style>.tokejfrcugqu{}</style><img src="/2025/04/23/note27/note27_pic01.png" srcset="/img/loading.gif" lazyload class="tokejfrcugqu">
 </div>
 <p>数据按外模式的描述提供给用户，按内模式的描述存储在磁盘上，而概念模式提供了连接这两级模式的相对稳定的中间层，并使得两级中任意一级的改变都不受另一级影响。</p>
 <h3 id="Ⅰ-概念模式">Ⅰ 概念模式</h3>
@@ -331,11 +331,11 @@
 </ol>
 <h3 id="Ⅱ-关系运算">Ⅱ 关系运算</h3>
 <div class="center">
-<style>.qdxfwuotwiok{}</style><img src="/2025/04/23/note27/note27_pic02.png" srcset="/img/loading.gif" lazyload class="qdxfwuotwiok">
+<style>.ldoiuypovgaz{}</style><img src="/2025/04/23/note27/note27_pic02.png" srcset="/img/loading.gif" lazyload class="ldoiuypovgaz">
 </div>
 <p>以关系R和关系S为例：</p>
 <div class="center">
-<style>.cycacgbpvshc{}</style><img src="/2025/04/23/note27/note27_pic03.png" srcset="/img/loading.gif" lazyload class="cycacgbpvshc">
+<style>.pjpzwszoxyen{}</style><img src="/2025/04/23/note27/note27_pic03.png" srcset="/img/loading.gif" lazyload class="pjpzwszoxyen">
 </div>
 <h4 id="1-笛卡尔积">1. 笛卡尔积</h4>
 <p>两个关系R（m个属性n个元组）和S（k个属性p个元组）的笛卡尔积记为R×S，结果是一个新关系：</p>
@@ -344,24 +344,24 @@
 <li>包含n×p个元组（每个R的元组与每个S的元组组合一次）</li>
 </ul>
 <div class="center">
-<style>.mroxjbztpbqt{}</style><img src="/2025/04/23/note27/note27_pic04.png" srcset="/img/loading.gif" lazyload class="mroxjbztpbqt">
+<style>.xjxygeumxjjj{}</style><img src="/2025/04/23/note27/note27_pic04.png" srcset="/img/loading.gif" lazyload class="xjxygeumxjjj">
 </div>
 <h4 id="2-投影">2. 投影</h4>
 <p>投影是从关系的垂直方向进行运算，在关系R中选出若干属性列<em>A</em>组成新的关系，记作$\pi _A\left( R \right) $。</p>
 <div class="center">
-<style>.mhihxjigrbcn{}</style><img src="/2025/04/23/note27/note27_pic05.png" srcset="/img/loading.gif" lazyload class="mhihxjigrbcn">
+<style>.grswxnsttxdi{}</style><img src="/2025/04/23/note27/note27_pic05.png" srcset="/img/loading.gif" lazyload class="grswxnsttxdi">
 </div>
 <h4 id="3-选择">3. 选择</h4>
 <p>选择是从关系的水平方向进行运算，在关系R中选择满足给定条件的诸元组，记作$\sigma _F\left( R \right) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>。例如，</mtext></mrow><annotation encoding="application/x-tex">。例如，</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">。例如，</span></span></span></span>\sigma _{1\ge 6}\left( R \right) $表示选取R关系中第1个属性值大于等于第6个属性值的元组。</p>
 <div class="center">
-<style>.jdciemdriqhj{}</style><img src="/2025/04/23/note27/note27_pic06.png" srcset="/img/loading.gif" lazyload class="jdciemdriqhj">
+<style>.jonhynrsgdbj{}</style><img src="/2025/04/23/note27/note27_pic06.png" srcset="/img/loading.gif" lazyload class="jonhynrsgdbj">
 </div>
 <h4 id="4-连接">4. 连接</h4>
 <p>连接运算是从两个关系R和S的笛卡尔积中选取满足条件的元组。因此，可以认为笛卡尔积是无条件连接，其它连接认为是有条件连接。</p>
 <h5 id="i-theta-连接">i. $\theta $连接</h5>
 <p>$\theta $连接是从R×S中选取属性间满足一定条件的元组。</p>
 <div class="center">
-<style>.hqrbhezugjky{}</style><img src="/2025/04/23/note27/note27_pic07.png" srcset="/img/loading.gif" lazyload class="hqrbhezugjky">
+<style>.zixqyioninee{}</style><img src="/2025/04/23/note27/note27_pic07.png" srcset="/img/loading.gif" lazyload class="zixqyioninee">
 </div>
 <h5 id="ii-等值连接">ii. 等值连接</h5>
 <p>等值连接是特殊的$\theta $连接，其中的比较符号只能为&quot;=&quot;。</p>
@@ -369,7 +369,7 @@
 <p>自然连接是一种特殊的等值连接，它要求两个关系中进行比较的分量必须是相同的属性组，并在结果集中将重复属性列去掉。<br>
 自然连接可以记为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>⋈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">R\Join S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>。</p>
 <div class="center">
-<style>.hvedqyromuwf{}</style><img src="/2025/04/23/note27/note27_pic08.jpg" srcset="/img/loading.gif" lazyload class="hvedqyromuwf">
+<style>.spdpkxmxyjsb{}</style><img src="/2025/04/23/note27/note27_pic08.jpg" srcset="/img/loading.gif" lazyload class="spdpkxmxyjsb">
 </div>
 <p>需要注意的是，自然连接不仅要在垂直方向上运算，也要在水平方向上运算。</p>
 <hr>
@@ -408,32 +408,32 @@
 <h4 id="5-外连接">5. 外连接</h4>
 <p>外连接是连接运算的扩展，可以处理由于连接运算而丢失的信息。</p>
 <div class="center">
-<style>.ijpjfwqskxzi{}</style><img src="/2025/04/23/note27/note27_pic09.jpg" srcset="/img/loading.gif" lazyload class="ijpjfwqskxzi">
+<style>.eskgepfpeypc{}</style><img src="/2025/04/23/note27/note27_pic09.jpg" srcset="/img/loading.gif" lazyload class="eskgepfpeypc">
 </div>
 <p>如上图所示，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>⋈</mo><mi>S</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">S\Join SC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6883em;vertical-align:-0.005em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⋈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">SC</span></span></span></span>中就丢失黎明、赵国庆等人的信息，而外连接就可以用来处理这种情况。</p>
 <h5 id="i-左外连接">i. 左外连接</h5>
 <p>左外连接是取出左侧关系中所有与右侧关系中任一元组都不匹配的元组，用空值null来填充所有来自右侧关系的属性，并构成新的元组。</p>
 <div class="center">
-<style>.pfleyvsudcwr{}</style><img src="/2025/04/23/note27/note27_pic10.png" srcset="/img/loading.gif" lazyload class="pfleyvsudcwr">
+<style>.epymqryuoyxd{}</style><img src="/2025/04/23/note27/note27_pic10.png" srcset="/img/loading.gif" lazyload class="epymqryuoyxd">
 </div>
 <h5 id="ii-右外连接">ii. 右外连接</h5>
 <p>右外连接和左外连接正相反，它是取出右侧关系中所有与左侧关系中任一元组都不匹配的元组，并用null替代后组成新的元组。</p>
 <div class="center">
-<style>.jhdsvjggdnrv{}</style><img src="/2025/04/23/note27/note27_pic11.png" srcset="/img/loading.gif" lazyload class="jhdsvjggdnrv">
+<style>.pywzervtgime{}</style><img src="/2025/04/23/note27/note27_pic11.png" srcset="/img/loading.gif" lazyload class="pywzervtgime">
 </div>
 <h5 id="iii-全外连接">iii. 全外连接</h5>
 <p>可以理解为在进行完一次左外连接之后再进行一次右外连接。</p>
 <div class="center">
-<style>.xhpbfzokdjdf{}</style><img src="/2025/04/23/note27/note27_pic12.png" srcset="/img/loading.gif" lazyload class="xhpbfzokdjdf">
+<style>.rfmjhwmlvdwo{}</style><img src="/2025/04/23/note27/note27_pic12.png" srcset="/img/loading.gif" lazyload class="rfmjhwmlvdwo">
 </div>
 <h3 id="Ⅲ-真题赏析">Ⅲ 真题赏析</h3>
 <div class="center">
-<style>.adwpfwakqbty{}</style><img src="/2025/04/23/note27/note27_pic13.png" srcset="/img/loading.gif" lazyload class="adwpfwakqbty">
+<style>.tzqysmzdlyhh{}</style><img src="/2025/04/23/note27/note27_pic13.png" srcset="/img/loading.gif" lazyload class="tzqysmzdlyhh">
 </div>
 <p><strong>D</strong>，应该优先执行选择运算，这样一来可以大幅缩减笛卡尔积得到的结果，增加查询效率。</p>
 <hr>
 <div class="center">
-<style>.ahgwvkrobomg{}</style><img src="/2025/04/23/note27/note27_pic14.png" srcset="/img/loading.gif" lazyload class="ahgwvkrobomg">
+<style>.xkmxlcxzhrsp{}</style><img src="/2025/04/23/note27/note27_pic14.png" srcset="/img/loading.gif" lazyload class="xkmxlcxzhrsp">
 </div>
 <ol start="54">
 <li><strong>C</strong>，由题意可得投影中的第一列为员工工号，第二列为姓名，也就是说第一张表的第一二列分别为员工工号、姓名，因此第一张表为E。此外，中文需要使用单引号包括。</li>
