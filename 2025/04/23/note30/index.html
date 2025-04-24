@@ -26,10 +26,17 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="软考中级备考笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic01.png">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic02.png">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic03.png">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic04.png">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic05.png">
+<meta property="og:image" content="http://example.com/2025/04/23/note30/note30_pic06.png">
 <meta property="article:published_time" content="2025-04-23T02:28:49.000Z">
-<meta property="article:modified_time" content="2025-04-24T06:48:10.672Z">
+<meta property="article:modified_time" content="2025-04-24T07:52:33.574Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/04/23/note30/note30_pic01.png">
   
   
   
@@ -225,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          20 字
+          589 字
         
       </span>
     
@@ -236,7 +243,7 @@
         
         
         
-          1 分钟
+          5 分钟
         
       </span>
     
@@ -288,6 +295,49 @@
 }
 </style>
 <h1>软件设计师 上午题 UML</h1>
+<p>统一建模语言(Unified Modeling Language, UNL)是一种面向对象软件的标准化建模语言，其简单、统一且富有表达力，目前已经成为可视化建模语言事实上的工业标准。<br><br>
+UML的词汇表中包含了3种构造块：事物、关系和图。事物是对模型种最具有代表性的成分的抽象；关系将事物联系在了一起；图则聚集了相关的事物。下面我们将逐一了解这些构造块：</p>
+<h2 id="一、事物">一、事物</h2>
+<p>UML中有四种事物：结构事物、行为事物、分组事物和注释事物：</p>
+<h4 id="1-结构事物">1. 结构事物</h4>
+<p>结构事物通常是模型中的静态部分，用来描述概念或者物理元素，各种结构事物的图形化表示如下图所示：</p>
+<div class="center">
+<style>.tqwznpfdiufa{}</style><img src="/2025/04/23/note30/note30_pic01.png" srcset="/img/loading.gif" lazyload class="tqwznpfdiufa">
+</div>
+<h4 id="2-行为事物">2. 行为事物</h4>
+<p>行为事物通常是模型中的动态部分，用来描述跨越时间和空间的行为，其图形化表示如下图所示：</p>
+<div class="center">
+<style>.pvqueodbwgtg{}</style><img src="/2025/04/23/note30/note30_pic02.png" srcset="/img/loading.gif" lazyload class="pvqueodbwgtg">
+</div>
+<h4 id="3-分组事物">3. 分组事物</h4>
+<p>分组事物是UML模型中的组织部分，是一些由模型分解成的“盒子”。在应用中最主要的分组事物是包(Package)，它能够将元素组织起来，绝大分事物都可以放进包内。包的图形化表示如下图所示：</p>
+<div class="center">
+<style>.xvgrnqonuddk{}</style><img src="/2025/04/23/note30/note30_pic03.png" srcset="/img/loading.gif" lazyload class="xvgrnqonuddk">
+</div>
+<h4 id="4-注释事物">4. 注释事物</h4>
+<p>这种事物的概念不难理解，而注解(Note)是其中比较重要的一种注释事物，其图形化表示如下图所示：</p>
+<div class="center">
+<style>.exusqdnuwhxy{}</style><img src="/2025/04/23/note30/note30_pic04.png" srcset="/img/loading.gif" lazyload class="exusqdnuwhxy">
+</div>
+<h2 id="二、关系">二、关系</h2>
+<p>UML当中有四种关系：依赖、关联、泛化和实现。</p>
+<h3 id="Ⅰ-概念了解">Ⅰ 概念了解</h3>
+<h4 id="1-依赖">1. 依赖</h4>
+<p>在依赖关系中，一个事物（独立事物）发生变化会影响另一个事物（依赖事物）的语义，其图形化表示如下图所示：</p>
+<div class="center">
+<style>.lofilvqbfwif{}</style><img src="/2025/04/23/note30/note30_pic05.png" srcset="/img/loading.gif" lazyload class="lofilvqbfwif">
+</div>
+<p>当出现<code>A --------&gt; B</code>时，A是<code>依赖事物</code>，B是<code>独立事物</code>。</p>
+<h4 id="2-关联">2. 关联</h4>
+<p>当两个对象之间被连接起来，它们就构成了关联关系，如下图所示：</p>
+<div class="center">
+<style>.goshiwytmhav{}</style><img src="/2025/04/23/note30/note30_pic06.png" srcset="/img/loading.gif" lazyload class="goshiwytmhav">
+</div>
+<p>不难发现，在关联上还可以标注重复度(Multiplicity)和角色(Role)，其中重复度指的就是参与关联的对象数量关系。而其中的<code>..</code>一般表示的是<code>或</code>的意思。</p>
+<h4 id="3-泛化">3. 泛化</h4>
+<h4 id="4-实现">4. 实现</h4>
+<h3 id="Ⅱ-真题赏析">Ⅱ 真题赏析</h3>
+<h2 id="三、图">三、图</h2>
 
                 
               </div>
