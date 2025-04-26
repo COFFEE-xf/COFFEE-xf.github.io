@@ -295,13 +295,13 @@
 <h1>“bad config line 1 in file .git/config”的解决方案</h1>
 <p>昨天晚上下了自习之后准备把笔记到Hexo上然后回寝室睡大觉，结果出现了以下报错：</p>
 <div class="center">
-<style>.byulhipfwxyv{}</style><img src="/2025/04/24/md02/md02_pic01.png" srcset="/img/loading.gif" lazyload class="byulhipfwxyv">
+<style>.jkwxfswcdyhi{}</style><img src="/2025/04/24/md02/md02_pic01.png" srcset="/img/loading.gif" lazyload class="jkwxfswcdyhi">
 </div>
 <p>其实之前也出现过一次这样的情况，但是当时什么动作也没做重新第二遍尝试<code>hexo d</code>就提交成功了，加上搜了一些技术文档看到有人说只是网络问题所以就没放在心上继续回去睡大觉了。<br><br>
 但是今天早上起来再尝试deploy的时候依旧出现同样的报错，这下开始发现应该是哪个配置文件出现了问题，下面是花两节课摸索出来的解决方案：</p>
 <h3 id="1-删除-hexo-deploy-git">1. 删除/hexo/.deploy_git</h3>
 <div class="center">
-<style>.rqkrmkwxtuwe{}</style><img src="/2025/04/24/md02/md02_pic02.png" srcset="/img/loading.gif" lazyload class="rqkrmkwxtuwe">
+<style>.wdgrjoukwcsw{}</style><img src="/2025/04/24/md02/md02_pic02.png" srcset="/img/loading.gif" lazyload class="wdgrjoukwcsw">
 </div>
 <p>我的本地代码库如上图所示，我最开始找<code>config</code>文件时一直找的就是<code>/.git</code>文件夹中的<code>config</code>文件。但是不论我用记事本打开这个文件还是用<code>$ vi .git/config</code>检查这个文件其中的内容都一切正常。<br><br>
 后来也反复尝试过删除<code>/.git/config</code>文件，再使用<code>$ git init</code>命令恢复它也无济于事。<br><br>
@@ -310,12 +310,12 @@
 <h3 id="2-使用管理员模式运行Git-Bash">2. 使用管理员模式运行Git Bash</h3>
 <p>在删除目标文件夹之后我重新尝试了<code>$ hexo d</code>命令，但是提示错误信息为没有足够的权限，那么就需要使用管理员模式运行<code>Git Bash</code>了，按下图图示操作即可：<br></p>
 <div class="center">
-<style>.diccojqsdeup{}</style><img src="/2025/04/24/md02/md02_pic03.png" srcset="/img/loading.gif" lazyload class="diccojqsdeup">
+<style>.lzqdzvepvyzb{}</style><img src="/2025/04/24/md02/md02_pic03.png" srcset="/img/loading.gif" lazyload class="lzqdzvepvyzb">
 </div>
 <p><em>注：使用管理员模式不一定是必须的，因为在我尝试复现的时候发现关掉管理员模式之后似乎也可以成功提交。</em></p>
 <p>随后就能正常递交文档了：</p>
 <div class="center">
-<style>.mngcbrdrnccg{}</style><img src="/2025/04/24/md02/md02_pic04.png" srcset="/img/loading.gif" lazyload class="mngcbrdrnccg">
+<style>.dlxarqusupuk{}</style><img src="/2025/04/24/md02/md02_pic04.png" srcset="/img/loading.gif" lazyload class="dlxarqusupuk">
 </div>
                 
               </div>
