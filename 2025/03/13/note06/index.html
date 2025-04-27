@@ -400,13 +400,13 @@
 <li>路由器会定期与邻居路由器交换路由信息（即距离向量），并以此来更新自己的路由表。</li>
 <li>用跳数来表示数据包从出发地到目的地之间经过的路由器数量。特别地，从一路由器到直接连接的跳数为1。</li>
 </ul>
-<style>.jbhxjcthplqn{}</style><img src="/2025/03/13/note06/note06_pic01.png" srcset="/img/loading.gif" lazyload class="jbhxjcthplqn">
-<style>.ukhuedoswxbd{}</style><img src="/2025/03/13/note06/note06_pic02.png" srcset="/img/loading.gif" lazyload class="ukhuedoswxbd">
+<style>.nttwwfrreepq{}</style><img src="/2025/03/13/note06/note06_pic01.png" srcset="/img/loading.gif" lazyload class="nttwwfrreepq">
+<style>.myijsnbgbmgi{}</style><img src="/2025/03/13/note06/note06_pic02.png" srcset="/img/loading.gif" lazyload class="myijsnbgbmgi">
 <p>但是需要注意的是，在RIP中一条路由最多只能包含15个路由器，因此距离为16表示网络不可达。这也就意味着RIP协议只适用于小型互联网。</p>
 <h5 id="2-开放最短路径优先OSPF-Open-Shortest-Path-First">2) 开放最短路径优先OSPF(Open Shortest Path First)</h5>
 <p>为了克服RIP只能应用于小型互联网的缺点，开放最短路径优先协议得以被开发，所谓“最短路径优先”即意味着该协议采用最短路径算法。<br><br>
 为了更好地管理大型互联网，OSPF将一个AS继续划分为了若干个更小的范围，即<strong>区域</strong>，这使得路由更新收敛速度得以提高。而每一个区域都有一个32位的用点分十进制表示的区域标识符。此外，<strong>每个区域内路由器的数量不超过200个</strong>。</p>
-<style>.ijrbqikdcmrs{}</style><img src="/2025/03/13/note06/note06_pic03.png" srcset="/img/loading.gif" lazyload class="ijrbqikdcmrs">
+<style>.gtngkwulgndb{}</style><img src="/2025/03/13/note06/note06_pic03.png" srcset="/img/loading.gif" lazyload class="gtngkwulgndb">
 <p>其中主干区域的标识符规定为0.0.0.0。<br></p>
 <p>和RIP的距离向量算法不同的是，OSPF采用的是<strong>分布式的链路状态协议</strong>，主要具有以下几个特点：</p>
 <ul>
@@ -696,7 +696,7 @@
 </blockquote>
 <p>其中，对用户流量进行路由处理的是核心交换层。</p>
 <div class="center">
-<style>.hyeckxmtxqdr{}</style><img src="/2025/03/13/note06/note06_pic10.png" srcset="/img/loading.gif" lazyload class="hyeckxmtxqdr">
+<style>.ebtmeqtusvla{}</style><img src="/2025/03/13/note06/note06_pic10.png" srcset="/img/loading.gif" lazyload class="ebtmeqtusvla">
 </div>
 <h4 id="2-城域网QoS技术">2. 城域网QoS技术</h4>
 <blockquote>
@@ -744,7 +744,7 @@
 </div>
 <p>这也就解释了前段时间一道课内阶段测试题的答案：<br></p>
 <div class="center">
-<style>.epclovaucebh{}</style><img src="/2025/03/13/note06/note06_pic06.png" srcset="/img/loading.gif" lazyload class="epclovaucebh">
+<style>.yuusekrsbljw{}</style><img src="/2025/03/13/note06/note06_pic06.png" srcset="/img/loading.gif" lazyload class="yuusekrsbljw">
 </div>
 言归正传，那么NAT（Network Address Translation）就是一种把内部私有IP地址翻译成合法公有IP地址的技术。<br>
 其中NAT技术主要分为：
@@ -754,17 +754,17 @@
 </ul>
 <p>而计算机三级网络技术中有关NAT的主要考察知识点就是动态地址转换表。下边我们直接以真题为例进行分析：<br></p>
 <div class="center">
-<style>.exjwkhtrklyo{}</style><img src="/2025/03/13/note06/note06_pic07.png" srcset="/img/loading.gif" lazyload class="exjwkhtrklyo">
+<style>.xfepnltuzkhq{}</style><img src="/2025/03/13/note06/note06_pic07.png" srcset="/img/loading.gif" lazyload class="xfepnltuzkhq">
 </div>
 <p>此外还有一种情况：</p>
 <div class="center">
-<style>.tpusvknuvvuv{}</style><img src="/2025/03/13/note06/note06_pic07.png" srcset="/img/loading.gif" lazyload class="tpusvknuvvuv">
+<style>.vlfddotuypmz{}</style><img src="/2025/03/13/note06/note06_pic07.png" srcset="/img/loading.gif" lazyload class="vlfddotuypmz">
 </div>
 <p>当内部网络的一个专用地址需要访问外网的时候，NAT会将其转换为Internet上唯一的外部公用地址+端口号，也就是<code>58.73.1.1, 1423</code>。而外部网络相应这个访问请求的时候也只能是响应这个转换过后的外部公用地址。因此本题答案为<code>58.73.1.1:1423</code>。</p>
 <h4 id="4-RPR弹性分组环">4. RPR弹性分组环</h4>
 <p>弹性分组环（RPR, Resilient Packet Ring）是一种采用环形拓扑且是<strong>互逆双环拓扑</strong>（见下图）的网络架构，广泛应用于城域网（MAN）或广域网（WAN）。其中，两个RPR节点之间的裸光纤最大长度可达<strong>100公里</strong>。<br></p>
 <div class="center">
-<style>.euzhwlnlsudq{}</style><img src="/2025/03/13/note06/note06_pic04.jpg" srcset="/img/loading.gif" lazyload class="euzhwlnlsudq">
+<style>.frccsgfkrhrz{}</style><img src="/2025/03/13/note06/note06_pic04.jpg" srcset="/img/loading.gif" lazyload class="frccsgfkrhrz">
 </div>
 <p>和前边提到过的技术类似，RPR也是基于前置基数发展而来的，其前身为光纤分布式数据接口FDDI（Fiber Distributed Data Interface）。FDDI是早期的环形网络技术（<strong>同样是双环</strong>），主要应用于较小的局域网（LAN）当中。在传统的FDDI环当中，当源节点向目的节点发送一个数据帧时，这个数据帧将由<strong>源节点</strong>从环中收回。但在RPR环中，这个数据帧将由<strong>目的节点</strong>从环中收回。<br></p>
 <blockquote>
@@ -831,7 +831,7 @@ RPR 的优势：RPR 中，目的节点在接收到数据帧后立即将其从环
 <h3 id="四、局域网设计与设备">四、局域网设计与设备</h3>
 <h4 id="1-综合布线系统">1. 综合布线系统</h4>
 <div class="center">
-<style>.tvraqhglwnfo{}</style><img src="/2025/03/13/note06/note06_pic08.jpg" srcset="/img/loading.gif" lazyload class="tvraqhglwnfo">
+<style>.hguedrmstfnc{}</style><img src="/2025/03/13/note06/note06_pic08.jpg" srcset="/img/loading.gif" lazyload class="hguedrmstfnc">
 </div>
 <p>其中需要注意的知识点有：</p>
 <ul>
@@ -851,7 +851,7 @@ RPR 的优势：RPR 中，目的节点在接收到数据帧后立即将其从环
 <h4 id="2-集线器">2. 集线器</h4>
 <p>集线器是一种运作在OSI模型（见下图）中的<strong>物理层</strong>中的一种网络硬件，可以让其链接的设备工作在同一网段。<br></p>
 <div class="center">
-<style>.itmwjrpmurmd{}</style><img src="/2025/03/13/note06/note06_pic05.png" srcset="/img/loading.gif" lazyload class="itmwjrpmurmd">
+<style>.ybgusolpwmdu{}</style><img src="/2025/03/13/note06/note06_pic05.png" srcset="/img/loading.gif" lazyload class="ybgusolpwmdu">
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">正如图中所示，集线器使用双绞线连接工作站</center>
 </div>
 <p>作为在物理层中工作的设备，即纯硬件网络底层设备，集线器仅对数据传输起到同步、放大和整型的作用。它采用<strong>CSMA/CD</strong>（Carrier Sense Multiple Access with Collision Detection，载波侦听多路访问/冲突检测）介质访问控制机制，这使得其具有以下功能：</p>
@@ -973,7 +973,7 @@ D）无线路由器</p>
 <p>中小型网络系统的主题部分是核心层网络，<strong>其采用的技术标准是GE/10GE</strong>，能够承担整个网络系统流量的40%-60%。<br><br>
 其设计方式一般如下图所示：</p>
 <div class="center">
-<style>.igpwrdcfknqu{}</style><img src="/2025/03/13/note06/note06_pic36.png" srcset="/img/loading.gif" lazyload class="igpwrdcfknqu">
+<style>.lbuqgdekwmyg{}</style><img src="/2025/03/13/note06/note06_pic36.png" srcset="/img/loading.gif" lazyload class="lbuqgdekwmyg">
 </div>
 <p>这两种设计方式的共同点是都采用了冗余电路的光纤连接了两个核心路由器，但是它们之间亦有区别：</p>
 <ul>
@@ -1356,7 +1356,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="5-路由表的更新算法">5. 路由表的更新算法</h4>
 <p>以官方给出的样题为例：</p>
 <div class="center">
-<style>.degjtjminfci{}</style><img src="/2025/03/13/note06/note06_pic11.png" srcset="/img/loading.gif" lazyload class="degjtjminfci">
+<style>.tlvtplznennq{}</style><img src="/2025/03/13/note06/note06_pic11.png" srcset="/img/loading.gif" lazyload class="tlvtplznennq">
 </div>
 <p>由于我们的目的是要更新R1的路由表，所以我们要首先把图(b)这个R2视角的报文转换为R1视角。由于R1和R2是相邻的两个路由器，所以在新表中距离直接加一即可。此外，再在新表中再新加一列<code>下一跳路由器</code>，这里显然全部都是<code>R2</code>。得到的新表表©如下所示：</p>
 <div class="center">
@@ -1410,7 +1410,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 收到&quot;Echo请求&quot;报文的目的节点必须向源节点发出&quot;Echo应答&quot;报文。</li>
 </ul>
 <div class="center">
-<style>.iltyvlrzbofi{}</style><img src="/2025/03/13/note06/note06_pic09.png" srcset="/img/loading.gif" lazyload class="iltyvlrzbofi">
+<style>.tlvewoixpuhg{}</style><img src="/2025/03/13/note06/note06_pic09.png" srcset="/img/loading.gif" lazyload class="tlvewoixpuhg">
 </div>
 <p><strong>不难发现，ICMP消息是封装在IP数据包当中的</strong>。</p>
 <h4 id="2-SNMP管理模型">2. SNMP管理模型</h4>
@@ -1454,7 +1454,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h3 id="一、IP表格的填写">一、IP表格的填写</h3>
 <p>以样题为例：</p>
 <div class="center">
-<style>.mhkgvnowpenw{}</style><img src="/2025/03/13/note06/note06_pic12.png" srcset="/img/loading.gif" lazyload class="mhkgvnowpenw">
+<style>.zjjptknuxlxr{}</style><img src="/2025/03/13/note06/note06_pic12.png" srcset="/img/loading.gif" lazyload class="zjjptknuxlxr">
 </div>
 <h4 id="1-地址类别">1. 地址类别</h4>
 <div class="center">
@@ -1483,7 +1483,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 </div>
 划分依据为：
 <div class="center">
-<style>.iuxwgllessdv{}</style><img src="/2025/03/13/note06/note06_pic13.png" srcset="/img/loading.gif" lazyload class="iuxwgllessdv">
+<style>.tmepykvgqyrj{}</style><img src="/2025/03/13/note06/note06_pic13.png" srcset="/img/loading.gif" lazyload class="tmepykvgqyrj">
 </div>
 <h4 id="2-主机号">2. 主机号</h4>
 <p>将IP地址中的网络号全部置为0得到的即为主机号。</p>
@@ -1491,20 +1491,20 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <p>此外，受限广播地址指的是255.255.255.255，此答案是固定的。</p>
 <h3 id="二、校园网部署">二、校园网部署</h3>
 <div class="center">
-<style>.yxsvnqrtkdeb{}</style><img src="/2025/03/13/note06/note06_pic15.jpg" srcset="/img/loading.gif" lazyload class="yxsvnqrtkdeb">
+<style>.dalkbgurgywg{}</style><img src="/2025/03/13/note06/note06_pic15.jpg" srcset="/img/loading.gif" lazyload class="dalkbgurgywg">
 </div>
 <p>这一题一共有15个左右的考点，一般会从中抽取4~5个考点进行考察：</p>
 <h4 id="1-crc-32">1. crc 32</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.vudkmoodxolm{}</style><img src="/2025/03/13/note06/note06_pic14.png" srcset="/img/loading.gif" lazyload class="vudkmoodxolm">
+<style>.rhbyeixpysww{}</style><img src="/2025/03/13/note06/note06_pic14.png" srcset="/img/loading.gif" lazyload class="rhbyeixpysww">
 </div>
 <p>当然也有可能是crc ___ 的形式，这时候只要确保整体是<code>crc 32</code>即可。<br><br>
 而需要知道的是，这一命令行是用来配置CRC的校验功能的，可以用来检测数据在传输过程中是否丢失。</p>
 <h4 id="2-network-area-0-与-area-0-range">2. network ___ area 0 与 area 0 range</h4>
 <p>这两个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.vddphobwhmgd{}</style><img src="/2025/03/13/note06/note06_pic16.png" srcset="/img/loading.gif" lazyload class="vddphobwhmgd">
+<style>.tjlyhlyhxscu{}</style><img src="/2025/03/13/note06/note06_pic16.png" srcset="/img/loading.gif" lazyload class="tjlyhlyhxscu">
 </div>
 <p>在路由器的OSPF配置模式下（OSPF是一个分层路由协议，可以将网络划分为不同的区域），<code>network ip &lt;子网号&gt;&lt;通配符掩码&gt; area &lt;区域号&gt;</code>命令可以将子网分配到特定的OSPF区域当中。而子网号指的是IP地址和子网掩码按位与之后得到的结果。此外，<strong>通配符掩码(Wildcard Mask)和子网掩码正相反</strong>，用于指定哪些位需要匹配，哪些位可以忽略。<br><br>
 同一模式下，<code>area &lt;区域号&gt; range &lt;子网号&gt;&lt;子网掩码&gt;</code>命令则用来定义某一特定范围子网的聚合，可以减少路由表中的条目数，提高路由器的工作效率。<br></p>
@@ -1521,20 +1521,20 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="3-ip-dhcp-excluded-address">3. ip dhcp excluded address</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.zcxrrvkcqpno{}</style><img src="/2025/03/13/note06/note06_pic17.png" srcset="/img/loading.gif" lazyload class="zcxrrvkcqpno">
+<style>.vhzvmjumlyjq{}</style><img src="/2025/03/13/note06/note06_pic17.png" srcset="/img/loading.gif" lazyload class="vhzvmjumlyjq">
 </div>
 <p>配置子网时，如果不想让某些IP地址参与DHCP地址分配，可以使用<code>ip dhcp excluded address &lt;被排除的起始IP地址&gt; &lt;被排除的终止IP地址&gt;</code>命令将目标IP地址排除。<br><br>
 所以这一空应填<code>excluded address</code>。</p>
 <h4 id="4-lease租赁命令">4. lease租赁命令</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.nubqbixsjpan{}</style><img src="/2025/03/13/note06/note06_pic18.png" srcset="/img/loading.gif" lazyload class="nubqbixsjpan">
+<style>.hnfstjildhyi{}</style><img src="/2025/03/13/note06/note06_pic18.png" srcset="/img/loading.gif" lazyload class="hnfstjildhyi">
 </div>
 <p>在默认情况下，用户在DHCP服务器中的租赁时间为1天。但是也可以在DHCP Pool配置模式下，使用<code>lease &#123;day [hours] [minutes] | infinite&#125;</code>命令来更改租用时长（infinite指的是无限时间）。<br><br>
 如果题目中要求的租赁时间为5小时30分钟，则这一空中就应该填上<code>0 5 30</code>。</p>
 <p>接下来以一道有两个子网号的题为例：</p>
 <div class="center">
-<style>.rxdhsrymyegl{}</style><img src="/2025/03/13/note06/note06_pic28.png" srcset="/img/loading.gif" lazyload class="rxdhsrymyegl">
+<style>.sieayfcuhrgj{}</style><img src="/2025/03/13/note06/note06_pic28.png" srcset="/img/loading.gif" lazyload class="sieayfcuhrgj">
 </div>
 <h4 id="5-pos-framing-帧格式">5. pos framing 帧格式</h4>
 <p>在配置路由器时，<code>pos framing</code>命令可以用来设置POS端口的帧格式，而帧格式题目中都会给出。因此46题的答案为<code>framing</code>。</p>
@@ -1557,8 +1557,8 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 </ul>
 <p>也还有一种情况是带loopback的<code>ip address</code>，如下图所示：</p>
 <div class="center">
-<style>.kifkblunyevw{}</style><img src="/2025/03/13/note06/note06_pic43.png" srcset="/img/loading.gif" lazyload class="kifkblunyevw">
-<style>.yarlpjqffhft{}</style><img src="/2025/03/13/note06/note06_pic42.png" srcset="/img/loading.gif" lazyload class="yarlpjqffhft">
+<style>.jyoifvhosjtj{}</style><img src="/2025/03/13/note06/note06_pic43.png" srcset="/img/loading.gif" lazyload class="jyoifvhosjtj">
+<style>.hqlknhnkgtto{}</style><img src="/2025/03/13/note06/note06_pic42.png" srcset="/img/loading.gif" lazyload class="hqlknhnkgtto">
 </div>
 <p>则此时答案为<code>192.167.166.6 255.255.255.255</code>。</p>
 <h4 id="10-bandwidth">10. bandwidth</h4>
@@ -1566,13 +1566,13 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="11-打开端口">11. 打开端口</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.ptmrphvaqbie{}</style><img src="/2025/03/13/note06/note06_pic37.png" srcset="/img/loading.gif" lazyload class="ptmrphvaqbie">
+<style>.bhoesucmfjff{}</style><img src="/2025/03/13/note06/note06_pic37.png" srcset="/img/loading.gif" lazyload class="bhoesucmfjff">
 </div>
 <p><code>no shutdown</code>命令用来打开端口。</p>
 <h4 id="12-async（异步）">12. async（异步）</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.erycxvfsfxle{}</style><img src="/2025/03/13/note06/note06_pic38.png" srcset="/img/loading.gif" lazyload class="erycxvfsfxle">
+<style>.eiuxavblyxom{}</style><img src="/2025/03/13/note06/note06_pic38.png" srcset="/img/loading.gif" lazyload class="eiuxavblyxom">
 </div>
 <p><code>async default ip address &lt;ip&gt;</code>命令用来配置异步串行接口命令。</p>
 <h4 id="13-封禁端口号">13. 封禁端口号</h4>
@@ -1581,7 +1581,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h3 id="三、校园网类天选题型一：Catalyst6500的命令解析">三、校园网类天选题型一：Catalyst6500的命令解析</h3>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.kjbcsluyewrk{}</style><img src="/2025/03/13/note06/note06_pic44.png" srcset="/img/loading.gif" lazyload class="kjbcsluyewrk">
+<style>.jjijdcxjbali{}</style><img src="/2025/03/13/note06/note06_pic44.png" srcset="/img/loading.gif" lazyload class="jjijdcxjbali">
 </div>
 <ol start="46">
 <li>刚开机时交换机要进入特权模式，故此题答案为<code>enable</code>。</li>
@@ -1593,7 +1593,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h3 id="四、校园网类天选题型二：办公网与商务网的综合运用">四、校园网类天选题型二：办公网与商务网的综合运用</h3>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.uqppahjuxzdm{}</style><img src="/2025/03/13/note06/note06_pic45.png" srcset="/img/loading.gif" lazyload class="uqppahjuxzdm">
+<style>.uryhrxbrbhwn{}</style><img src="/2025/03/13/note06/note06_pic45.png" srcset="/img/loading.gif" lazyload class="uryhrxbrbhwn">
 </div>
 <ol start="46">
 <li>这里是要排除IP地址，故答案为<code>ip dhcp excluded-address</code>。</li>
@@ -1605,19 +1605,19 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <p>注：如果要配置DNS服务器的域名，则配置命令为<code>dns-server &lt;DNS服务器地址&gt;</code>。</p>
 <h3 id="五、DHCP报文分析">五、DHCP报文分析</h3>
 <div class="center">
-<style>.sbnoqfshbaxh{}</style><img src="/2025/03/13/note06/note06_pic19.jpg" srcset="/img/loading.gif" lazyload class="sbnoqfshbaxh">
-<style>.iiusclttxjoy{}</style><img src="/2025/03/13/note06/note06_pic20.jpg" srcset="/img/loading.gif" lazyload class="iiusclttxjoy">
+<style>.xtupmidmluhj{}</style><img src="/2025/03/13/note06/note06_pic19.jpg" srcset="/img/loading.gif" lazyload class="xtupmidmluhj">
+<style>.qyotqjmrmkmt{}</style><img src="/2025/03/13/note06/note06_pic20.jpg" srcset="/img/loading.gif" lazyload class="qyotqjmrmkmt">
 </div>
 <p>这道题一般有以下几个考点：</p>
 <h4 id="1-DHCP的工作流程">1. DHCP的工作流程</h4>
 <div class="center">
-<style>.hgcibwklgcrs{}</style><img src="/2025/03/13/note06/note06_pic21.png" srcset="/img/loading.gif" lazyload class="hgcibwklgcrs">
+<style>.wkhpivksegey{}</style><img src="/2025/03/13/note06/note06_pic21.png" srcset="/img/loading.gif" lazyload class="wkhpivksegey">
 </div>
 对应这一流程填空即可。<br>
 <h4 id="2-对第二条报文的分析">2. 对第二条报文的分析</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.mbylgdwliruz{}</style><img src="/2025/03/13/note06/note06_pic22.png" srcset="/img/loading.gif" lazyload class="mbylgdwliruz">
+<style>.fusntmhvonyk{}</style><img src="/2025/03/13/note06/note06_pic22.png" srcset="/img/loading.gif" lazyload class="fusntmhvonyk">
 </div>
 <ul>
 <li>对于第52题，我们要知道offer命令是由DHCP服务器发往客户端的。而在之前的request命令中，客户端是采用<strong>广播</strong>的方式向DHCP服务器发送请求的。也就是说，此时的客户端地址即为其广播地址。而52题所在的位置是DLC（数据链路控制）头部，也就是说这一部分是在数据链路层传播的，而数据链路层的传播途径是基于MAC地址的。所以52题的答案为客户端的广播MAC地址，为<code>ffffffffffff</code>。</li>
@@ -1628,7 +1628,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="3-一共有5条报文的情况">3. 一共有5条报文的情况</h4>
 <p>这个考点的形式一般如下图所示：</p>
 <div class="center">
-<style>.jqunjqtfuctn{}</style><img src="/2025/03/13/note06/note06_pic41.png" srcset="/img/loading.gif" lazyload class="jqunjqtfuctn">
+<style>.gngdecwiegvt{}</style><img src="/2025/03/13/note06/note06_pic41.png" srcset="/img/loading.gif" lazyload class="gngdecwiegvt">
 </div>
 <p>这种题型的特殊点在于在除了先前提到的4种报文之外，又多了一种<code>release</code>报文（编号1所示，此时报文的源地址和目标地址仍为正常的客户机地址和DHCP服务器地址）。当客户端不再需要当前分配的IP地址时就会发送一条这样的报文，而DHCP服务器在收到Release报文之后就会将该IP地址标记为可用状态，并更新自身的地址池。<br><br>
 而随后进行的正常环节种，由于客户端还没有配置IP地址，它就只能采用广播通信的方式来进行报文发送，因此源地址和目标地址分别为<code>0.0.0.0</code>和<code>255.255.255.255</code>，随后也一直采用的是广播通信。</p>
@@ -1642,13 +1642,13 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 </ul>
 <h3 id="六、sniffer抓包工具">六、sniffer抓包工具</h3>
 <div class="center">
-<style>.gvqtetisftfg{}</style><img src="/2025/03/13/note06/note06_pic23.jpg" srcset="/img/loading.gif" lazyload class="gvqtetisftfg">
-<style>.pqiyigdeeipw{}</style><img src="/2025/03/13/note06/note06_pic24.jpg" srcset="/img/loading.gif" lazyload class="pqiyigdeeipw">
-<style>.kltwujrhkogx{}</style><img src="/2025/03/13/note06/note06_pic25.jpg" srcset="/img/loading.gif" lazyload class="kltwujrhkogx">
+<style>.fcgvsxvfggqo{}</style><img src="/2025/03/13/note06/note06_pic23.jpg" srcset="/img/loading.gif" lazyload class="fcgvsxvfggqo">
+<style>.vgltcdsdktgp{}</style><img src="/2025/03/13/note06/note06_pic24.jpg" srcset="/img/loading.gif" lazyload class="vgltcdsdktgp">
+<style>.oskydnyonjyx{}</style><img src="/2025/03/13/note06/note06_pic25.jpg" srcset="/img/loading.gif" lazyload class="oskydnyonjyx">
 </div>
 <p>以样题为例：</p>
 <div class="center">
-<style>.mguewbhpbgqd{}</style><img src="/2025/03/13/note06/note06_pic26.png" srcset="/img/loading.gif" lazyload class="mguewbhpbgqd">
+<style>.uugbcoxpeoqw{}</style><img src="/2025/03/13/note06/note06_pic26.png" srcset="/img/loading.gif" lazyload class="uugbcoxpeoqw">
 </div>
 <ul>
 <li>
@@ -1661,7 +1661,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <li>ping命令：当Summary中出现<code>echo reply</code>的字眼的时候可以确定执行的是<code>ping</code>命令（如下图所示）。这是由于ping命令的工作原理是通过发送<strong>ICMP</strong> Echo Request报文，并等待目标主机返回ICMP Echo Reply报文。</li>
 </ul>
  <div class="center">
- <style>.yuyttytfnoet{}</style><img src="/2025/03/13/note06/note06_pic27.png" srcset="/img/loading.gif" lazyload class="yuyttytfnoet">
+ <style>.eqscovrmlchv{}</style><img src="/2025/03/13/note06/note06_pic27.png" srcset="/img/loading.gif" lazyload class="eqscovrmlchv">
  </div>
 <p>因此这道题执行的协议是<code>ICMP</code>。</p>
 <ul>
@@ -1680,7 +1680,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 </ul>
 <p>下面将继续根据真题分析还没提到的考点：</p>
 <div class="center">
-<style>.xpcnpyiqpnmj{}</style><img src="/2025/03/13/note06/note06_pic29.png" srcset="/img/loading.gif" lazyload class="xpcnpyiqpnmj">
+<style>.nftkhrhnumyw{}</style><img src="/2025/03/13/note06/note06_pic29.png" srcset="/img/loading.gif" lazyload class="nftkhrhnumyw">
 </div>
 <ul>
 <li>
@@ -1689,7 +1689,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <li>
 <p>58题，这里考察的是TCP的三次握手，其过程如下图所示：</p>
  <div class="center">
- <style>.rfxqfwmscqgw{}</style><img src="/2025/03/13/note06/note06_pic30.png" srcset="/img/loading.gif" lazyload class="rfxqfwmscqgw">
+ <style>.ggzmdobydnuh{}</style><img src="/2025/03/13/note06/note06_pic30.png" srcset="/img/loading.gif" lazyload class="ggzmdobydnuh">
  </div>
  因此，①应该为第27条报文中的`SEQ`值加一，为`486042695`；②应该为第29条报文中的`ACK`值减一，为`1327742113`。
 </li>
@@ -1723,15 +1723,15 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 </li>
 </ul>
 <div class="center">
-<style>.hbcxuivajcri{}</style><img src="/2025/03/13/note06/note06_pic35.png" srcset="/img/loading.gif" lazyload class="hbcxuivajcri">
+<style>.qobfzgirgcec{}</style><img src="/2025/03/13/note06/note06_pic35.png" srcset="/img/loading.gif" lazyload class="qobfzgirgcec">
 </div>
 <ul>
 <li>58题，第18条报文是SYN报文，其对应的Flags是<code>02</code>，故答案为<code>02</code>。</li>
 <li>60题，当需要回放捕获的数据包时，可以使用Sniffer内置的<code>数据包生成器</code>。</li>
 </ul>
 <div class="center">
-<style>.eujeegepuocb{}</style><img src="/2025/03/13/note06/note06_pic39.png" srcset="/img/loading.gif" lazyload class="eujeegepuocb">
-<style>.mruzlmnqdocg{}</style><img src="/2025/03/13/note06/note06_pic40.png" srcset="/img/loading.gif" lazyload class="mruzlmnqdocg">
+<style>.jrtyfsqkbtjw{}</style><img src="/2025/03/13/note06/note06_pic39.png" srcset="/img/loading.gif" lazyload class="jrtyfsqkbtjw">
+<style>.grgnmkdjoozm{}</style><img src="/2025/03/13/note06/note06_pic40.png" srcset="/img/loading.gif" lazyload class="grgnmkdjoozm">
 </div>
 <p>这道题初看很难有思路，因为虽然直到这段报文是在一个Reply的过程中的，但具体是<code>offer</code>还是<code>ack</code>似乎就无从下手了。但实际上我们可以根据倒数第五行的<code>DHCP：Message Type=5</code>来判断具体的报文类型。以下是具体的参考：</p>
 <div class="center">
@@ -1776,12 +1776,12 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="1-路由聚合">1. 路由聚合</h4>
 <p>这道题的考察形式一般如下所示：</p>
 <div class="center">
-<style>.ewuptpcrnupr{}</style><img src="/2025/03/13/note06/note06_pic32.png" srcset="/img/loading.gif" lazyload class="ewuptpcrnupr">
+<style>.evtuecwkuwek{}</style><img src="/2025/03/13/note06/note06_pic32.png" srcset="/img/loading.gif" lazyload class="evtuecwkuwek">
 </div>
 <p>首先简单介绍一下路由器中S端口和E端口的区别，前者是基于点对点或点对多点连接的，用于广域网连接；后者则是基于广播和多播通信的，用于局域网连接。<br><br>
 其次是目的网络的求法，其顺序如下图所示：</p>
 <div class="center">
-<style>.guvreknnwfid{}</style><img src="/2025/03/13/note06/note06_pic33.png" srcset="/img/loading.gif" lazyload class="guvreknnwfid">
+<style>.dlllrbnoywtx{}</style><img src="/2025/03/13/note06/note06_pic33.png" srcset="/img/loading.gif" lazyload class="dlllrbnoywtx">
 </div>
 <p>分别将对应的IP网段聚合即可。<br><br>
 其中的三路由聚合比较特殊，有以下几个注意事项：</p>
@@ -1800,13 +1800,13 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h4 id="3-设备的安装位置">3. 设备的安装位置</h4>
 <p>这道题的考察形式一般如下所示：</p>
 <div class="center">
-<style>.ojcomqgubwmw{}</style><img src="/2025/03/13/note06/note06_pic34.png" srcset="/img/loading.gif" lazyload class="ojcomqgubwmw">
+<style>.zswwhjcrmkhu{}</style><img src="/2025/03/13/note06/note06_pic34.png" srcset="/img/loading.gif" lazyload class="zswwhjcrmkhu">
 </div>
 在题干图示中找到对应的网段并将对应的路由器和端口号填入即可。
 <h4 id="4-可新增路由器数量">4. 可新增路由器数量</h4>
 <p>这道题的考察形式一般如下所示：</p>
 <div class="center">
-<style>.iwychwenunbo{}</style><img src="/2025/03/13/note06/note06_pic46.png" srcset="/img/loading.gif" lazyload class="iwychwenunbo">
+<style>.cfsxptjtesig{}</style><img src="/2025/03/13/note06/note06_pic46.png" srcset="/img/loading.gif" lazyload class="cfsxptjtesig">
 </div>
 <p>如果要求路由器RF可再接入的路由器的数量的话，基本原理就是求出还剩多少个可用的IP地址：首先是进行三路由聚合，得到RF的E0口聚合后的IP地址为<code>10.7.1.72/29</code>，也就是说主机地址的位数有3位。那么除去RF、RC和RD已经占有的三位，以及全0和全1不可用的两位，那么答案就是<code>8-3-2=3</code>。</p>
 <h4 id="5-防火墙的配置">5. 防火墙的配置</h4>
@@ -1818,7 +1818,7 @@ DHCP主要有以下几种分配IP地址的方法：</p>
 <h3 id="二、天选题型">二、天选题型</h3>
 <p>这道题的考察形式一般如下所示：</p>
 <div class="center">
-<style>.jwiurnjssdhg{}</style><img src="/2025/03/13/note06/note06_pic47.png" srcset="/img/loading.gif" lazyload class="jwiurnjssdhg">
+<style>.sgrqmmdwfxfv{}</style><img src="/2025/03/13/note06/note06_pic47.png" srcset="/img/loading.gif" lazyload class="sgrqmmdwfxfv">
 </div>
 <ol start="61">
 <li>显然是<code>路由器</code>，因为路由器能够根据IP地址进行数据包的路由选择，这是连接到互联网所必需的。</li>
