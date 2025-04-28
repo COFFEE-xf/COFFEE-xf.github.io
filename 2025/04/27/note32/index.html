@@ -35,9 +35,15 @@
 <meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic06.png">
 <meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic09.png">
 <meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic10.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic12.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic14.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic15.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic17.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic11.png">
+<meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic16.png">
 <meta property="og:image" content="http://example.com/2025/04/27/note32/note32_pic04.png">
 <meta property="article:published_time" content="2025-04-27T11:32:14.000Z">
-<meta property="article:modified_time" content="2025-04-28T02:03:22.981Z">
+<meta property="article:modified_time" content="2025-04-28T08:29:12.371Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/27/note32/note32_pic01.png">
@@ -236,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          2.3k 字
         
       </span>
     
@@ -247,7 +253,7 @@
         
         
         
-          13 分钟
+          20 分钟
         
       </span>
     
@@ -311,7 +317,7 @@
 </ol>
 <p>而总的来说，设计模式部分的内容可以按着下面这个表格梳理：</p>
 <div class="center">
-<style>.rpdfydmfdmlo{}</style><img src="/2025/04/27/note32/note32_pic01.png" srcset="/img/loading.gif" lazyload class="rpdfydmfdmlo">
+<style>.crzijmuyuyts{}</style><img src="/2025/04/27/note32/note32_pic01.png" srcset="/img/loading.gif" lazyload class="crzijmuyuyts">
 </div>
 <h2 id="一、创建型设计模式">一、创建型设计模式</h2>
 <p>创建型设计模式的侧重点为对象创建机制，也就是说通过控制对象的创建方式来提升代码的灵活性和可复用性。</p>
@@ -326,32 +332,32 @@
 <h4 id="2-工厂方法模式">2. 工厂方法模式</h4>
 <p>和简单工厂模式不同的是，工厂方法模式中定义了一个创建对象的接口，这样一来就满足了开闭原则。</p>
 <div class="center">
-<style>.wqgwsckpmiqx{}</style><img src="/2025/04/27/note32/note32_pic02.png" srcset="/img/loading.gif" lazyload class="wqgwsckpmiqx">
+<style>.xblnczlkswqt{}</style><img src="/2025/04/27/note32/note32_pic02.png" srcset="/img/loading.gif" lazyload class="xblnczlkswqt">
 </div>
 <p>在工厂方法模式当中，父类（抽象工厂）只声明创建方法（比如上图中的<code>createProduct()</code>）而不关心具体实现，子类（具体工厂）负责实现父类的创建方法并返回具体的产品实例。</p>
 <h4 id="3-抽象工厂模式">3. 抽象工厂模式</h4>
 <p>和工厂方法模式当中创建单一产品不同的是，抽象工厂模式当中创建了一个产品家族，即一系列相关或相互依赖的的对象。</p>
 <div class="center">
-<style>.yyrtoakwiktv{}</style><img src="/2025/04/27/note32/note32_pic03.png" srcset="/img/loading.gif" lazyload class="yyrtoakwiktv">
+<style>.gtpuskrkjlnd{}</style><img src="/2025/04/27/note32/note32_pic03.png" srcset="/img/loading.gif" lazyload class="gtpuskrkjlnd">
 </div>
 <h3 id="Ⅱ-生成器模式">Ⅱ 生成器模式</h3>
 <p>生成器模式的特点是将对象的构造过程与其表示分离，使得同样的构建过程可以创建不同的表示，主要用于分步骤构建复杂对象，其结构如下所示：</p>
 <div class="center">
-<style>.jpinosdcccvt{}</style><img src="/2025/04/27/note32/note32_pic05.png" srcset="/img/loading.gif" lazyload class="jpinosdcccvt">
+<style>.rsrlgjtntblf{}</style><img src="/2025/04/27/note32/note32_pic05.png" srcset="/img/loading.gif" lazyload class="rsrlgjtntblf">
 </div>
 <h3 id="Ⅲ-原型模式">Ⅲ 原型模式</h3>
 <p>原型模式的核心思想是通过复制现有对象（原型）来创建新对象，而不是通过<code>new</code>实例化。因此原型模式可以基于克隆快速生成对象，避免重复执行耗时的初始化操作。其结构如下所示：</p>
 <div class="center">
-<style>.igmyrpropvmu{}</style><img src="/2025/04/27/note32/note32_pic07.png" srcset="/img/loading.gif" lazyload class="igmyrpropvmu">
+<style>.qbozcwyobkym{}</style><img src="/2025/04/27/note32/note32_pic07.png" srcset="/img/loading.gif" lazyload class="qbozcwyobkym">
 </div>
 <h3 id="Ⅳ-单例模式">Ⅳ 单例模式</h3>
 <p>单例模式确保一个类中只有一个实例，并提供一个全局访问点。它通过控制实例化过程，避免重复创建对象，节省资源。其结构如下所示：</p>
 <div class="center">
-<style>.tdiprnnoedky{}</style><img src="/2025/04/27/note32/note32_pic08.png" srcset="/img/loading.gif" lazyload class="tdiprnnoedky">
+<style>.nefqfvmofccv{}</style><img src="/2025/04/27/note32/note32_pic08.png" srcset="/img/loading.gif" lazyload class="nefqfvmofccv">
 </div>
 <h3 id="Ⅴ-真题赏析">Ⅴ 真题赏析</h3>
 <div class="center">
-<style>.ymxhryrymwps{}</style><img src="/2025/04/27/note32/note32_pic06.png" srcset="/img/loading.gif" lazyload class="ymxhryrymwps">
+<style>.kidkzjkxgmoy{}</style><img src="/2025/04/27/note32/note32_pic06.png" srcset="/img/loading.gif" lazyload class="kidkzjkxgmoy">
 </div>
 <p><strong>ACAD</strong>，对于（45）而言，所谓的<code>构造一个使用Builder接口的对象</code>指的就是控制整个流程的类，是<strong>Director(指挥者)</strong>，那么对于本题而言就是Waiter。此外，对于（47）而言，Builder模式适用于：1）创建复杂对象的算法应该独立于该对象的组成部分以及装配方式时；2）当构造过程必须允许被构造对象有不同的表示时。</p>
 <h2 id="二、结构型设计模式">二、结构型设计模式</h2>
@@ -360,24 +366,63 @@
 <h3 id="Ⅰ-适配器模式">Ⅰ 适配器模式</h3>
 <p>适配器模式的核心思想是通过一个中间层（适配器）来解决接口不匹配的问题，类似于电源插头转换器的角色。它用于将不兼容的接口转换为客户端期望的接口，使原本无法协同工作的类能够一同工作。适配器模式的结构如下所示：</p>
 <div class="center">
-<style>.ripmjvetretw{}</style><img src="/2025/04/27/note32/note32_pic09.png" srcset="/img/loading.gif" lazyload class="ripmjvetretw">
+<style>.bpibraryykre{}</style><img src="/2025/04/27/note32/note32_pic09.png" srcset="/img/loading.gif" lazyload class="bpibraryykre">
 </div>
 <h3 id="Ⅱ-桥接模式">Ⅱ 桥接模式</h3>
 <p>桥接模式的核心思想是通过组合代替继承，解决多层继承带来的类爆炸问题，提升系统的灵活性和可扩展性。这使得桥接模式可以将抽象部分和实现部分分离，使得它们可以独立变化。桥接模式的结构如下所示：</p>
 <div class="center">
-<style>.nunhjnlujkit{}</style><img src="/2025/04/27/note32/note32_pic10.png" srcset="/img/loading.gif" lazyload class="nunhjnlujkit">
+<style>.bjcnnarwukym{}</style><img src="/2025/04/27/note32/note32_pic10.png" srcset="/img/loading.gif" lazyload class="bjcnnarwukym">
 </div>
+<p>其中，抽象是系统的高级控制逻辑，定义客户端直接使用的接口和行为。抽象并不关心具体实现细节，而是通过组合持有一个实现的引用。而实现则是系统的底层核心操作，独立于抽象，可以自由变化或者替换。</p>
 <h3 id="Ⅲ-组合模式">Ⅲ 组合模式</h3>
+<p>假如现在有这么一个公司组织结构：</p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs txt">CEO<br>├── 技术部<br>│   ├── 开发组<br>│   │   ├── 程序员A（叶子）<br>│   │   └── 程序员B（叶子）<br>│   └── 测试组<br>│       └── 测试员X（叶子）<br>└── 财务部<br>    └── 会计Y（叶子）<br></code></pre></td></tr></table></figure>
+<p>在组合模式当中，无论是部门（容器节点）还是员工（叶子结点），都可以被统一看作“公司成员”。它们之间的区别是叶子结点直接实现基础行为，而容器节点除了自身行为之外还可以递归调用子节点的方法。例如在计算全公司人数时，只需要让每个“公司成员”返回自己的人数并进行递归累加即可，无需区分部门还是员工。<br>
+这就是组合模式，它会将对象组合成树形结构以表示“部分-整体”的层次关系，使得用户对单个对象和组合对象的使用具有一致性。其结构如下图所示：</p>
+<div class="center">
+<style>.qigdnfxzkrdx{}</style><img src="/2025/04/27/note32/note32_pic12.png" srcset="/img/loading.gif" lazyload class="qigdnfxzkrdx">
+</div>
 <h3 id="Ⅳ-装饰器">Ⅳ 装饰器</h3>
+<p>装饰器的核心思想是通过嵌套包装对象来扩展功能，而非通过子类继承。因此，装饰器模式可以用于动态地为对象添加额外职责。其结构如下所示：</p>
+<div class="center">
+<style>.gbandujssgkj{}</style><img src="/2025/04/27/note32/note32_pic14.png" srcset="/img/loading.gif" lazyload class="gbandujssgkj">
+</div>
 <h3 id="Ⅴ-外观模式">Ⅴ 外观模式</h3>
+<p>外观模式的核心思想是用一个高层接口包装一组接口，让客户端只需调用一个简单方法就能完成复杂功能。这样一来就可以为复杂的子系统提供一个统一的简化接口，隐藏内部细节，降低客户端与子系统的耦合度。外观模式的结构如下图所示：</p>
+<div class="center">
+<style>.pwmhflniklnq{}</style><img src="/2025/04/27/note32/note32_pic15.png" srcset="/img/loading.gif" lazyload class="pwmhflniklnq">
+</div>
+<p>其中，Facade知道哪些子系统类复制处理请求，会将客户的请求代理给适当的子系统对象。</p>
 <h3 id="Ⅵ-享元模式">Ⅵ 享元模式</h3>
+<p>享元模式的核心思想是分离对象的固有状态（共享）和外部状态（非共享），从而通过共享技术高效地支持大量细粒度对象的复用，进而减少内存占用和对象创建开销。享元模式的结构如下图所示：</p>
+<div class="center">
+<style>.iwgpnmjdxueq{}</style><img src="/2025/04/27/note32/note32_pic17.png" srcset="/img/loading.gif" lazyload class="iwgpnmjdxueq">
+</div>
 <h3 id="Ⅶ-代理模式">Ⅶ 代理模式</h3>
 <h3 id="Ⅷ-真题赏析">Ⅷ 真题赏析</h3>
-<h2 id="三、行为型设计模式">三、行为型设计模式</h2>
 <div class="center">
-<style>.kkyylzplhssi{}</style><img src="/2025/04/27/note32/note32_pic04.png" srcset="/img/loading.gif" lazyload class="kkyylzplhssi">
+<style>.egutrwbcbwoc{}</style><img src="/2025/04/27/note32/note32_pic11.png" srcset="/img/loading.gif" lazyload class="egutrwbcbwoc">
 </div>
+<p><strong>CDAB</strong>，桥接模式适用于：</p>
+<ol>
+<li>不希望在抽象和它的实现部分之间有一个固定的绑定关系。</li>
+<li>类的抽象以及它的实现都应该可以通过生成子类的方法加以扩充。</li>
+<li>对一个抽象的实现部分的修改应对客户不产生影响，即客户代码不必重新编译。</li>
+<li>(C++)想对客户完全隐藏抽象的实现部分。</li>
+<li>有许多类要生成的类层次结构。</li>
+<li>想在多个对象间共享实现(可能使用引用计数)，但同时要求客户并不知道这一点。</li>
+</ol>
 <hr>
+<div class="center">
+<style>.aeklsizpdueo{}</style><img src="/2025/04/27/note32/note32_pic16.png" srcset="/img/loading.gif" lazyload class="aeklsizpdueo">
+</div>
+<p><strong>CD</strong>，对于（45）题的A选项而言，这是<strong>责任链模式</strong>的适用情况。</p>
+<h2 id="三、行为型设计模式">三、行为型设计模式</h2>
+<h3 id="1">1.</h3>
+<hr>
+<div class="center">
+<style>.qyftxdtnsmdn{}</style><img src="/2025/04/27/note32/note32_pic04.png" srcset="/img/loading.gif" lazyload class="qyftxdtnsmdn">
+</div>
 <p>B，</p>
 <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>软件设计师教程（第五版）. (2018).
 <a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
