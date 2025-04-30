@@ -21,19 +21,25 @@
   
     <meta name="description" content="软考中级备考笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件设计师 上午题 操作系统">
+<meta property="og:title" content="软件设计师 上午题 操作系统知识">
 <meta property="og:url" content="http://example.com/2025/04/28/note33/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="软考中级备考笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic01.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic02.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic03.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic04.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic05.png">
 <meta property="article:published_time" content="2025-04-28T14:32:24.000Z">
-<meta property="article:modified_time" content="2025-04-28T14:33:32.902Z">
+<meta property="article:modified_time" content="2025-04-30T09:31:17.983Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/04/28/note33/note33_pic01.png">
   
   
   
-  <title>软件设计师 上午题 操作系统 - Hexo</title>
+  <title>软件设计师 上午题 操作系统知识 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +208,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="软件设计师 上午题 操作系统"></span>
+            <span id="subtitle" data-typed-text="软件设计师 上午题 操作系统知识"></span>
           
         </div>
 
@@ -225,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          23 字
+          1.3k 字
         
       </span>
     
@@ -236,7 +242,7 @@
         
         
         
-          1 分钟
+          11 分钟
         
       </span>
     
@@ -273,7 +279,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">软件设计师 上午题 操作系统</h1>
+            <h1 id="seo-header">软件设计师 上午题 操作系统知识</h1>
             
             
               <div class="markdown-body">
@@ -287,7 +293,53 @@
   margin-right: auto;
 }
 </style>
-<h1>软件设计师 上午题 操作系统</h1>
+<h1>软件设计师 上午题 操作系统知识</h1>
+<p>操作系统(Operating System, OS)是为裸机配置的一种系统软件，用于填补人与机器之间的鸿沟。操作系统在计算机系统中的地位如下图所示：</p>
+<div class="center">
+<style>.vuydclrhrnqm{}</style><img src="/2025/04/28/note33/note33_pic01.png" srcset="/img/loading.gif" lazyload class="vuydclrhrnqm">
+</div>
+<p>不难发现，操作系统是裸机上的第一层软件，是对硬件系统功能的首次扩充，是用户与计算机之间的接口。有了操作系统，系统软件和应用软件等大量其它软件才有了使用基础，因此，操作系统已成为现代计算机系统中必不可少的最重要的系统软件。<br>
+操作系统的核心功能模块分为进程管理、存储管理、设备管理、文件管理和作业管理五个部分，它们共同构成了操作系统对计算机硬件和软件资源的管理体系。</p>
+<h2 id="一、进程管理">一、进程管理</h2>
+<p>进程管理也称之为处理机管理，为了描述系统中程序执行时的动态变化，操作系统中引入了进程的概念。所谓进程管理即管理计算机中正在运行的程序，其管理重点是研究诸进程之间的并发特性，以及进程之间相互合作与资源竞争产生的问题，进而确保CPU资源被合理分配。</p>
+<h3 id="Ⅰ-基本概念">Ⅰ 基本概念</h3>
+<h4 id="1-程序与进程">1. 程序与进程</h4>
+<p>程序的执行方式大致可以分为顺序执行和并发执行两类：</p>
+<p><strong>1）程序顺序执行的特征</strong>：</p>
+<p>顺序执行是指程序严格按照代码编写的顺序依次执行，前一条语句执行完毕才会执行下一句。程序顺序执行时的主要特征包括顺序性、封闭性和可再现性。<br>
+此外，有一种有向无环图叫做前驱图，它可以用来描述程序中各个任务之间的依赖关系。因此顺序执行的任务就可以转换为一条线性前驱图，如下图所示：</p>
+<div class="center">
+<style>.ohrlijtxdpib{}</style><img src="/2025/04/28/note33/note33_pic02.png" srcset="/img/loading.gif" lazyload class="ohrlijtxdpib">
+</div>
+<p>其中，输入结束之后才能进行计算，计算结束之后才能进行输出。</p>
+<p><strong>2）程序并发执行的特征</strong>：</p>
+<p>若在计算机系统当中采用多道程序设计技术，则主存中的多道程序可处于并发执行状态。虽然每个作业中有前驱关系的各程序段不能并行执行，但是每个作业中没有前驱关系的程序段或者不同作业的程序段可以并行执行。</p>
+<div class="center">
+<style>.hescdoxldixk{}</style><img src="/2025/04/28/note33/note33_pic03.png" srcset="/img/loading.gif" lazyload class="hescdoxldixk">
+</div>
+<p>若每个程序有三个程序段：输入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">I_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、计算<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和输出<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。如图4-2所示，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">I_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>就可以和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>并行执行，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">I_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">P_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>也可以并行执行等等。<br>
+同时，程序并发执行时有以下特征：</p>
+<ul>
+<li><strong>失去了程序的封闭性</strong>：在顺序执行时，程序独占所有资源，其执行过程不受外界干扰，结果完全由程序自身决定，这也就是所谓的封闭性。而在并发执行的过程中，多个程序共享资源就会打破这一封闭性。</li>
+<li><strong>程序和机器的执行程序的活动不再一一对应</strong>：在顺序执行中，程序指令严格按照代码顺序执行，程序行为是可预测的。但是在并发执行当中因CPU调度、中断、抢占等问题，指令的执行顺序可能被打乱。</li>
+<li><strong>并发程序间的相互制约性</strong>：并发程序由于共享资源或者协作关系，会彼此制约和影响。其中又分为直接制约和间接制约。前者是指程序间进行显式通信，而后者指的是竞争同一资源导致阻塞。</li>
+</ul>
+<hr>
+<div class="center">
+<style>.oiqtbaquifid{}</style><img src="/2025/04/28/note33/note33_pic04.png" srcset="/img/loading.gif" lazyload class="oiqtbaquifid">
+</div>
+<p>首先需要了解的是什么是信号量和PV操作。信号量本质上是一个计数器+等待队列+原子操作(即PV操作)。其中计数器中的整型变量，也就是题目中所谓的<code>S1</code>，<code>S2</code>，<code>S3</code>，<code>S4</code>，是用来表示当前可用的“通行许可证”数量，可以用来衡量当前系统中剩余的资源数量。而P操作（Proberen，荷兰语“通过”）是申请资源，操作结果是计数器<code>S</code>-=1，V操作（Verhogen，荷兰语“释放”）是释放资源，作结果是计数器<code>S</code>+=1。另外，信号量是针对于进程转换这个过程而言的，也就是图中的每一个“箭头”，而非针对进程本身。<strong>在每一个箭头当中应该先完成一次V操作再完成一次P操作</strong>。<br>
+那么对于本题来说，<code>S1</code>是指P1P2之间的箭头，其余以此类推。那么P1进行时，应该先分别完成一次V(S1)和一次V(S2)；然后为了使P2准备就绪，就应该再完成一次P(S1)。重复执行这个思路就能得到最终答案。</p>
+<hr>
+<div class="center">
+<style>.dtlytbuxiuja{}</style><img src="/2025/04/28/note33/note33_pic05.png" srcset="/img/loading.gif" lazyload class="dtlytbuxiuja">
+</div>
+<p>BAC，捋顺<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">I_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>-&gt;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>-&gt;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的关系即可。</p>
+<h4 id="2-进程的状态及其状态间的切换">2. 进程的状态及其状态间的切换</h4>
+<h2 id="二、存储管理">二、存储管理</h2>
+<h2 id="三、设备管理">三、设备管理</h2>
+<h2 id="四、文件管理">四、文件管理</h2>
+<h2 id="五、作业管理">五、作业管理</h2>
 
                 
               </div>
@@ -340,7 +392,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>软件设计师 上午题 操作系统</div>
+      <div>软件设计师 上午题 操作系统知识</div>
       <div>http://example.com/2025/04/28/note33/</div>
     </div>
     <div class="license-meta">
