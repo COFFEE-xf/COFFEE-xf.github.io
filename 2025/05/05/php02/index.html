@@ -19,28 +19,23 @@
   <meta name="author" content="谢斐">
   <meta name="keywords" content="">
   
-    <meta name="description" content="今日洛谷习题知识点整理">
+    <meta name="description" content="VIT1024 Ass01 Lab3实现小结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习笔记_25_03_18">
-<meta property="og:url" content="http://example.com/2025/03/14/note09/index.html">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://example.com/2025/05/05/php02/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今日洛谷习题知识点整理">
+<meta property="og:description" content="VIT1024 Ass01 Lab3实现小结">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/03/14/note09/note09_pic01.png">
-<meta property="article:published_time" content="2025-03-14T07:37:11.000Z">
-<meta property="article:modified_time" content="2025-03-18T15:06:28.244Z">
+<meta property="article:published_time" content="2025-05-05T09:27:00.000Z">
+<meta property="article:modified_time" content="2025-05-05T09:29:38.023Z">
 <meta property="article:author" content="谢斐">
-<meta property="article:tag" content="洛谷">
-<meta property="article:tag" content="数学问题">
-<meta property="article:tag" content="蓝桥杯">
-<meta property="article:tag" content="任意进制转换">
-<meta property="article:tag" content="python - pow函数">
+<meta property="article:tag" content="PHP">
+<meta property="article:tag" content="VUC">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/03/14/note09/note09_pic01.png">
   
   
   
-  <title>学习笔记_25_03_18 - Hexo</title>
+  <title>test - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +204,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="学习笔记_25_03_18"></span>
+            <span id="subtitle" data-typed-text="test"></span>
           
         </div>
 
@@ -220,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-14 15:37" pubdate>
-          2025年3月14日 下午
+        <time datetime="2025-05-05 17:27" pubdate>
+          2025年5月5日 下午
         </time>
       </span>
     
@@ -232,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          889 字
+          11 字
         
       </span>
     
@@ -243,7 +238,7 @@
         
         
         
-          8 分钟
+          1 分钟
         
       </span>
     
@@ -280,7 +275,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">学习笔记_25_03_18</h1>
+            <h1 id="seo-header">test</h1>
             
             
               <div class="markdown-body">
@@ -294,52 +289,7 @@
   margin-right: auto;
 }
 </style>
-<h1>学习笔记_25_03_18</h1>
-<h2 id="P11000-蓝桥杯-2024-省-Python-B-数字串个数"><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P11000">P11000 [蓝桥杯 2024 省 Python B] 数字串个数</a></h2>
-<h3 id="题目描述">题目描述</h3>
-<p>小蓝想要构造出一个长度为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10000</mn></mrow><annotation encoding="application/x-tex">10000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10000</span></span></span></span> 的数字字符串，有以下要求：</p>
-<ol>
-<li>
-<p>小蓝不喜欢数字 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>，所以数字字符串中不可以出现 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>；</p>
-</li>
-<li>
-<p>小蓝喜欢数字 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span>，所以数字字符串中必须要有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span> 这两个数字。</p>
-</li>
-</ol>
-<p>请问满足题意的数字字符串有多少个？这个数字会很大，你只需要输出其<br>
-对 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mn>9</mn></msup><mo>+</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">10^9 + 7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span> 取余后的结果。</p>
-<h3 id="输入格式">输入格式</h3>
-<p>无</p>
-<h3 id="输出格式">输出格式</h3>
-<p>一行一个整数表示答案。</p>
-<h3 id="解决方案">解决方案</h3>
-<p>这道题本质上还是一个数学问题，在排除<code>0</code>之后，一共有1-9九个数字，因此一个长度为10000的字符串目前一共有<code>9^10000</code>种组合可能。<br><br>
-如果这九个数字中没有<code>3</code>，九个数字变为八个数字，则一共有<code>8^10000</code>种组合可能。<br><br>
-同理，如果没有<code>7</code>，一共有<code>8^10000</code>种组合可能；如果既没有<code>3</code>又没有<code>7</code>，则一共有<code>7^10000</code>种组合可能<br><br>
-那就不难得出一个类似于下图的韦恩图：</p>
-<div class="center">
-<style>.phvmufofkdwr{}</style><img src="/2025/03/14/note09/note09_pic01.png" srcset="/img/loading.gif" lazyload class="phvmufofkdwr">
-</div>
-<p>根据容斥原理不难得出我们所要求的结果数为<code>9^10000 - 8^10000 - 8^10000 + 7^10000</code>。则题解代码为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>((<span class="hljs-number">9</span>**<span class="hljs-number">10000</span> - <span class="hljs-number">8</span>**<span class="hljs-number">10000</span>*<span class="hljs-number">2</span> + <span class="hljs-number">7</span>**<span class="hljs-number">10000</span>) // (<span class="hljs-number">10</span> ** <span class="hljs-number">9</span> + <span class="hljs-number">7</span>))<br></code></pre></td></tr></table></figure>
-<p>但是这条语句突破了Python中的最大整数限制并因此报错，所以这里还想强调一下<code>pow()</code>函数的使用，可以避免类似的情况：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">mod = <span class="hljs-number">10</span>**<span class="hljs-number">9</span> + <span class="hljs-number">7</span><br><span class="hljs-built_in">print</span>((<span class="hljs-built_in">pow</span>(<span class="hljs-number">9</span>, <span class="hljs-number">10000</span>, mod) - <span class="hljs-number">2</span> * <span class="hljs-built_in">pow</span>(<span class="hljs-number">8</span>, <span class="hljs-number">10000</span>, mod) + <span class="hljs-built_in">pow</span>(<span class="hljs-number">7</span>, <span class="hljs-number">10000</span>, mod)) % mod)<br><span class="hljs-comment"># pow()函数的第三个参数即为前两个参数的计算结果将要取模的模数</span><br></code></pre></td></tr></table></figure>
-<h2 id="P10999-蓝桥杯-2024-省-Python-B-穿越时空之门"><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P10999">P10999 [蓝桥杯 2024 省 Python B] 穿越时空之门</a></h2>
-<h3 id="题目描述-2">题目描述</h3>
-<p>随着 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2024</mn></mrow><annotation encoding="application/x-tex">2024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2024</span></span></span></span> 年的钟声回荡，传说中的时空之门再次敞开。这扇门是一条神秘<br>
-的通道，它连接着二进制和四进制两个不同的数码领域，等待着勇者们的探索。<br>
-在二进制的领域里，勇者的力量被转换成了力量数值的二进制表示中各数<br>
-位之和。</p>
-<p>在四进制的领域里，力量的转换规则相似，变成了力量数值的四进制表示中各数位之和。</p>
-<p>穿越这扇时空之门的条件是严苛的：当且仅当勇者在二进制领域的力量等同于四进制领域的力量时，他才能够成功地穿越。</p>
-<p>国王选定了小蓝作为领路人，带领着力量值从 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2024</mn></mrow><annotation encoding="application/x-tex">2024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2024</span></span></span></span> 的勇者们踏上了这段探索未知的旅程。作为小蓝的助手，你的任务是帮助小蓝计算出，在这 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2024</mn></mrow><annotation encoding="application/x-tex">2024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2024</span></span></span></span> 位勇者中，有多少人符合穿越时空之门的条件。</p>
-<h3 id="输入格式-2">输入格式</h3>
-<p>无</p>
-<h3 id="输出格式-2">输出格式</h3>
-<p>一行一个整数表示答案。</p>
-<h3 id="解决方案-2">解决方案</h3>
-<p>这道题的思路很简单，主要想记录的点在于如何进行任意进制间的转换。由于Python默认只提供了二、八、十和十六一共四种进制之间的转换函数，因此掌握辗转相除法的代码实现还是非常有比较的，特此记录。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">convert_to_base</span>(<span class="hljs-params">num, base</span>):<br>    <span class="hljs-keyword">if</span> num == <span class="hljs-number">0</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;0&quot;</span><br>    digits = []<br>    <span class="hljs-keyword">while</span> num:<br>        digits.append(<span class="hljs-built_in">int</span>(num%base))<br>        num //= base<br>    digits = digits[::-<span class="hljs-number">1</span>]<br><br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;</span>.join(<span class="hljs-built_in">str</span>(x) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> digits)<br><br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    count = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2025</span>):<br>        i_bin = <span class="hljs-built_in">bin</span>(i)[<span class="hljs-number">2</span>:]<br>        i_four = convert_to_base(i, <span class="hljs-number">4</span>)<br><br>        sum_bin = <span class="hljs-number">0</span><br>        sum_four = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> i_bin:<br>            sum_bin += <span class="hljs-built_in">int</span>(m)<br>        <span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> i_four:<br>            sum_four += <span class="hljs-built_in">int</span>(n)<br><br>        <span class="hljs-keyword">if</span> sum_bin == sum_four:<br>            count += <span class="hljs-number">1</span><br><br>    <span class="hljs-built_in">print</span>(count)<br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    main()<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
@@ -360,6 +310,13 @@
   <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
+    <span>></span>
+    
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/PHP/" class="category-chain-item">PHP</a>
+  
+  
+
+  
 
       </span>
     
@@ -372,15 +329,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%B4%9B%E8%B0%B7/" class="print-no-link">#洛谷</a>
+        <a href="/tags/PHP/" class="print-no-link">#PHP</a>
       
-        <a href="/tags/%E6%95%B0%E5%AD%A6%E9%97%AE%E9%A2%98/" class="print-no-link">#数学问题</a>
-      
-        <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/" class="print-no-link">#蓝桥杯</a>
-      
-        <a href="/tags/%E4%BB%BB%E6%84%8F%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="print-no-link">#任意进制转换</a>
-      
-        <a href="/tags/python-pow%E5%87%BD%E6%95%B0/" class="print-no-link">#python - pow函数</a>
+        <a href="/tags/VUC/" class="print-no-link">#VUC</a>
       
     </div>
   
@@ -392,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>学习笔记_25_03_18</div>
-      <div>http://example.com/2025/03/14/note09/</div>
+      <div>test</div>
+      <div>http://example.com/2025/05/05/php02/</div>
     </div>
     <div class="license-meta">
       
@@ -405,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月14日</div>
+          <div>2025年5月5日</div>
         </div>
       
       
@@ -437,18 +388,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/14/note08/" title="学习笔记_25_03_17">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">学习笔记_25_03_17</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/13/note06/" title="计算机三级网络技术相关知识点整理">
-                        <span class="hidden-mobile">计算机三级网络技术相关知识点整理</span>
+                      <a href="/2025/04/28/note33/" title="软件设计师 上午题 操作系统知识">
+                        <span class="hidden-mobile">软件设计师 上午题 操作系统知识</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
