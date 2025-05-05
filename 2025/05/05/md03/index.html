@@ -19,25 +19,27 @@
   <meta name="author" content="谢斐">
   <meta name="keywords" content="">
   
-    <meta name="description" content="软考中级备考笔记">
+    <meta name="description" content="该问题一般出现在ova文件导入环节">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件设计师 下午题 试题二 数据库设计">
-<meta property="og:url" content="http://example.com/2025/04/23/note29/index.html">
+<meta property="og:title" content="VMWare “Capacity mismatch for disk XXX。”的解决方案">
+<meta property="og:url" content="http://example.com/2025/05/05/md03/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="软考中级备考笔记">
+<meta property="og:description" content="该问题一般出现在ova文件导入环节">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/04/23/note29/note29_pic01.png">
-<meta property="og:image" content="http://example.com/2025/04/23/note29/note29_pic02.png">
-<meta property="og:image" content="http://example.com/2025/04/23/note29/note29_pic03.png">
-<meta property="article:published_time" content="2025-04-23T13:01:43.000Z">
-<meta property="article:modified_time" content="2025-04-24T06:43:26.663Z">
+<meta property="og:image" content="http://example.com/2025/05/05/md03/md03_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/05/md03/md03_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/05/md03/md03_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/05/md03/md03_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/05/md03/md03_pic05.png">
+<meta property="article:published_time" content="2025-05-05T12:17:42.000Z">
+<meta property="article:modified_time" content="2025-05-05T12:43:13.687Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/04/23/note29/note29_pic01.png">
+<meta name="twitter:image" content="http://example.com/2025/05/05/md03/md03_pic01.png">
   
   
   
-  <title>软件设计师 下午题 试题二 数据库设计 - Hexo</title>
+  <title>VMWare “Capacity mismatch for disk XXX。”的解决方案 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -206,7 +208,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="软件设计师 下午题 试题二 数据库设计"></span>
+            <span id="subtitle" data-typed-text="VMWare “Capacity mismatch for disk XXX。”的解决方案"></span>
           
         </div>
 
@@ -217,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-04-23 21:01" pubdate>
-          2025年4月23日 晚上
+        <time datetime="2025-05-05 20:17" pubdate>
+          2025年5月5日 晚上
         </time>
       </span>
     
@@ -229,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          562 字
+          731 字
         
       </span>
     
@@ -240,7 +242,7 @@
         
         
         
-          5 分钟
+          7 分钟
         
       </span>
     
@@ -277,7 +279,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">软件设计师 下午题 试题二 数据库设计</h1>
+            <h1 id="seo-header">VMWare “Capacity mismatch for disk XXX。”的解决方案</h1>
             
             
               <div class="markdown-body">
@@ -291,42 +293,50 @@
   margin-right: auto;
 }
 </style>
-<h1>软件设计师 下午题 试题二 数据库设计</h1>
-<h2 id="一、问题一">一、问题一</h2>
-<p>问题一一般考察的内容就是ER图中缺失的联系，如下图所示：</p>
+<h1>VMWare “Capacity mismatch for disk XXX。”的解决方案</h1>
+<p>笔者在使用<em>VMware Workstation Pro</em>虚拟机环境完成<a target="_blank" rel="noopener" href="https://loquattree.xyz/2025/05/05/php02/">课内大作业</a>的过程中需要导入一个老师提供的.ova文件，但是在导入时出现了以下报错：</p>
 <div class="center">
-<style>.pbxkzmvlpqwj{}</style><img src="/2025/04/23/note29/note29_pic01.png" srcset="/img/loading.gif" lazyload class="pbxkzmvlpqwj">
+<style>.ldiggfgjuliv{}</style><img src="/2025/05/05/md03/md03_pic01.png" srcset="/img/loading.gif" lazyload class="ldiggfgjuliv">
 </div>
-<p>以《软件设计师考试同步辅导（下午科目）》中的例题为例：</p>
+<p>以下是解决方案：</p>
+<h3 id="一、解压-ova文件">一、解压.ova文件</h3>
+<p>​​.ova文件​​（Open Virtual Appliance）是一种​​虚拟设备打包格式，因此它实际上是一个压缩包文件，其中包含了以下内容：</p>
+<ul>
+<li>.ovf文件​​（Open Virtualization Format）：描述虚拟机的硬件配置（CPU、内存、网络等）、磁盘信息和其他元数据（XML格式）。</li>
+<li>vmdk/.vhd等磁盘镜像​​：存储虚拟机的操作系统和数据（格式取决于虚拟化平台，如VMware用VMDK，Hyper-V用VHD）。</li>
+<li>​​.mf文件​​（Manifest File）：是虚拟设备中的​​清单文件​​，用于验证文件完整性和确保虚拟机的安全导入。</li>
+</ul>
+<p>但是常见的解压缩工具都无法直接解压.ova文件，因此需要先手动将其后缀改为.zip格式再解压缩即可。解压结果如下图所示：</p>
 <div class="center">
-<style>.afqurpbvfbtp{}</style><img src="/2025/04/23/note29/note29_pic02.png" srcset="/img/loading.gif" lazyload class="afqurpbvfbtp">
+<style>.kiiixpeidepn{}</style><img src="/2025/05/05/md03/md03_pic02.png" srcset="/img/loading.gif" lazyload class="kiiixpeidepn">
 </div>
-<p>答：<strong>配送员-配送-地点，多对多联系</strong>。</p>
-<h2 id="二、问题二">二、问题二</h2>
-<p>问题二一般考察的是补充关系模式中缺失的属性，依旧以例1为例：</p>
+<h3 id="二、配置-ovf文件">二、配置.ovf文件</h3>
+<p>笔者搜索到的绝大部分解决方案都是将.ovf文件中的虚拟机软件的版本号修改为当前自己使用到的版本号即可，如下图所示：</p>
 <div class="center">
-<style>.qgjsvuwvoejc{}</style><img src="/2025/04/23/note29/note29_pic03.png" srcset="/img/loading.gif" lazyload class="qgjsvuwvoejc">
+<style>.ryrfiguukfxm{}</style><img src="/2025/05/05/md03/md03_pic03.png" srcset="/img/loading.gif" lazyload class="ryrfiguukfxm">
 </div>
-<p>答：<br>
-（a）<strong>商品数量，仓库信息</strong>；<br>
-（b）<strong>支付凭证号码</strong>；<br>
-（c）<strong>商品条码，订单ID</strong>；<br>
-<br><br>
-作答此题时不能仅仅看ER图进行回答，还要通读题干中的【需求描述】，否则很容易遗失属性信息。此外每一空中不一定只缺失一个属性，需要将所有缺失的属性都补充完整。例如<code>仓库信息</code>的出处就是（5）中的<code>商品所在的仓库信息</code>。</p>
-<h2 id="三、问题三">三、问题三</h2>
-<p>问题三的考察内容不固定，但是一般需要掌握以下知识点，以应对除了修改ER图之外的考点：</p>
-<ol>
-<li>弱实体：弱实体是不能单独存在，必须依赖于其它实体才能存在的实体。弱实体用双线矩形框表示，其与实体的关系用双线菱形表示。</li>
-<li>简单属性：简单属性是指​​不能再分解​​为更小组成部分的属性，它是数据库中最基本的数据单元。简单属性也称为​​原子属性​​，表示一个实体的单一特征。</li>
-<li>规范性问题：按第一范式到第三范式的标准逐一检查是否符合规范，下面来复习一下各个范式的要求：
-<ol>
-<li>第一范式：表中所有属性都应该是简单属性。</li>
-<li>第二范式：表中不允许存在部分依赖，即非主属性不能依赖于组合主键的一部分。</li>
-<li>第三范式：表中不允许存在传递依赖，即一个非主属性不能依赖于另一个非主属性。</li>
-</ol>
-</li>
-</ol>
-<p>除此之外，最主要的考察内容就是对ER图进行补充和修改，具体情况具体分析即可。</p>
+<p>可以一试，可能对低版本的VMware Workstation Pro是起效的，但是笔者使用的版本在修改后依旧会报错，因此需要更彻底的更改：</p>
+<h4 id="1-删除“-Disk-ovf-capacity-“18103500800”-ovf-diskId-“vmdisk2”-ovf-fileRef-“file1”-ovf-format-“http-www-vmware-com-interfaces-specifications-vmdk-html-streamOptimized”-vbox-uuid-“bf38c60b-49bd-48c9-9c03-55acfcec0141”-”">1. 删除“&lt;Disk ovf:capacity=“18103500800” ovf:diskId=“vmdisk2” ovf:fileRef=“file1” ovf:format=“<a target="_blank" rel="noopener" href="http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized">http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized</a>” vbox:uuid=“bf38c60b-49bd-48c9-9c03-55acfcec0141”/&gt;”</h4>
+<p>在.ovf文件的最开始，内容可能不太一致，删除即可。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">DiskSection</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">Info</span>&gt;</span>List of the virtual disks used in the package<span class="hljs-tag">&lt;/<span class="hljs-name">Info</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">Disk</span> <span class="hljs-attr">ovf:capacity</span>=<span class="hljs-string">&quot;18103500800&quot;</span> <span class="hljs-attr">ovf:diskId</span>=<span class="hljs-string">&quot;vmdisk2&quot;</span> <span class="hljs-attr">ovf:fileRef</span>=<span class="hljs-string">&quot;file1&quot;</span> <span class="hljs-attr">ovf:format</span>=<span class="hljs-string">&quot;http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized&quot;</span> <span class="hljs-attr">vbox:uuid</span>=<span class="hljs-string">&quot;bf38c60b-49bd-48c9-9c03-55acfcec0141&quot;</span>/&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">DiskSection</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h4 id="2-删除“-Image-uuid-“-bf38c60b-49bd-48c9-9c03-55acfcec0141-”-”">2. 删除“&lt;Image uuid=“{bf38c60b-49bd-48c9-9c03-55acfcec0141}”/&gt;”</h4>
+<p>在.ovf文件的最末尾：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">AttachedDevice</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;HardDisk&quot;</span> <span class="hljs-attr">hotpluggable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">port</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">device</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">Image</span> <span class="hljs-attr">uuid</span>=<span class="hljs-string">&quot;&#123;bf38c60b-49bd-48c9-9c03-55acfcec0141&#125;&quot;</span>/&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">AttachedDevice</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h4 id="3-继续删除">3. 继续删除</h4>
+<p>在文章中间部分，可搜索<code>/disk/vmdisk</code>找到，全部删除：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">Item</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:AddressOnParent</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:AddressOnParent</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:Caption</span>&gt;</span>disk2<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:Caption</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:Description</span>&gt;</span>Disk Image<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:Description</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:ElementName</span>&gt;</span>disk2<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:ElementName</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:HostResource</span>&gt;</span>/disk/vmdisk2<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:HostResource</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:InstanceID</span>&gt;</span>9<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:InstanceID</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:Parent</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:Parent</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">rasd:ResourceType</span>&gt;</span>17<span class="hljs-tag">&lt;/<span class="hljs-name">rasd:ResourceType</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>保存退出即可。</p>
+<h3 id="三、配置-mf文件">三、配置.mf文件</h3>
+<p>随便找一个文件Hash值的在线计算网站，计算出更改后的.ovf文件的SHA1值，并对应地将.mf文件中的值修改即可，不然无法导入.ovf文件：</p>
+<div class="center">
+<style>.udtfnlittfuy{}</style><img src="/2025/05/05/md03/md03_pic04.png" srcset="/img/loading.gif" lazyload class="udtfnlittfuy">
+</div>
+<h3 id="四、导入-ovf文件">四、导入.ovf文件</h3>
+<p>全部完成之后使用VMware Workstation Pro打开修改过后的.ovf文件即可：</p>
+<div class="center">
+<style>.ovzjswdeasjd{}</style><img src="/2025/05/05/md03/md03_pic05.png" srcset="/img/loading.gif" lazyload class="ovzjswdeasjd">
+</div>
+<h2 id="Bingo！">Bingo！</h2>
 
                 
               </div>
@@ -345,22 +355,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
+  <a href="/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="category-chain-item">疑难杂症解决方案</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E4%B8%8B%E5%8D%88%E9%A2%98/" class="category-chain-item">下午题</a>
-  
-  
-
-  
-
   
 
       </span>
@@ -379,8 +375,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>软件设计师 下午题 试题二 数据库设计</div>
-      <div>http://example.com/2025/04/23/note29/</div>
+      <div>VMWare “Capacity mismatch for disk XXX。”的解决方案</div>
+      <div>http://example.com/2025/05/05/md03/</div>
     </div>
     <div class="license-meta">
       
@@ -392,7 +388,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年4月23日</div>
+          <div>2025年5月5日</div>
         </div>
       
       
@@ -424,18 +420,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/24/note30/" title="软件设计师 上午题 UML">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">软件设计师 上午题 UML</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/04/23/note28/" title="软件设计师 下午题 试题一 数据流图设计">
-                        <span class="hidden-mobile">软件设计师 下午题 试题一 数据流图设计</span>
+                      <a href="/2025/05/05/php02/" title="test">
+                        <span class="hidden-mobile">test</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
