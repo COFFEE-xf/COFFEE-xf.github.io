@@ -27,7 +27,7 @@
 <meta property="og:description" content="该问题一般出现使用Linux dnf命令时">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-06T11:15:17.000Z">
-<meta property="article:modified_time" content="2025-05-06T14:24:41.563Z">
+<meta property="article:modified_time" content="2025-05-06T15:39:48.930Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          809 字
+          838 字
         
       </span>
     
@@ -310,6 +310,8 @@
 <h3 id="2-升级GLIBC库">2. 升级GLIBC库</h3>
 <p>执行以下命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">下载安装包</span><br>cd /opt<br>wget https://mirrors.aliyun.com/gnu/glibc/glibc-2.31.tar.gz<br><br>tar -zxf glibc-2.31.tar.gz<br>cd glibc-2.31/<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">检查是否满足基本需求</span><br>cat INSTALL | grep -E &quot;newer|later&quot;<br><br>mkdir build<br>cd build<br><br>../configure  --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin --disable-sanity-checks --disable-werror<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">一定要有这一步，python2安装会报错</span><br>yum install python3 <br><br>make -j8 # 使用8核编译后速度显著快于-j4<br>make install<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">解决新启动远程终端时报一个WARNING</span><br>make localedata/install-locales<br></code></pre></td></tr></table></figure>
+<p>如果再升级后仍出现和原先相同的报错，使用强制安装：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo rpm -ivh --nodeps /tmp/chrome.rpm<br></code></pre></td></tr></table></figure>
 
                 
               </div>
