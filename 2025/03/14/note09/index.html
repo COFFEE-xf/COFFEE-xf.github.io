@@ -318,7 +318,7 @@
 同理，如果没有<code>7</code>，一共有<code>8^10000</code>种组合可能；如果既没有<code>3</code>又没有<code>7</code>，则一共有<code>7^10000</code>种组合可能<br><br>
 那就不难得出一个类似于下图的韦恩图：</p>
 <div class="center">
-<style>.mvecpcrjnwic{}</style><img src="/2025/03/14/note09/note09_pic01.png" srcset="/img/loading.gif" lazyload class="mvecpcrjnwic">
+<style>.jrmqvdqnfxpr{}</style><img src="/2025/03/14/note09/note09_pic01.png" srcset="/img/loading.gif" lazyload class="jrmqvdqnfxpr">
 </div>
 <p>根据容斥原理不难得出我们所要求的结果数为<code>9^10000 - 8^10000 - 8^10000 + 7^10000</code>。则题解代码为：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>((<span class="hljs-number">9</span>**<span class="hljs-number">10000</span> - <span class="hljs-number">8</span>**<span class="hljs-number">10000</span>*<span class="hljs-number">2</span> + <span class="hljs-number">7</span>**<span class="hljs-number">10000</span>) // (<span class="hljs-number">10</span> ** <span class="hljs-number">9</span> + <span class="hljs-number">7</span>))<br></code></pre></td></tr></table></figure>
