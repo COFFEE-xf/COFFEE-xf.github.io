@@ -26,11 +26,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="软考中级备考笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/08/note35/note35_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/08/note35/note35_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/08/note35/note35_pic03.png">
 <meta property="article:published_time" content="2025-05-08T08:19:45.000Z">
-<meta property="article:modified_time" content="2025-05-08T08:27:22.304Z">
+<meta property="article:modified_time" content="2025-05-08T09:50:11.831Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="软考">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/08/note35/note35_pic01.png">
   
   
   
@@ -226,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          23 字
+          1.3k 字
         
       </span>
     
@@ -237,7 +241,7 @@
         
         
         
-          1 分钟
+          11 分钟
         
       </span>
     
@@ -289,6 +293,67 @@
 }
 </style>
 <h1>软件设计师 上午题 软件工程</h1>
+<p>软件工程​旨在通过工程化方法（如需求分析、设计、开发、测试和维护）高效构建​​高质量、可靠、可维护​​的软件系统。其核心目标是​​解决“软件危机”​​（如成本超支、进度延迟、质量低下等问题），平衡用户需求、技术可行性和商业可持续性。</p>
+<h2 id="一、软件过程">一、软件过程</h2>
+<p>软件开发中所遵循的路线图被称之为“软件过程”，为了有效管理软件过程，人们开发了以下几种模型：</p>
+<h4 id="1-能力成熟度模型（CMM）">1. 能力成熟度模型（CMM）</h4>
+<p>一个软件组织在开发软件的过程中，其能力一定是一步步提高的，而CMM就是一个用来描述软件组织进化阶段的模型。它将软件过程改进分为以下五个成熟度级别：</p>
+<ul>
+<li><strong>初始级</strong>：该阶段的软件过程杂乱无章，几乎没有明确定义的步骤，想要完成项目必须依靠英雄式核心人物的作用。</li>
+<li><strong>可重复级</strong>：建立了基本的项目管理过程和实践，有必要的过程准则来重复以前在同类项目中的成功。</li>
+<li><strong>已定义级</strong>：管理和工程两方面的软件过程已经文档化和标准化。所有项目都采用根据实际情况修改后得到的标准软件过程来开发和维护软件。</li>
+<li><strong>已管理级</strong>：制定了软件过程和产品质量的详细度量标准，软件过程的质量都被开发人员所理解和控制。</li>
+<li><strong>优化级</strong>：加强了定量分析，有不断的反馈使得软件过程可以不断持续地改进。</li>
+</ul>
+<h4 id="2-能力成熟度模型集成（CMMI）">2. 能力成熟度模型集成（CMMI）</h4>
+<p>CMMI是若干个过程模型的综合和改进，能够支持多个工程学科。CMMI提供了两种表示方法：</p>
+<ul>
+<li>阶段式模型：阶段式模型的结构类似于CMM。
+<ul>
+<li>初始的：过程不可预测且缺乏控制。</li>
+<li>已管理的：过程为项目服务。</li>
+<li>已定义的：过程为组织服务。</li>
+<li>定量管理的：过程已度量和控制。</li>
+<li>优化的：集中于过程改进。</li>
+</ul>
+</li>
+<li>连续式模型：我们将软件过程中的特定领域的标准化实践集合称之为过程域，而连续式模型关注的就是过程域的能力。连续式模型中使用能力等级（CL）来评估过程域的能力：
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">CL_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（未完成的）：未完成<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">CL_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>中制定的目标即为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">CL_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">CL_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（已执行的）：过程​​能被执行​​（能将可标识的输入转换为可标识的输出），但依赖个人能力，无标准化。</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">CL_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（已管理的）：过程​​有计划、有监控​​，能按文档化流程执行。</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">CL_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（已定义的）：过程​​标准化​​，基于组织级最佳实践，并培训团队。</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">CL_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（定量管理的）：过程​通过数据（如需求变更率）优化。</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><msub><mi>L</mi><mn>5</mn></msub></mrow><annotation encoding="application/x-tex">CL_5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（优化的）：使用<strong>量化手段</strong>​​持续改进过程​​，通过技术创新或流程再造提升效率。</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、软件过程模型">二、软件过程模型</h2>
+<p>软件过程模型，亦即软件开发模型，它是软件开发全部过程、活动和任务的结构框架。</p>
+<h3 id="Ⅰ-瀑布模型">Ⅰ 瀑布模型</h3>
+<h4 id="1-瀑布模型">1. 瀑布模型</h4>
+<p>瀑布模型将软件生存周期中的各个活动规定为依照线性顺序连接的若干阶段的模型，各阶段间相互衔接，如同瀑布般逐级下落：</p>
+<div class="center">
+<style>.dvxcpdhqdifd{}</style><img src="/2025/05/08/note35/note35_pic01.png" srcset="/img/loading.gif" lazyload class="dvxcpdhqdifd">
+</div>
+<p>显然，瀑布模型很适合软件需求非常明确的模型。但是在瀑布模型中，客户必须能够完整清晰地表达他们的需求，而且需求或设计中的错误只有到了项目后期才会被发现，容易出现积重难返的现象。</p>
+<h4 id="2-V模型">2. V模型</h4>
+<p>V模型是瀑布模型的一个变体，左侧用来描述开发，右侧用来描述测试，这样就使得测试与开发能够并行设计，能够在项目早期就发现缺陷。</p>
+<div class="center">
+<style>.ogfyvbzeeuir{}</style><img src="/2025/05/08/note35/note35_pic02.png" srcset="/img/loading.gif" lazyload class="ogfyvbzeeuir">
+</div>
+<h3 id="Ⅱ-增量模型">Ⅱ 增量模型</h3>
+<p>增量模型事实上也是瀑布模型的一个变体，它融合了瀑布模型的迭代特征。在增量模型中将总体需求分段为一系列增量产品，每个增量包含一个完整的功能子集。</p>
+<div class="center">
+<style>.ixtkjmsixvqn{}</style><img src="/2025/05/08/note35/note35_pic03.png" srcset="/img/loading.gif" lazyload class="ixtkjmsixvqn">
+</div>
+<p>如图所示，每个增量都可以分别开发并分批发布。一般来说会将软件最核心的功能包含进第一个增量当中，这样一来用户就能在整个系统开发完毕之前抢先进行使用，并给出反馈以便下一个增量发布新特征和新功能。<br>
+增量模型的困难在于需要比较长远的项目规划，否则前期开发的增量有可能造成后来增量的不稳定或者产生重新开发的成本。</p>
+<h3 id="Ⅲ-演化模型">Ⅲ 演化模型</h3>
+<h3 id="Ⅳ-喷泉模型">Ⅳ 喷泉模型</h3>
+<h3 id="Ⅴ-统一过程（UP）模型">Ⅴ 统一过程（UP）模型</h3>
+<h3 id="Ⅵ-敏捷方法">Ⅵ 敏捷方法</h3>
+<h2 id="三、需求分析">三、需求分析</h2>
 
                 
               </div>
