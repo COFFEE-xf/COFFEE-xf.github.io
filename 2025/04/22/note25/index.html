@@ -329,7 +329,7 @@
 <h3 id="Ⅰ-编译程序的基本原理">Ⅰ 编译程序的基本原理</h3>
 <p>编译程序的功能是将某高级语言书写的源程序翻译成与之等价的目标程序（汇编语言或机器语言）。其工作过程如下图所示：</p>
 <div class="center">
-<style>.ubgbidsvrwth{}</style><img src="/2025/04/22/note25/note25_pic01.png" srcset="/img/loading.gif" lazyload class="ubgbidsvrwth">
+<style>.dxlpcnimrcrq{}</style><img src="/2025/04/22/note25/note25_pic01.png" srcset="/img/loading.gif" lazyload class="dxlpcnimrcrq">
 </div>
 <h4 id="1-词法分析">1. 词法分析</h4>
 <p>词法分析​是编译器的第一个阶段，其核心任务是将​​源代码的字符序列​​转换为有意义的​<strong>​词法单元</strong>（Token）序列​，也即<strong>记号流</strong>，为后续的语法分析提供结构化输入。<br>
@@ -358,7 +358,7 @@
 <p>正如前文所述，词法分析是一个将源程序中的字符串转换为单词符号序列的一个过程，而这个过程所依赖的模型有以下几个：</p>
 <h4 id="1-正规式与正规集">1. 正规式与正规集</h4>
 <div class="center">
-<style>.lnuuedrrrlxa{}</style><img src="/2025/04/22/note25/note25_pic07.png" srcset="/img/loading.gif" lazyload class="lnuuedrrrlxa">
+<style>.fkhnjqnvveca{}</style><img src="/2025/04/22/note25/note25_pic07.png" srcset="/img/loading.gif" lazyload class="fkhnjqnvveca">
 </div>
 <p>正规式是一种用于描述​​字符串模式​​的形式化表达式，用于匹配符合特定规则的字符串集合，是定义​​正规集​​的数学工具。<br>
 例如有一个正规式<code>a*</code>，它就定义了一个正规集<code>&#123;ε, &quot;a&quot;, &quot;aa&quot;, &quot;aaa&quot;, ...&#125;</code>；再比如正规式<code>(a|b)*</code>定义的正规集就是<code>&#123;ε, &quot;a&quot;, &quot;b&quot;, &quot;aa&quot;, &quot;ab&quot;, &quot;ba&quot;, &quot;bb&quot;, &quot;aabba&quot;, &quot;babab&quot;, ...&#125;</code>。</p>
@@ -368,14 +368,14 @@
 <li>确定的有限自动机（Deterministic Finite Automata, DFA）：对每一个状态来说识别字符后转移的状态是唯一的。</li>
 </ul>
 <div class="center">
-<style>.pcbkrzwxrduk{}</style><img src="/2025/04/22/note25/note25_pic09.png" srcset="/img/loading.gif" lazyload class="pcbkrzwxrduk">
+<style>.tvypwajleltw{}</style><img src="/2025/04/22/note25/note25_pic09.png" srcset="/img/loading.gif" lazyload class="tvypwajleltw">
 </div>
 <p>  有限自动机中所谓的状态转移图和状态转移矩阵的概念和在数电中学习过的状态图基本类似，只是需要注意的是双圈表示的结点是终结结点。</p>
 <ul>
 <li>不确定的有限自动机（Nodeterministic Finite Automata, NFA）：对每一个状态来说识别字符后转移的状态是不确定的。</li>
 </ul>
 <div class="center">
-<style>.ifqriittvsjq{}</style><img src="/2025/04/22/note25/note25_pic10.png" srcset="/img/loading.gif" lazyload class="ifqriittvsjq">
+<style>.rdplimerxxmk{}</style><img src="/2025/04/22/note25/note25_pic10.png" srcset="/img/loading.gif" lazyload class="rdplimerxxmk">
 </div>
 <p>当一个字符串被输入进有限自动机中之后，如果在最后一个字符被输入之后，自动机的状态落到了双圈的终结结点上，该自动机就会返回一个“接受”的状态，说明这个字符串满足目标语言的规则，反之就会返回一个“拒绝”的状态。<br>
 也就是说，在有限自动机当中，所谓的终结结点并不是说自动机在进入这一状态之后就会终止，而是在终止时据此返回结果。</p>
@@ -390,45 +390,45 @@
 </ul>
 <p>比如以下这道例题：</p>
 <div class="center">
-<style>.tlbmqeyyssfz{}</style><img src="/2025/04/22/note25/note25_pic12.png" srcset="/img/loading.gif" lazyload class="tlbmqeyyssfz">
+<style>.akyhgljfziss{}</style><img src="/2025/04/22/note25/note25_pic12.png" srcset="/img/loading.gif" lazyload class="akyhgljfziss">
 </div>
 <p>其中类似于<code>T -&gt; F|T*F</code>就是一条产生式规则，定义了在非终结符<code>T</code>的展开规则。</p>
 <h3 id="Ⅳ-解释程序的基本原理">Ⅳ 解释程序的基本原理</h3>
 <p>正如前文所述，编译程序可分为：词法分析、语法分析、语义分析、中间代码生成、代码优化和目标代码生成六个部分。而对于解释程序而言，有前三个过程即可。即编译器和解释器都不能省略词法分析、语法分析和语义分析三个阶段且顺序不可交换。</p>
 <h3 id="Ⅴ-真题赏析">Ⅴ 真题赏析</h3>
 <div class="center">
-<style>.rdwxbaqbebow{}</style><img src="/2025/04/22/note25/note25_pic02.png" srcset="/img/loading.gif" lazyload class="rdwxbaqbebow">
+<style>.kivoowlwnxkm{}</style><img src="/2025/04/22/note25/note25_pic02.png" srcset="/img/loading.gif" lazyload class="kivoowlwnxkm">
 </div>
 <p><strong>C</strong>，语义分析阶段只能发现静态错误，动态语义错误只有在程序运行时才能发现。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 静态语义错误</span><br><span class="hljs-type">int</span> x = <span class="hljs-string">&quot;hello&quot;</span>;  <span class="hljs-comment">// 错误：int 不能赋值为字符串（类型不匹配）</span><br><br><span class="hljs-built_in">printf</span>(y);        <span class="hljs-comment">// 错误：y 未声明</span><br><br><span class="hljs-comment">// -----------------------------------------------------------</span><br><br><span class="hljs-comment">// 动态语义错误</span><br><span class="hljs-type">int</span> a = <span class="hljs-number">10</span> / <span class="hljs-number">0</span>;    <span class="hljs-comment">// 运行时错误：除零</span><br><span class="hljs-type">int</span> arr[<span class="hljs-number">3</span>] = &#123;<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>&#125;;<br><br><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>, arr[<span class="hljs-number">5</span>]); <span class="hljs-comment">// 运行时错误：数组越界</span><br><br><span class="hljs-type">int</span> i = <span class="hljs-number">0</span><br><span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">1</span>)<br>&#123;<br>  i--<br>&#125; <span class="hljs-comment">// 运行时错误：死循环</span><br><br></code></pre></td></tr></table></figure>
 <hr>
 <div class="center">
-<style>.svylzxgsjrda{}</style><img src="/2025/04/22/note25/note25_pic03.png" srcset="/img/loading.gif" lazyload class="svylzxgsjrda">
+<style>.xucwulgggmyh{}</style><img src="/2025/04/22/note25/note25_pic03.png" srcset="/img/loading.gif" lazyload class="xucwulgggmyh">
 </div>
 <p><strong>D</strong>，B选项的错误在于应该为<code>在语法分析阶段可以发现程序中的所有语法错误</code>，而非<code>所有错误</code>。</p>
 <hr>
 <div class="center">
-<style>.ngjhpfiezqla{}</style><img src="/2025/04/22/note25/note25_pic04.png" srcset="/img/loading.gif" lazyload class="ngjhpfiezqla">
+<style>.wewkylwktgtm{}</style><img src="/2025/04/22/note25/note25_pic04.png" srcset="/img/loading.gif" lazyload class="wewkylwktgtm">
 </div>
 <p><strong>D</strong>，寄存器分配是目标代码生成阶段的核心任务之一，这是由于将中间代码转换为机器码时需要分配物理寄存器。</p>
 <hr>
 <div class="center">
-<style>.srqcnxirrufo{}</style><img src="/2025/04/22/note25/note25_pic05.png" srcset="/img/loading.gif" lazyload class="srqcnxirrufo">
+<style>.rwoxucgxxsgl{}</style><img src="/2025/04/22/note25/note25_pic05.png" srcset="/img/loading.gif" lazyload class="rwoxucgxxsgl">
 </div>
 <p><strong>A</strong>，词法分析和语法分析的核心区别在于前者是检查字符是否符合规定而后者是检查语句是否符合规定。</p>
 <hr>
 <div class="center">
-<style>.vftcbdokarlm{}</style><img src="/2025/04/22/note25/note25_pic06.png" srcset="/img/loading.gif" lazyload class="vftcbdokarlm">
+<style>.dgusintlggcq{}</style><img src="/2025/04/22/note25/note25_pic06.png" srcset="/img/loading.gif" lazyload class="dgusintlggcq">
 </div>
 <p><strong>B</strong>，类型检查是​​语义分析阶段​​的核心任务之一，进行类型检查可以确保程序在逻辑上正确，避免出现对浮点数进行模运算等错误情况。</p>
 <hr>
 <div class="center">
-<style>.exvhgehnebjt{}</style><img src="/2025/04/22/note25/note25_pic08.png" srcset="/img/loading.gif" lazyload class="exvhgehnebjt">
+<style>.ckipswjriixo{}</style><img src="/2025/04/22/note25/note25_pic08.png" srcset="/img/loading.gif" lazyload class="ckipswjriixo">
 </div>
 <p><strong>B</strong>，对于A选项而言，0*有可能为空串，其开头和结尾也有可能是1。</p>
 <hr>
 <div class="center">
-<style>.eecavpmnvknm{}</style><img src="/2025/04/22/note25/note25_pic11.png" srcset="/img/loading.gif" lazyload class="eecavpmnvknm">
+<style>.fuwfsgxiekvt{}</style><img src="/2025/04/22/note25/note25_pic11.png" srcset="/img/loading.gif" lazyload class="fuwfsgxiekvt">
 </div>
 <p><strong>B</strong>，从题中的自动机可分析出，初态q0同时是终态，从q0到q0的弧(标记 0)表明该自动机识别零个或多个0构成的串，路径q0→q1→q0的循环表明“10”的多次重复，因此该自动机识别的字符串是“010”的无穷多次，表示为(0|10)*。</p>
 

@@ -47,8 +47,10 @@
 <meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic20.png">
 <meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic21.png">
 <meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic23.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic26.png">
+<meta property="og:image" content="http://example.com/2025/04/28/note33/note33_pic27.png">
 <meta property="article:published_time" content="2025-04-28T14:32:24.000Z">
-<meta property="article:modified_time" content="2025-05-07T15:17:38.789Z">
+<meta property="article:modified_time" content="2025-05-08T06:39:30.085Z">
 <meta property="article:author" content="谢斐">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/04/28/note33/note33_pic01.png">
@@ -247,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6.1k 字
+          7.1k 字
         
       </span>
     
@@ -258,7 +260,7 @@
         
         
         
-          51 分钟
+          60 分钟
         
       </span>
     
@@ -330,7 +332,7 @@
 <h1>软件设计师 上午题 操作系统知识</h1>
 <p>操作系统(Operating System, OS)是为裸机配置的一种系统软件，用于填补人与机器之间的鸿沟。操作系统在计算机系统中的地位如下图所示：</p>
 <div class="center">
-<style>.uwtwzildmejp{}</style><img src="/2025/04/28/note33/note33_pic01.png" srcset="/img/loading.gif" lazyload class="uwtwzildmejp">
+<style>.fnemdskjdrci{}</style><img src="/2025/04/28/note33/note33_pic01.png" srcset="/img/loading.gif" lazyload class="fnemdskjdrci">
 </div>
 <p>不难发现，操作系统是裸机上的第一层软件，是对硬件系统功能的首次扩充，是用户与计算机之间的接口。有了操作系统，系统软件和应用软件等大量其它软件才有了使用基础，因此，操作系统已成为现代计算机系统中必不可少的最重要的系统软件。<br>
 操作系统的核心功能模块分为进程管理、存储管理、设备管理、文件管理和作业管理五个部分，它们共同构成了操作系统对计算机硬件和软件资源的管理体系。</p>
@@ -343,13 +345,13 @@
 <p>顺序执行是指程序严格按照代码编写的顺序依次执行，前一条语句执行完毕才会执行下一句。程序顺序执行时的主要特征包括顺序性、封闭性和可再现性。<br>
 此外，有一种有向无环图叫做前驱图，它可以用来描述程序中各个任务之间的依赖关系。因此顺序执行的任务就可以转换为一条线性前驱图，如下图所示：</p>
 <div class="center">
-<style>.wvffytoypuft{}</style><img src="/2025/04/28/note33/note33_pic02.png" srcset="/img/loading.gif" lazyload class="wvffytoypuft">
+<style>.ycsujruuyady{}</style><img src="/2025/04/28/note33/note33_pic02.png" srcset="/img/loading.gif" lazyload class="ycsujruuyady">
 </div>
 <p>其中，输入结束之后才能进行计算，计算结束之后才能进行输出。</p>
 <p><strong>2）程序并发执行的特征</strong>：</p>
 <p>若在计算机系统当中采用多道程序设计技术，则主存中的多道程序可处于并发执行状态。虽然每个作业中有前驱关系的各程序段不能并行执行，但是每个作业中没有前驱关系的程序段或者不同作业的程序段可以并行执行。</p>
 <div class="center">
-<style>.ruljzplvdgoe{}</style><img src="/2025/04/28/note33/note33_pic03.png" srcset="/img/loading.gif" lazyload class="ruljzplvdgoe">
+<style>.lqgwjhuresud{}</style><img src="/2025/04/28/note33/note33_pic03.png" srcset="/img/loading.gif" lazyload class="lqgwjhuresud">
 </div>
 <p>若每个程序有三个程序段：输入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">I_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、计算<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和输出<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。如图4-2所示，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">I_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>就可以和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>并行执行，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">I_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">P_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>也可以并行执行等等。<br>
 同时，程序并发执行时有以下特征：</p>
@@ -360,13 +362,13 @@
 </ul>
 <hr>
 <div class="center">
-<style>.evisywhbexxu{}</style><img src="/2025/04/28/note33/note33_pic04.png" srcset="/img/loading.gif" lazyload class="evisywhbexxu">
+<style>.tmjkimhdghrr{}</style><img src="/2025/04/28/note33/note33_pic04.png" srcset="/img/loading.gif" lazyload class="tmjkimhdghrr">
 </div>
 <p>首先需要了解的是什么是信号量和PV操作。信号量本质上是一个计数器+等待队列+原子操作(即PV操作)。其中计数器中的整型变量，也就是题目中所谓的<code>S1</code>，<code>S2</code>，<code>S3</code>，<code>S4</code>，是用来表示当前可用的“通行许可证”数量，可以用来衡量当前系统中剩余的资源数量。而P操作（Proberen，荷兰语“通过”）是申请资源，操作结果是计数器<code>S</code>-=1，V操作（Verhogen，荷兰语“释放”）是释放资源，作结果是计数器<code>S</code>+=1。另外，信号量是针对于进程转换这个过程而言的，也就是图中的每一个“箭头”，而非针对进程本身。<strong>在每一个箭头当中应该先完成一次V操作再完成一次P操作</strong>。<br>
 那么对于本题来说，<code>S1</code>是指P1P2之间的箭头，其余以此类推。那么P1进行时，应该先分别完成一次V(S1)和一次V(S2)；然后为了使P2准备就绪，就应该再完成一次P(S1)。重复执行这个思路就能得到最终答案。</p>
 <hr>
 <div class="center">
-<style>.axokyifxbhex{}</style><img src="/2025/04/28/note33/note33_pic05.png" srcset="/img/loading.gif" lazyload class="axokyifxbhex">
+<style>.atcsaqowdxoi{}</style><img src="/2025/04/28/note33/note33_pic05.png" srcset="/img/loading.gif" lazyload class="atcsaqowdxoi">
 </div>
 <p>BAC，捋顺<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">I_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>-&gt;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>-&gt;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的关系即可。</p>
 <h4 id="2-进程的状态及其状态间的切换">2. 进程的状态及其状态间的切换</h4>
@@ -378,7 +380,7 @@
 </ul>
 <p>当在这三种基本状态中捋顺了转换关系，就构成了三态模型：</p>
 <div class="center">
-<style>.ojvjdahpogkl{}</style><img src="/2025/04/28/note33/note33_pic06.png" srcset="/img/loading.gif" lazyload class="ojvjdahpogkl">
+<style>.kebbcnsclwie{}</style><img src="/2025/04/28/note33/note33_pic06.png" srcset="/img/loading.gif" lazyload class="kebbcnsclwie">
 </div>
 <h3 id="Ⅱ-进程间的通信">Ⅱ 进程间的通信</h3>
 <p>显而易见，在一个多道程序环境的系统当中，进程间必然存在资源共享和相互合作的问题，而进程通信就是指各个进程之间交换信息的过程。</p>
@@ -409,17 +411,17 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs c">semaphore mutex = <span class="hljs-number">1</span>; <span class="hljs-comment">// 初始值为1的互斥信号量</span><br><br>Process <span class="hljs-title function_">P1</span><span class="hljs-params">()</span> <br>&#123;<br>    P(mutex);    <span class="hljs-comment">// 进入临界区前申请锁</span><br>    <span class="hljs-comment">// 临界区代码</span><br>    V(mutex);    <span class="hljs-comment">// 离开临界区后释放锁</span><br>&#125;<br><br>Process <span class="hljs-title function_">P2</span><span class="hljs-params">()</span> <br>&#123;<br>    P(mutex);<br>    <span class="hljs-comment">// 临界区代码</span><br>    V(mutex);<br>&#125;<br></code></pre></td></tr></table></figure>
 <hr>
 <div class="center">
-<style>.ggbyhipcuxjf{}</style><img src="/2025/04/28/note33/note33_pic07.png" srcset="/img/loading.gif" lazyload class="ggbyhipcuxjf">
+<style>.fqgtxrihpjri{}</style><img src="/2025/04/28/note33/note33_pic07.png" srcset="/img/loading.gif" lazyload class="fqgtxrihpjri">
 </div>
 <p><strong>D</strong>。系统内有两台打印机，那么说明起始的可用资源总数应为2，即S的最大值应为2。当第一个进程想要调用打印机时，它就需要进行一次P(S)操作，S变为1。随后依次类推，每个进程逐次进行P(S)操作，最后就得到了S的最小值为-(n-2)。</p>
 <hr>
 <div class="center">
-<style>.uestpkycwvkd{}</style><img src="/2025/04/28/note33/note33_pic08.png" srcset="/img/loading.gif" lazyload class="uestpkycwvkd">
+<style>.jkninrahkrwb{}</style><img src="/2025/04/28/note33/note33_pic08.png" srcset="/img/loading.gif" lazyload class="jkninrahkrwb">
 </div>
 <p><strong>BA</strong>，不难发现，生产者甲和生产者乙两者之间需要保持一种同步关系，而生产者甲和生产者乙自身所处的过程则需要保持一种互斥关系。在之前的学习中我们了解到，如果要保持同步关系，需要先执行一次V操作通知资源已经准备好，而如果要保持互斥关系，需要先执行一次P操作来占用资源。据此分析，S1是一个互斥信号量，在存放前减一，在取出后加一，用来表示的应该是半成品箱中被占用的资源，<strong>因此其初值应该为n</strong>；而S2是一个同步信号量，用来表示生产者甲通知生产者乙已经完成了一个半成品，<strong>因此其初值应该为0</strong>。此外，根据题目，S也是一个互斥信号量，鉴于它在每一个临界区中都会出现，它表示的应该是半成品箱是否正在被占用以存取物品，<strong>因此其初值应该为1</strong>。</p>
 <hr>
 <div class="center">
-<style>.zjhibvxereto{}</style><img src="/2025/04/28/note33/note33_pic09.png" srcset="/img/loading.gif" lazyload class="zjhibvxereto">
+<style>.wylxrwkbpvst{}</style><img src="/2025/04/28/note33/note33_pic09.png" srcset="/img/loading.gif" lazyload class="wylxrwkbpvst">
 </div>
 <p><strong>CD</strong>， <span class="heimu"><s>信号量S应该与一个互斥的进程有关，即当前还有几个购票终端可以使用，那么这个信号量的初值就应该为n-1。</s></span>  用户在选定具体的终端<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">P_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>之后需要占用这个终端，因此需要一个互斥信号量S，<strong>其初始值应该为1</strong>；<strong>(a)处应该为P(S)</strong>，因为当一个乘客想要买票时会占用一个终端；<strong>(b)处和©处都应该是V(S)</strong>，因为此时已经完成了购票流程，可以释放终端了。</p>
 <h3 id="Ⅲ-死锁">Ⅲ 死锁</h3>
@@ -428,7 +430,7 @@
 <h4 id="1-进程资源图">1. 进程资源图</h4>
 <p>进程资源图是一种​​有向图​​，用于描述操作系统中的​​进程与资源之间的分配和请求关系​​，是分析和检测死锁的重要工具，其一般形式如下图所示：</p>
 <div class="center">
-<style>.jpfkqfdjloyl{}</style><img src="/2025/04/28/note33/note33_pic10.png" srcset="/img/loading.gif" lazyload class="jpfkqfdjloyl">
+<style>.lrqrxnpkgsoa{}</style><img src="/2025/04/28/note33/note33_pic10.png" srcset="/img/loading.gif" lazyload class="lrqrxnpkgsoa">
 </div>
 <p>其中，一个圆圈代表一个进程，一个矩形代表一个资源，其中的圆圈个数是其资源的数量。</p>
 <p>不同数字代表的箭头含义不同：</p>
@@ -447,7 +449,7 @@
 <p>如果一个图可完全简化，该系统就不会产生死锁，反之就会产生死锁。</p>
 <hr>
 <div class="center">
-<style>.xvhiwqmopgrl{}</style><img src="/2025/04/28/note33/note33_pic11.png" srcset="/img/loading.gif" lazyload class="xvhiwqmopgrl">
+<style>.qzvxkcyblhcc{}</style><img src="/2025/04/28/note33/note33_pic11.png" srcset="/img/loading.gif" lazyload class="qzvxkcyblhcc">
 </div>
 <p><strong>BC</strong>，在图(a)中，R1中两个资源已经分配完毕但依旧有P2的申请，因此P2是一个堵塞结点，P1同理，图(b)同理。</p>
 <hr>
@@ -457,13 +459,13 @@
 <p>银行家（操作系统）需要确保手头的现金（资源）能满足所有客户（进程）的贷款需求，同时避免资金链断裂（死锁）。</p>
 </blockquote>
 <div class="center">
-<style>.tvyduptebywc{}</style><img src="/2025/04/28/note33/note33_pic12.png" srcset="/img/loading.gif" lazyload class="tvyduptebywc">
+<style>.phincvqdxtvp{}</style><img src="/2025/04/28/note33/note33_pic12.png" srcset="/img/loading.gif" lazyload class="phincvqdxtvp">
 </div>
 <p>以此题为例，通过对已分配资源数的加和计算，不难发现R1，R2和R3的剩余资源数分别为1、1、0。<br>
 那么显然此时不能再继续执行还需要R3分配资源的进程了，观察后发现只有P4符合这一条件，因此执行序列的第一个应该为P4，<strong>排除①②</strong>。<br>
 下面可以讨论序列③能否完成，可以借助下图分析：</p>
 <div class="center">
-<style>.pqamijkbgihj{}</style><img src="/2025/04/28/note33/note33_pic13.png" srcset="/img/loading.gif" lazyload class="pqamijkbgihj">
+<style>.iiubmrayrxbd{}</style><img src="/2025/04/28/note33/note33_pic13.png" srcset="/img/loading.gif" lazyload class="iiubmrayrxbd">
 </div>
 <p>如果一个进程最终能够执行完毕，我们就给它打上一个<code>True</code>的标志。而检查其是否能够执行完毕的条件即为<code>可用</code>能否覆盖<code>需求</code>。同时，一个进程完成之后会释放所有已经占用的资源，即<code>可用+已分</code>部分的内容。据此分析，P1是无法完成的，因此<strong>排除序列③</strong>。</p>
 <h3 id="Ⅳ-线程">Ⅳ 线程</h3>
@@ -537,22 +539,22 @@
 <h3 id="Ⅰ-分页存储管理">Ⅰ 分页存储管理</h3>
 <p>进行分页管理的原理即为将一个进程的地址空间划分成若干个大小相等的区域，称为页，同时将主存空间划分成与页相等大小的若干个物理块，称为块。在实际运行时会将若干个页分别装入多个不相邻接的块中。</p>
 <div class="center">
-<style>.exjoptbtlqil{}</style><img src="/2025/04/28/note33/note33_pic14.png" srcset="/img/loading.gif" lazyload class="exjoptbtlqil">
+<style>.ufddfhoiebeb{}</style><img src="/2025/04/28/note33/note33_pic14.png" srcset="/img/loading.gif" lazyload class="ufddfhoiebeb">
 </div>
 <p>分页系统的地址结构如上图所示，由页号和偏移量（即页内地址）两部分组成。其中页号是高位部分，用于索引页表，而页内偏移是低位部分，直接对应物理页内的位置。</p>
 <hr>
 <div class="center">
-<style>.tdufqgsjtslr{}</style><img src="/2025/04/28/note33/note33_pic16.png" srcset="/img/loading.gif" lazyload class="tdufqgsjtslr">
+<style>.qvsnhdicontt{}</style><img src="/2025/04/28/note33/note33_pic16.png" srcset="/img/loading.gif" lazyload class="qvsnhdicontt">
 </div>
 <p><strong>AC</strong>，根据题意不难发现，页面0、页面2和页面4在内存当中，若需淘汰应在在三个页面当中淘汰。而根据程序的局部性原理，页面0最近被访问过，页面2、页面4既被访问过又被修改过，因此最有可能淘汰的是页面0。此外，由于页面大小为4KB，即4×2^10字节，亦即2^12字节，说明该系统中页有12位。也就是说只有当<strong>页面偏移量为12时</strong>才能覆盖所有位，如此一来便确定了页面偏移量。而题目中给出的2C25H等同于0x2C25（H用来表明该数采用十六进制表示），也就是一共有4个数，即4×4=16位。那么在后12位为页面偏移量的情况下，剩余的前4位，即第1个数就是页号了，为2。随后再根据页表内的信息将页号转换为页帧号（即物理块号），就得到了<strong>物理地址为4C25H</strong>。</p>
 <h3 id="Ⅱ-段页式存储管理">Ⅱ 段页式存储管理</h3>
 <p>段页式存储管理是一种对段式存储和页式存储“各取所长”的存储管理方式，它先将整个主存划分成大小相等的存储块，随后将用户程序按程序的逻辑关系分为若干个段，再将一个段划分成若干个页。据此就形成了由段号、段内页号和业内地址三部分组成的段页式管理的地址：</p>
 <div class="center">
-<style>.lkgedrljyrld{}</style><img src="/2025/04/28/note33/note33_pic17.png" srcset="/img/loading.gif" lazyload class="lkgedrljyrld">
+<style>.nesvcvuvxfex{}</style><img src="/2025/04/28/note33/note33_pic17.png" srcset="/img/loading.gif" lazyload class="nesvcvuvxfex">
 </div>
 <hr>
 <div class="center">
-<style>.vkjlxsbiihwu{}</style><img src="/2025/04/28/note33/note33_pic18.png" srcset="/img/loading.gif" lazyload class="vkjlxsbiihwu">
+<style>.xsanihrrmeer{}</style><img src="/2025/04/28/note33/note33_pic18.png" srcset="/img/loading.gif" lazyload class="xsanihrrmeer">
 </div>
 <p><strong>B</strong>，简单的分段计算，唯一需要注意的是页号所在段的长度描述的是每个段<strong>最大允许</strong>有多少多少个页。</p>
 <h2 id="三、设备管理">三、设备管理</h2>
@@ -598,23 +600,23 @@
 </div>
 <hr>
 <div class="center">
-<style>.aaxodbjctipe{}</style><img src="/2025/04/28/note33/note33_pic19.png" srcset="/img/loading.gif" lazyload class="aaxodbjctipe">
+<style>.cxazihgkuyqs{}</style><img src="/2025/04/28/note33/note33_pic19.png" srcset="/img/loading.gif" lazyload class="cxazihgkuyqs">
 </div>
 <p><strong>CB</strong>，</p>
 <p>单缓冲工作的过程图和并行工作的示意图如下图所示：</p>
 <div class="center">
-<style>.rmxgujepiwhe{}</style><img src="/2025/04/28/note33/note33_pic20.png" srcset="/img/loading.gif" lazyload class="rmxgujepiwhe">
+<style>.ugofquvitcot{}</style><img src="/2025/04/28/note33/note33_pic20.png" srcset="/img/loading.gif" lazyload class="ugofquvitcot">
 </div>
 <p>不难发现当单缓冲区并行工作时，上一个任务的处理过程和下一个任务的输入过程是并行的，因此每个任务的实际工作时长可以看作10+5=15μs，再加上最后一个任务多余的处理时间，总时间即为15×10+2=152μs。</p>
 <p>双缓冲工作的过程图和并行工作的示意图如下图所示：</p>
 <div class="center">
-<style>.vkhhzsksakqo{}</style><img src="/2025/04/28/note33/note33_pic21.png" srcset="/img/loading.gif" lazyload class="vkhhzsksakqo">
+<style>.myjmbefwcbbm{}</style><img src="/2025/04/28/note33/note33_pic21.png" srcset="/img/loading.gif" lazyload class="myjmbefwcbbm">
 </div>
 <p>双缓冲区和单缓冲区的不同就在于其输入过程是持续不断的，因此只需要计算10次输入过程的时长，并再加上最后一个任务的传送以及处理时间即可，答案为107μs。</p>
 <h3 id="Ⅱ-磁盘调度">Ⅱ 磁盘调度</h3>
 <p>计算机从一个磁盘中读取数据的基本过程为：读/写头移动到目标柱面上，这一过程称之为寻道时间；而存储数据的目标扇区会一刻不停旋转，想要读取数据就需要等待扇区旋转到读/写头的位置，这一过程称之为旋转延迟。</p>
 <div class="center">
-<style>.gdykegfksrsl{}</style><img src="/2025/04/28/note33/note33_pic23.png" srcset="/img/loading.gif" lazyload class="gdykegfksrsl">
+<style>.ehwrjapzvajb{}</style><img src="/2025/04/28/note33/note33_pic23.png" srcset="/img/loading.gif" lazyload class="ehwrjapzvajb">
 </div>
 <p>而磁盘调度算法分为移臂调度和旋转调度两类，并且是先进行移臂调度，然后进行旋转调度。需要注意的是，在访问磁盘的过程中最耗时的是寻道时间。</p>
 <h4 id="1-移臂调度算法">1. 移臂调度算法</h4>
@@ -626,8 +628,93 @@
 <h5 id="4）-单向扫描调度算法（CSCAN）">4） 单向扫描调度算法（CSCAN）</h5>
 <p>CSCAN算法和SCAN算法的区别在于前者是一种单向扫描算法，这意味着该算法在折返过程中不会停留，将保持循环往复保持同一起点进行单向扫描。</p>
 <h4 id="2-旋转调度算法">2. 旋转调度算法</h4>
+<p>当读写头到达指定位置之后，会有多个进程等待访问该柱面，那么该如何决定这些进程的访问顺序？就需要考虑以下几种情况：</p>
+<ul>
+<li>进程请求访问的是同一磁道上不同编号的扇区</li>
+<li>进程请求访问的是不同磁道上不同编号的扇区</li>
+<li>进程请求访问的是不同磁道上相同编号的扇区</li>
+</ul>
+<p>对于前两种情况，旋转调度总是让首先到达读/写头位置的扇区进行操作，而后一种情况下则是任选一个扇区进行传送操作。</p>
+<p>旋转调度算法中常常涉及到在磁盘中对信息存储进行优化分布，鉴于在这里不便展开，详情请参见<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1AY411E7GC?vd_source=d2a4fcb87f01b1e635c2de07e4f9fb34&amp;spm_id_from=333.788.videopod.episodes&amp;p=79">2010年上半年第27、28题</a>。</p>
 <h2 id="四、文件管理">四、文件管理</h2>
-<h2 id="五、作业管理">五、作业管理</h2>
+<h3 id="Ⅰ-文件目录">Ⅰ 文件目录</h3>
+<p>为了实现文件的“按名存取”，操作系统中势必存在一种来管理文件的数据结构，我们称其为文件控制块（FCB），而FCB的有序集合就是文件目录，故而文件控制块也可以被称作目录项。</p>
+<h4 id="1-文件控制块">1. 文件控制块</h4>
+<p>FCB中包含以下三类信息：</p>
+<ul>
+<li>基本信息类：存储文件名、文件的物理地址、文件长度等。</li>
+<li>存取控制信息类：存储文件的存取权限。</li>
+<li>使用信息类：存储文件建立日期、最后一次修改日期、当前使用的信息等。</li>
+</ul>
+<h4 id="2-目录结构">2. 目录结构</h4>
+<p>如何组织目录结构显然是一个重要的议题，它将直接影响文件的存取速度。常见的目录结构有以下三种:</p>
+<ul>
+<li>一级目录结构：整个目录结构是一个线性结构，即在整个系统中只需要建立一张目录表，系统为每一个文件分配一个目录项。</li>
+<li>二级目录结构：一级目录结构的一个缺点就是不同用户的文件容易重名且缺乏隔离性，因此我们可以引入二级目录结构的概念。二级目录结构由用户目录和主目录组成，主目录是系统唯一的顶层目录，包含所有用户的子目录，而用户目录则用来管理用户自己的独立文件。</li>
+<li>多级目录结构：但是二级目录结构过强的隔离性又影响了多个用户之间的协作，比如一个用户难以直接访问另一个用户的文件，因此我们又引入了多级目录结构。多级目录结构类似于一棵树，从树根向下，每一个结点是一个目录，叶子节点即为文件，现代操作系统一般都采用了这种目录结构。</li>
+</ul>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th>单级目录</th>
+<th>二级目录</th>
+<th><strong>多级目录</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>结构复杂度</strong></td>
+<td>最简单（所有文件同级存储）</td>
+<td>中等（用户目录+主目录）</td>
+<td>最复杂（树形嵌套，但灵活性最高）</td>
+</tr>
+<tr>
+<td><strong>命名冲突</strong></td>
+<td>极易发生（文件名必须唯一）</td>
+<td>用户间隔离（同用户仍冲突）</td>
+<td>路径唯一性彻底解决（如<code>/a/1.txt</code>和<code>/b/1.txt</code>可共存）</td>
+</tr>
+<tr>
+<td><strong>扩展性</strong></td>
+<td>无法扩展</td>
+<td>有限扩展（仅两级）</td>
+<td>无限嵌套子目录（如<code>/a/b/c/...</code>）</td>
+</tr>
+<tr>
+<td><strong>权限控制</strong></td>
+<td>全局统一权限</td>
+<td>用户目录独立权限</td>
+<td>每个目录可单独设权限（<code>chmod</code>）</td>
+</tr>
+<tr>
+<td><strong>典型系统</strong></td>
+<td>早期DOS</td>
+<td>早期Unix</td>
+<td>现代Linux/Windows/macOS</td>
+</tr>
+<tr>
+<td><strong>路径示例</strong></td>
+<td><code>file.txt</code></td>
+<td><code>/home/user1/file.txt</code></td>
+<td><code>/home/user1/docs/project1.txt</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="Ⅱ-存储空间的管理">Ⅱ 存储空间的管理</h3>
+<h4 id="位示图">位示图</h4>
+<p>位示图是一种常见的空闲空间的管理方法，它通过在外存上建立一张位示图来记录文件存储器的使用情况。</p>
+<div class="center">
+<style>.ihhweedlivxm{}</style><img src="/2025/04/28/note33/note33_pic26.png" srcset="/img/loading.gif" lazyload class="ihhweedlivxm">
+</div>
+<p>其中，每一个<strong>字</strong>对应的是文件存储器中的连续的物理块。假如当前的计算机系统的字长为32位，那么第0字就代表了0~31号物理块，第1字就代表了32~63号物理块，以此类推。而物理块上填写的0、1即为其空闲与否的状态。</p>
+<hr>
+<div class="center">
+<style>.fcppwyrbjwfp{}</style><img src="/2025/04/28/note33/note33_pic27.png" srcset="/img/loading.gif" lazyload class="fcppwyrbjwfp">
+</div>
+<p><strong>B</strong>，简单计算，不再赘述。</p>
 <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>软件设计师教程（第五版）. (2018).
 <a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
                 
