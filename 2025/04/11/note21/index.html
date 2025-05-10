@@ -297,7 +297,7 @@
 <h1>优先队列的应用</h1>
 <p>优先队列是一种基于堆实现的数据结构，它使得队列中最高优先级的元素总是排在堆顶（优先级或大或小，与大顶堆或小顶堆有关）。</p>
 <div class="center">
-<style>.uxrqvvtccqqq{}</style><img src="/2025/04/11/note21/note21_pic01.png" srcset="/img/loading.gif" lazyload class="uxrqvvtccqqq">
+<style>.igfgowsnnjmr{}</style><img src="/2025/04/11/note21/note21_pic01.png" srcset="/img/loading.gif" lazyload class="igfgowsnnjmr">
 </div>
 <p>在Python中可以直接使用<code>heapq</code>库来使用优先队列，主要有以下几个用法:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> heapq<br><span class="hljs-keyword">import</span> sys<br><br>heap = <span class="hljs-built_in">list</span>(<span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, sys.stdin.readline().strip().split()))<br><br>heap = heapq.heapify(heap)      <span class="hljs-comment"># 将一个朴素队列堆化</span><br>min_num = heapq.heappop(heap)   <span class="hljs-comment"># 弹出堆中的最小元素（该库默认定义为小顶堆）</span><br><br>heapq.heappush(heap, new_num)   <span class="hljs-comment"># 插入一个新的数</span><br><br>n = <span class="hljs-number">3</span><br>heap = [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>]<br><span class="hljs-built_in">print</span>(heapq.nsmallest(n, heap)) <span class="hljs-comment"># 输出堆中最小的n个元素</span><br><span class="hljs-built_in">print</span>(heapq.nlargest(n, heap))  <span class="hljs-comment"># 输出堆中最大的n个元素</span><br></code></pre></td></tr></table></figure>
@@ -328,7 +328,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> heapq<br><span class="hljs-keyword">import</span> sys<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">main</span>():<br>    n = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())<br>    heap = <span class="hljs-built_in">list</span>(<span class="hljs-built_in">map</span>(<span class="hljs-built_in">int</span>, sys.stdin.readline().strip().split()))<br><br>    heapq.heapify(heap)<br><br>    ans = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">while</span> <span class="hljs-built_in">len</span>(heap) &gt; <span class="hljs-number">1</span>:<br>        pop_num1 = heapq.heappop(heap)<br>        pop_num2 = heapq.heappop(heap)<br><br>        push_num = pop_num1 + pop_num2<br>        ans += push_num<br><br>        heapq.heappush(heap, push_num)<br>        <br>    <span class="hljs-built_in">print</span>(ans)<br>    <br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&quot;__main__&quot;</span>:<br>    main()<br></code></pre></td></tr></table></figure>
 <p>Bingo!</p>
 <div class="center">
-<style>.yittcjjonwfx{}</style><img src="/2025/04/11/note21/note21_pic02.png" srcset="/img/loading.gif" lazyload class="yittcjjonwfx">
+<style>.oeonkidclqmo{}</style><img src="/2025/04/11/note21/note21_pic02.png" srcset="/img/loading.gif" lazyload class="oeonkidclqmo">
 </div>
 <h1>这里留个尾巴，等主播打完蓝桥杯回来更新P8755</h1>
 
@@ -434,9 +434,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/23/note29/" title="软件设计师 下午题 试题二 数据库设计">
+                      <a href="/2025/04/24/md02/" title="Git “bad config line 1 in file .git/config”报错的解决方案">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">软件设计师 下午题 试题二 数据库设计</span>
+                        <span class="hidden-mobile">Git “bad config line 1 in file .git/config”报错的解决方案</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
