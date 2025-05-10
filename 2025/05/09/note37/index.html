@@ -21,20 +21,27 @@
   
     <meta name="description" content="软考中级备考笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件设计师 上午题 信息安全">
+<meta property="og:title" content="软件设计师 上午题 网络与信息安全基础知识">
 <meta property="og:url" content="http://example.com/2025/05/09/note37/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="软考中级备考笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic05.png">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/09/note37/note37_pic07.png">
 <meta property="article:published_time" content="2025-05-09T13:26:04.000Z">
-<meta property="article:modified_time" content="2025-05-09T13:26:38.486Z">
+<meta property="article:modified_time" content="2025-05-10T14:15:44.320Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="软考">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/09/note37/note37_pic01.png">
   
   
   
-  <title>软件设计师 上午题 信息安全 - Hexo</title>
+  <title>软件设计师 上午题 网络与信息安全基础知识 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="软件设计师 上午题 信息安全"></span>
+            <span id="subtitle" data-typed-text="软件设计师 上午题 网络与信息安全基础知识"></span>
           
         </div>
 
@@ -226,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          23 字
+          3.5k 字
         
       </span>
     
@@ -237,7 +244,7 @@
         
         
         
-          1 分钟
+          30 分钟
         
       </span>
     
@@ -274,7 +281,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">软件设计师 上午题 信息安全</h1>
+            <h1 id="seo-header">软件设计师 上午题 网络与信息安全基础知识</h1>
             
             
               <div class="markdown-body">
@@ -288,7 +295,132 @@
   margin-right: auto;
 }
 </style>
-<h1>软件设计师 上午题 信息安全</h1>
+<h1>软件设计师 上午题 网络与信息安全基础知识</h1>
+<p>  OSI网络分层示意图镇楼：</p>
+<div class="center">
+<style>.umhbropatoao{}</style><img src="/2025/05/09/note37/note37_pic01.png" srcset="/img/loading.gif" lazyload class="umhbropatoao">
+</div>
+<h2 id="一、网络互联硬件">一、网络互联硬件</h2>
+<p>  构建一个实际的网络需要网络的传输介质、网络互连设备作为支持，本节主要介绍构建网络的传输介质和互连设备。</p>
+<h3 id="Ⅰ-网络的互联设备">Ⅰ 网络的互联设备</h3>
+<p>  网络互连的目的是使一个网络的用户能够访问其它网络的资源，而且一般不能直接相连，需要一个互联设备来中转实现。这个中间设备要实现不同网络之间的协议转换功能，根据它们工作的协议层可以按如下方式进行分类：</p>
+<h4 id="1-物理层的互联设备">1. 物理层的互联设备</h4>
+<p>  物理层的互联设备有中继器和集线器：</p>
+<ul>
+<li>中继器：它是在物理层上实现局域网网段互联的，用于扩展局域网网段的长度。由于中继器仅能够放大和整形电信号，不具备协议转换或者路由能力，因此中继器只能连接相同的局域网网段，即两个或多个局域网在物理层上具有完全相同的技术标准。</li>
+<li>集线器：集线器是早期的简单物理层广播设备，用于连接多台计算机或其他网络设备，组成一个共享式局域网（LAN）。集线器也可以看作一个特殊的多路中继器，也具有信号放大功能。</li>
+</ul>
+<h4 id="2-数据链路层的互联设备">2. 数据链路层的互联设备</h4>
+<p>  数据链路层的互联设备有网桥和交换机：</p>
+<ul>
+<li>网桥：网桥的核心功能是根据MAC地址智能转发数据帧，从而减少不必要的网络流量。网桥要分析帧地址字段，以决定是否把收到的帧转发到另一个网络段上，所以网桥能够起到过滤帧的作用。</li>
+<li>交换机：交换机是一个具有简化、低价、高性能和高端口密集特点的交换产品，用于在局域网内高效转发数据帧，它通过MAC地址表​智能识别设备，实现点对点通信​​，显著提升网络性能。</li>
+</ul>
+<h4 id="3-网络层的互联设备">3. 网络层的互联设备</h4>
+<p>  网络层的互联设备主要就是路由器：</p>
+<ul>
+<li>路由器：​​路由器的核心功能是​连接不同网络​，并根据​IP地址​选择最佳路径转发数据包。路由器具有很强的异种网互联能力，互联网络的最低两层协议可以互不相同，通过驱动软件接口到第三层而得到统一。</li>
+</ul>
+<h4 id="4-应用层的互联设备">4. 应用层的互联设备</h4>
+<p>  应用层的互联设备主要就是网关：</p>
+<ul>
+<li>网关：在一个计算机网络中，当连接不同类型且协议差别较大的网络时，则要选用网关设备。网关的功能体现在OSI模型的最高层，它将协议进行转换，将数据重新分组，以便在两个不同类型的网络系统之间进行通信。由于协议转换是一件复杂的事，一般来说，网关只进行一对一转换。</li>
+</ul>
+<hr>
+<div class="center">
+<style>.hqmdxpmpondf{}</style><img src="/2025/05/09/note37/note37_pic02.png" srcset="/img/loading.gif" lazyload class="hqmdxpmpondf">
+</div>
+<p>  <strong>C</strong>，所谓广播域和冲突域的区别在于，前者意味着如果站点发出一个广播信号，所有能接收到这个信号的设备范围称为一个广播域，而后者意味着同一时间内只能有一台设备发送信息。而对于本题而言，路由器起到分割子网的作用，而子网显然是一个广播域，那么分割出的两个子网就是两个广播域；集线器中同时只有一个端口能够使用，整个共享一个冲突域；交换机的各个端口可以并行工作，一共是四个冲突域。综上所述，一共就是2个广播域和5个冲突域。</p>
+<h2 id="二、网络的协议与标准">二、网络的协议与标准</h2>
+<h3 id="Ⅰ-TCP-IP协议族">Ⅰ TCP/IP协议族</h3>
+<p>  TCP/IP作为Internet的核心协议，通过近20多年的发展已日渐成熟，并被广泛应用于局域网和广域网中，目前已成为事实上的国际标准。</p>
+<h4 id="1-TCP-IP分层模型">1. TCP/IP分层模型</h4>
+<p>  TCP/IP是个协议族，它包含了多种协议。ISO/OSI模型、TCP/IP的分层模型及协议的对比如下图所示：</p>
+<div class="center">
+<style>.zwytfqgyfuyn{}</style><img src="/2025/05/09/note37/note37_pic03.png" srcset="/img/loading.gif" lazyload class="zwytfqgyfuyn">
+</div>
+<p>  而其中具体的协议间的依赖关系、以及各个协议依赖的端口如下图所示：</p>
+<div class="center">
+<style>.zcdvmglondzg{}</style><img src="/2025/05/09/note37/note37_pic05.png" srcset="/img/loading.gif" lazyload class="zcdvmglondzg">
+</div>
+<p>  而数据在TCP/IP协议中的传输遵循分层封装与解封装机制，数据从发送方到接收方需经过应用层-&gt;传输层-&gt;网际层-&gt;网络接口层的逐层处理，以下是详细流程：</p>
+<ul>
+<li>发送方：进行数据封装。
+<ul>
+<li>应用层：当用户在应用程序中发送数据时，数据会首先在应用层被封装。例如，当用户通过浏览器访问页面时，HTTP请求会被封装成应用层数据。</li>
+<li>传输层：随后应用层数据将被传递到传输层，而传输层的主要协议TCP/UDP会在数据前端添加传输层头部信息，生成段（Segment–TCP）或者数据报（Datagram–UDP）。</li>
+<li>网际层：在这一层，网络层协议（如IP）会在数据前添加IP头部信息，将数据段/报封装成数据包（Packet）。</li>
+<li>网络接口层：添加MAC头部，形成帧（Frame）。</li>
+</ul>
+</li>
+<li>接收方：将先前添加的头部逐层剥离以完成解封装操作，将数据逐层上传，最后在应用层将最终数据呈现给用户。</li>
+</ul>
+<div class="center">
+<style>.igiesphymolg{}</style><img src="/2025/05/09/note37/note37_pic04.png" srcset="/img/loading.gif" lazyload class="igiesphymolg">
+</div>
+<h4 id="2-网际层协议——IP">2. 网际层协议——IP</h4>
+<p>  IP所提供的服务一般被认为是无连接的和不可靠的：</p>
+<ul>
+<li>无连接的：所谓无连接传输是一个和面向连接传输相对应的一个概念：
+<ul>
+<li>无连接：没有确定目标系统在已做好接收数据准备之前就发送数据，如IP。</li>
+<li>面向连接：源系统与目标系统在应用层数据传送之前需要进行三次握手，如TCP。</li>
+</ul>
+</li>
+<li>不可靠的：指目的系统不对成功接收的分组进行确认，IP只是尽可能地使数据传输成功。</li>
+</ul>
+<blockquote>
+<p>由于IP只提供无连接、不可靠的服务，所以把差错检测和流量控制之类的服务授权给了其他的各层协议，这正是TCP/IP能够高效工作的一个重要保证。这样，可以根据传送数据的属性来确定所需的传送服务以及客户应该使用的协议。例如，传送大型文件的FTP会话需要面向连接的、可靠的服务(因为如果稍有损坏，就可能导致整个文件无法使用)。</p>
+</blockquote>
+<h4 id="3-网际层协议——ARP">3. 网际层协议——ARP</h4>
+<p>  ARP协议（Address Resolution Protocol, 地址解析协议）的主要作用是将IP地址转换为物理地址。</p>
+<blockquote>
+<p>网络中的任何设备，主机、路由器和交换机等均有唯一的物理地址，该地址通过网卡给出，每个网卡出厂后都有不同的编号，这意味着用户所购买的网卡有着唯一的物理地址。另一方面，为了屏蔽底层协议及物理地址上的差异，IP协议又使用了IP地址，因此，在数据传输过程中，必须对IP地址与物理地址进行相互转换。</p>
+</blockquote>
+<p>  当主机A需要与主机B通信但未知其MAC地址时，会向局域网<strong>广播</strong>ARP请求包（包含目标IP），只有IP匹配的主机B会<strong>单播</strong>回复ARP响应包（携带自身MAC地址），主机A收到后将该映射存入本地ARP缓存表，后续通信直接查表即可。</p>
+<h4 id="4-传输层协议——TCP">4. 传输层协议——TCP</h4>
+<p>  TCP（Transmission Control Protocol, 传输控制协议）在IP提供的不可靠数据服务的基础上为应用程序提供了一个可靠的、面向连接的、全双工的数据传输服务。<br>
+TCP具有的特点有：可靠传输、连接管理、差错校验和重传、流量控制（采用可变大小的滑动窗口协议）、拥塞控制和端口寻址。</p>
+<h4 id="5-传输层协议——UDP">5. 传输层协议——UDP</h4>
+<p>  与TCP对应，在传输层中还有一种UDP协议（User Datagram Protocol, 用户数据报协议），这是一种不可靠的、无连接的协议。与TCP相比，UDP提供的错误检测功能要弱得多，因此其特点主要侧重于提高传输的高速率性。而TCP所做不到的功能，例如重新发送丢失或出错的数据、建立或终止连接等，都将由使用UDP进行通信的应用程序负责处理。</p>
+<blockquote>
+<p>TCP虽然提供了一个可靠的数据传输服务，但它是以牺牲通信量来实现的。也就是说，为了完成同样一个任务，TCP需要更多的时间和通信量。这在网络不可靠的时候通过牺牲一些时间换来达到网络的可靠性是可行的，但在网络十分可靠的情况下，则可以采用UDP，通信量的浪费就会很小。</p>
+</blockquote>
+<h4 id="6-电子邮件服务协议">6. 电子邮件服务协议</h4>
+<p>  电子邮箱服务，亦即E-mail服务，整个系统基于的是客户端/服务器模式，由E-mail客户端软件、E-mail服务器和通信协议三部分组成。<br>
+  E-mail服务器主要采用SMTP协议（简单邮件传输协议），这个协议描述了电子邮件的信息格式以及其传递处理方法，这是一种面向文本的网络协议。<br>
+  但使用SMTP在PC上收信是非常困难的，因此我们常用SMTP来发信而用POP3保管用户未能及时取走的邮件。POP3协议是POP协议（Psot Office Protocol）的一个版本，目前的POP3协议既能与SMTP共同使用，也可以单独使用来传送和接收电子邮件。此外，POP协议每次传输以整个E-mail为单位，不能提供部分传输。</p>
+<h2 id="三、网络命令">三、网络命令</h2>
+<h3 id="1-Windows命令">1. Windows命令</h3>
+<p>  软考中常见的Windows网络命令有以下几种：</p>
+<ul>
+<li>ipconfig/release: DHCP客户端手工释放IP地址。</li>
+<li>ipconfig/flushdns: 清除本地DNS缓存内容。</li>
+<li>ipconfig/displaydns: 显示本地DNS缓存内容。</li>
+<li>ipconfig/registerdns: DNS客户端手工向服务器进行注册。</li>
+<li>ipconfig: 显示所有网络适配器的IP地址、子网掩码和缺省网关值。</li>
+<li>ipconfig/all: 显示所有网络适配器的完整TCP/IP配置信息，包括<strong>DHCP服务是否已经启动</strong>。</li>
+<li>ipconfig/renew: DHCP客户端手工向服务器刷新请求（重新申请IP地址）。</li>
+</ul>
+<hr>
+<ol>
+<li>2016年上半年第68题：</li>
+</ol>
+<div class="center">
+<style>.yautprpbmigy{}</style><img src="/2025/05/09/note37/note37_pic07.png" srcset="/img/loading.gif" lazyload class="yautprpbmigy">
+</div>
+<p>  <strong>C</strong>，使用ping命令进行网络检测，按照由近及远原则，首先执行的是<code>ping 127.0.0.1</code>，其次是<code>ping 本地IP</code>，再次是<code>ping 默认网关</code>，最后是<code>ping 远程主机</code>。</p>
+<h2 id="四、网络安全">四、网络安全</h2>
+<h3 id="Ⅰ-防火墙技术">Ⅰ 防火墙技术</h3>
+<blockquote>
+<p>防火墙(Firewall)是建立在内外网络边界上的过滤封锁机制，它认为内部网络是安全和可信赖的，而外部网络是不安全和不可信赖的。防火墙的作用是防止不希望的、未经授权地进出被保护的内部网络，通过边界控制强化内部网络的安全策略。防火墙作为网络安全体系的基础和核心控制设施，贯穿于受控网络通信主干线，对通过受控干线的任何通信行为进行安全处理，如控制、审计、报警和反应等，同时也承担着繁重的通信任务。由于其自身处于网络系统中的敏感位置，自身还要面对各种安全威胁，因此，选用一个安全、稳定和可靠的防火墙产品，其重要性不言而喻。</p>
+</blockquote>
+<p>  不难发现，防火墙技术的一个基本理念是<strong>防外不防内</strong>，它会在外部环境和内部环境之间建立一个DMZ非军事区，并按照内网、DMZ、外网的优先顺序进行保护。</p>
+<p>  防火墙技术经历了包过滤、应用代理网关和状态检测技术三个发展阶段，需要我们重点掌握的是前两种技术：</p>
+<h4 id="1-包过滤防火墙">1. 包过滤防火墙</h4>
+<p>  包过滤防火墙​​是最基础的防火墙技术，工作在​​网络层和传输层​​，其中有一个包检查块，能够分析<strong>数据包的​​源/目标IP地址、端口号及协议类型（如TCP/UDP/ICMP）​​等头部信息</strong>，依据预设规则（ACL）决定允许或阻断流量。其​​优点是处理速度快、对性能影响小​​，适合部署在路由器等网络边界设备；但​​缺点是无法检测传输数据的内容（因为这是应用层内容​），因此它对应用和用户是透明的；且​​缺乏状态跟踪能力​​（如无法识别TCP握手异常），现多作为其他高级防火墙的初级过滤模块使用。</p>
+<h4 id="2-应用代理网关防火墙">2. 应用代理网关防火墙</h4>
+<p>​  ​应用代理网关防火墙​​是工作在​​应用层​​的防火墙技术，通过扮演&quot;中间人&quot;角色代理客户端与服务器的通信，​​深度解析HTTP、FTP、SMTP等应用层协议内容​​，实现基于用户身份、文件类型、关键词等细粒度控制。其核心优势在于能​​彻底隔离内外网直接连接​​，有效防御SQL注入（一种以获得数据库权限为目的的攻击）、恶意文件上传等应用层攻击，但代价是​​需要为每种协议开发独立代理模块​​，且​​性能开销较大​​，通常用于需要高安全性的邮件服务器、Web应用等场景。</p>
 
                 
               </div>
@@ -348,7 +480,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>软件设计师 上午题 信息安全</div>
+      <div>软件设计师 上午题 网络与信息安全基础知识</div>
       <div>http://example.com/2025/05/09/note37/</div>
     </div>
     <div class="license-meta">
