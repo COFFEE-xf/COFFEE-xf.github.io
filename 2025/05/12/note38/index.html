@@ -1,0 +1,880 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="谢斐">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="软考真题做题笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件设计师 知识点拾遗 2023年上半年">
+<meta property="og:url" content="http://example.com/2025/05/12/note38/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="软考真题做题笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic05.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic06.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic07.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic08.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic09.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic10.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic11.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic12.png">
+<meta property="og:image" content="http://example.com/2025/05/12/note38/note38_pic14.png">
+<meta property="article:published_time" content="2025-05-12T11:52:55.000Z">
+<meta property="article:modified_time" content="2025-05-12T13:12:44.711Z">
+<meta property="article:author" content="谢斐">
+<meta property="article:tag" content="软考">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/12/note38/note38_pic01.png">
+  
+  
+  
+  <title>软件设计师 知识点拾遗 2023年上半年 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>My Loquat Tree</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="软件设计师 知识点拾遗 2023年上半年"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-12 19:52" pubdate>
+          2025年5月12日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          19 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">软件设计师 知识点拾遗 2023年上半年</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>软件设计师 知识点拾遗 2023年上半年</h1>
+<p>上午题错了28个，险过险过，主要还是好多去年学的概念记不清楚了，这几天还是要多刷题。</p>
+<h2 id="一、上午题">一、上午题</h2>
+<ol>
+<li>第2题：</li>
+</ol>
+<div class="center">
+<style>.pairwcpdtikn{}</style><img src="/2025/05/12/note38/note38_pic01.png" srcset="/img/loading.gif" lazyload class="pairwcpdtikn">
+</div>
+<p>  DMA控制器即为直接内存访问控制器(Direct Memory Access, DMA)，它允许​​外设直接与<strong>主存</strong>交换数据​​，而​​无需CPU参与每次数据传输​​，从而解放CPU去执行其他任务。中断控制器同理。</p>
+<ol start="2">
+<li>第3题：</li>
+</ol>
+<div class="center">
+<style>.htklmpsdaqke{}</style><img src="/2025/05/12/note38/note38_pic02.png" srcset="/img/loading.gif" lazyload class="htklmpsdaqke">
+</div>
+<p>  海明码是一种通过在数据位之间的特定位置上插入k个校验位，并据此扩大码距来实现检错和纠错功能的。设数据位是n位，校验位是k位，则n和k之间必须满足以下关系：</p>
+<p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>−</mo><mn>1</mn><mo>≥</mo><mi>n</mi><mo>+</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">2^k-1\ge n+k
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9824em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7804em;vertical-align:-0.136em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span></span></p>
+<p>将题目中的8代入n，解出<strong>k至少为4</strong>。</p>
+<ol start="3">
+<li>第4题：</li>
+</ol>
+<div class="center">
+<style>.kcwnywqgrnxv{}</style><img src="/2025/05/12/note38/note38_pic03.png" srcset="/img/loading.gif" lazyload class="kcwnywqgrnxv">
+</div>
+<p>  中断向量​是计算机系统中用于​​快速定位中断处理程序（ISR, Interrupt Service Routine）的索引机制​​。它本质上是一个​​指针数组​​，其中每个向量存储了<strong>特定中断对应的处理程序的入口地址</strong>。当发生中断时，CPU通过中断向量表直接跳转到对应的ISR执行，无需手动查询。</p>
+<ol start="4">
+<li>第7题：</li>
+</ol>
+<div class="center">
+<style>.bxxtwgeuobkz{}</style><img src="/2025/05/12/note38/note38_pic04.png" srcset="/img/loading.gif" lazyload class="bxxtwgeuobkz">
+</div>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th>OSI层数</th>
+<th>名称</th>
+<th>核心作用</th>
+<th>典型协议/设备</th>
+<th>数据传输单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>7</strong></td>
+<td>应用层</td>
+<td>提供用户接口，实现具体网络服务（如文件传输、邮件收发）。</td>
+<td>HTTP, FTP, SMTP, DNS</td>
+<td>数据（Data）</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>表示层</td>
+<td>数据格式转换（编码/解码）、<strong>加密解密、压缩解压</strong>。</td>
+<td>SSL/TLS, JPEG, MPEG</td>
+<td>数据（Data）</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>会话层</td>
+<td>建立、管理、终止应用程序间的会话（连接）。</td>
+<td>NetBIOS, RPC, SIP</td>
+<td>数据（Data）</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>传输层</td>
+<td>提供端到端的可靠/不可靠传输，流量控制，错误校验。</td>
+<td>TCP, UDP</td>
+<td>段（Segment）</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>网络层</td>
+<td>逻辑寻址（IP）、路由选择、分组转发。</td>
+<td>IP, ICMP, OSPF, 路由器</td>
+<td>包（Packet）</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>数据链路层</td>
+<td>物理寻址（MAC）、帧同步、差错控制、流量控制（局域网通信）。</td>
+<td>Ethernet, PPP, 交换机, 网桥</td>
+<td>帧（Frame）</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>物理层</td>
+<td>定义电气/机械特性，传输原始比特流（0和1）。</td>
+<td>RS-232, 光纤, 网卡, 集线器</td>
+<td>比特（Bit）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol start="5">
+<li>第8题：</li>
+</ol>
+<div class="center">
+<style>.xggbpvkvexxh{}</style><img src="/2025/05/12/note38/note38_pic05.png" srcset="/img/loading.gif" lazyload class="xggbpvkvexxh">
+</div>
+<p>  HTTPS 采用混合加密方式，即使用非对称加密算法和对称加密算法相结合的方式。整个握手过程中，服务器和客户端通过非对称加密算法进行通信，确认彼此身份后，再生成一个会话密钥，采用对称加密算法对后续的通信数据进行加密传输。<br>
+  因此，浏览器和服务器之间用于加密HTTP消息的方式是<strong>会话密钥 + 对称加密</strong>。</p>
+<ol start="6">
+<li>第11题：</li>
+</ol>
+<div class="center">
+<style>.vfgcklryynin{}</style><img src="/2025/05/12/note38/note38_pic06.png" srcset="/img/loading.gif" lazyload class="vfgcklryynin">
+</div>
+<p>  Web 应用防火墙是一种安全工具，可以在 Web 应用程序和互联网之间建立一道屏障，防止恶意攻击者利用已知或未知的漏洞进行各种攻击操作。常见的攻击方式包括登录口令暴力破解、恶意注册、抢票机器人等。<br>
+  但是，<strong>流氓软件并非Web应用防火墙所能有效防护的范畴</strong>。流氓软件是指那些没有明确安装许可的、不良软件或广告软件，常常会通过欺骗、搭便车等方式侵入用户计算机系统，窃取用户信息或广告推销等。与Web应用防火墙不同，<strong>流氓软件需要通过杀毒软件、反恶意软件等安全工具来进行检测和清除</strong>。</p>
+<ol start="7">
+<li>第14题：</li>
+</ol>
+<div class="center">
+<style>.xreffutbncyt{}</style><img src="/2025/05/12/note38/note38_pic07.png" srcset="/img/loading.gif" lazyload class="xreffutbncyt">
+</div>
+<p>  软件著作权属于自然人的，该自然人死亡后，在软件著作权的保护期内，软件著作权的继承人<strong>可以继承除署名权外的其他各项软件著作权</strong>。</p>
+<ol start="8">
+<li>第16题：</li>
+</ol>
+<div class="center">
+<style>.lenfnirktefq{}</style><img src="/2025/05/12/note38/note38_pic08.png" srcset="/img/loading.gif" lazyload class="lenfnirktefq">
+</div>
+<p>  软件设计的一个基本原则是高内聚低耦合，过于集中的设计可能会导致系统的单点故障、性能瓶颈等问题，降低了系统的可靠性和可扩展性。</p>
+<ol start="9">
+<li>第33题：</li>
+</ol>
+<div class="center">
+<style>.ghaomiumwxcl{}</style><img src="/2025/05/12/note38/note38_pic09.png" srcset="/img/loading.gif" lazyload class="ghaomiumwxcl">
+</div>
+<p>  管道—过滤器​​是一种经典的​​数据流驱动​​的软件架构风格，其核心思想是将系统拆分为一系列独立的处理单元（​​过滤器​​），这些单元通过​​管道​​连接，数据像水流一样在管道中传递，依次经过各个过滤器处理。该风格具有以下优点：</p>
+<ul>
+<li><strong>软件构件具有良好的隐蔽性和高内聚、低耦合的特点</strong>；</li>
+<li>允许设计者将整个系统的输入输出行为看成是多个过滤器的行为的简单合成；</li>
+<li><strong>支持软件复用</strong>；</li>
+<li>系统维护和增强系统性能简单；</li>
+<li>允许对一些如吞吐量、死锁等属性的分析；</li>
+<li><strong>支持并行执行</strong>；</li>
+</ul>
+<ol start="10">
+<li>第41题和42题：</li>
+</ol>
+<div class="center">
+<style>.qtpghpgouovd{}</style><img src="/2025/05/12/note38/note38_pic10.png" srcset="/img/loading.gif" lazyload class="qtpghpgouovd">
+</div>
+<p>  <strong>UML图以时间顺序组织对象之间的交互活动</strong>；对于42题而言，矩形中存在一个循环Loop[1…2]，表示循环执行的次数最少一次最多两次，而矩形中的消息只有a和b，这意味着<strong>如果执行了c就不可能再执行a或者b，不执行a和b也不能执行c</strong>，因此选择C选项。</p>
+<ol start="11">
+<li>第44题和45题：</li>
+</ol>
+<div class="center">
+<style>.edbdrlcnnfuk{}</style><img src="/2025/05/12/note38/note38_pic11.png" srcset="/img/loading.gif" lazyload class="edbdrlcnnfuk">
+</div>
+<p>  我们还是先来复习一下题目中提到的几个概念：</p>
+<ul>
+<li>单例：单例模式确保一个类中只有一个实例，并提供一个全局访问点。它通过控制实例化过程，避免重复创建对象，节省资源。</li>
+<li>抽象工厂：和工厂方法模式当中创建单一产品不同的是，抽象工厂模式当中创建了一个产品家族，即一系列相关或相互依赖的的对象。</li>
+<li>生成器：生成器模式的特点是将对象的构造过程与其表示分离，使得同样的构建过程可以创建不同的表示，主要用于分步骤构建复杂对象。</li>
+<li>原型：原型模式的核心思想是通过复制现有对象（原型）来创建新对象，而不是通过new实例化。因此原型模式可以基于克隆快速生成对象，避免重复执行耗时的初始化操作。</li>
+<li>行为型：管理对象间的交互与职责分配。</li>
+<li>结构型：通过组合类/对象形成更大结构。</li>
+<li>创建型：对象创建机制，解耦客户端与实例化逻辑。</li>
+</ul>
+<p>  则不难看出题目中的是创建型设计模式中的原型设计模式，<strong>这一模式的主要思想是通过复制现有的对象来创建新的对象</strong>。</p>
+<ol start="12">
+<li>第46题和47题：</li>
+</ol>
+<div class="center">
+<style>.oyovqnuvmxde{}</style><img src="/2025/05/12/note38/note38_pic12.png" srcset="/img/loading.gif" lazyload class="oyovqnuvmxde">
+</div>
+<p>  依旧是复习一下提到的几个概念：</p>
+<ul>
+<li>策略模式：策略模式是一种将算法抽离出来的设计模式，它定义一系列算法（策略）​​，并将每个算法封装成独立类，使它们可以​​互相替换​​，且算法的变化不影响使用它的客户端。</li>
+<li>状态模式：状态模式的核心为：同一个动作在不同状态下有不同的表现。例如日常用的台灯，正常状态下按开关出现的是白光，护眼模式下同样按开关出现的却是黄光。</li>
+<li>观察者模式：在观察者模式当中定义了对象间的一对多依赖关系，当一个对象（主题）状态改变时，所有依赖它的对象（观察者）都会自动收到通知并更新。</li>
+<li>命令模式：命令模式将请求封装为独立的对象（命令），允许用户参数化客户端（调用者）与接收者（执行者），从而支持请求的排队、撤销、日志记录等操作。</li>
+</ul>
+<p>  对于旅游定价系统来说，不同的季节和节假日需要采取不同的定价策略，因此可以把<strong>不同的定价策略封装成独立的策略对象</strong>，并通过<strong>策略模式</strong>实现动态选择不同的策略。</p>
+<ol start="13">
+<li>第53题和54题：</li>
+</ol>
+<div class="center">
+<style>.aftvtxkzujos{}</style><img src="/2025/05/12/note38/note38_pic14.png" srcset="/img/loading.gif" lazyload class="aftvtxkzujos">
+</div>
+<p>  要确定关系模式中的候选关键字，需满足以下条件：</p>
+<ul>
+<li>闭包覆盖性​​：候选关键字的闭包（通过函数依赖集推导出的属性集合）必须包含所有属性（即等于属性集U）。</li>
+<li>最小性​​：候选关键字不能有冗余属性（即去掉任一属性后，闭包不再覆盖U）。</li>
+</ul>
+<p>  对于本题而言，只有关键字ABD和关键字ACD的闭包满足以上要求，<strong>故关系模式R有两个候选关键字ABD和ACD</strong>。<br>
+  而主属性指的是所有候选关键字中的属性，非主属性则不包含在任何候选关键字中。那么不难发现A、B、C、D均为主属性，则<strong>主属性和非主属性的个数分别为4和0</strong>。</p>
+<h2 id="二、下午题">二、下午题</h2>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/" class="category-chain-item">知识点拾遗</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AF%E8%80%83/" class="print-no-link">#软考</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>软件设计师 知识点拾遗 2023年上半年</div>
+      <div>http://example.com/2025/05/12/note38/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>谢斐</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月12日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/11/php03/" title="php03">
+                        <span class="hidden-mobile">php03</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
