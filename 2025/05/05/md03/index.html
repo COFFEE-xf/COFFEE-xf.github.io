@@ -297,7 +297,7 @@
 <h1>VMWare “Capacity mismatch for disk XXX。”报错的解决方案</h1>
 <p>笔者在使用<em>VMware Workstation Pro</em>虚拟机环境完成<a target="_blank" rel="noopener" href="https://loquattree.xyz/2025/05/05/php02/">课内大作业</a>的过程中需要导入一个老师提供的.ova文件，但是在导入时出现了以下报错：</p>
 <div class="center">
-<style>.rkergfkeghrb{}</style><img src="/2025/05/05/md03/md03_pic01.png" srcset="/img/loading.gif" lazyload class="rkergfkeghrb">
+<style>.yxidlserfihd{}</style><img src="/2025/05/05/md03/md03_pic01.png" srcset="/img/loading.gif" lazyload class="yxidlserfihd">
 </div>
 <p>以下是解决方案：</p>
 <h3 id="一、解压-ova文件">一、解压.ova文件</h3>
@@ -309,12 +309,12 @@
 </ul>
 <p>但是常见的解压缩工具都无法直接解压.ova文件，因此需要先手动将其后缀改为.zip格式再解压缩即可。解压结果如下图所示：</p>
 <div class="center">
-<style>.yjhjpxrynhpj{}</style><img src="/2025/05/05/md03/md03_pic02.png" srcset="/img/loading.gif" lazyload class="yjhjpxrynhpj">
+<style>.uncnwoiurvcx{}</style><img src="/2025/05/05/md03/md03_pic02.png" srcset="/img/loading.gif" lazyload class="uncnwoiurvcx">
 </div>
 <h3 id="二、配置-ovf文件">二、配置.ovf文件</h3>
 <p>笔者搜索到的绝大部分解决方案都是将.ovf文件中的虚拟机软件的版本号修改为当前自己使用到的版本号即可，如下图所示：</p>
 <div class="center">
-<style>.ybbhbcdlnyyf{}</style><img src="/2025/05/05/md03/md03_pic03.png" srcset="/img/loading.gif" lazyload class="ybbhbcdlnyyf">
+<style>.hwihucggvrmh{}</style><img src="/2025/05/05/md03/md03_pic03.png" srcset="/img/loading.gif" lazyload class="hwihucggvrmh">
 </div>
 <p>可以一试，可能对低版本的VMware Workstation Pro是起效的，但是笔者使用的版本在修改后依旧会报错，因此需要更彻底的更改：</p>
 <h4 id="1-删除“-Disk-ovf-capacity-“18103500800”-ovf-diskId-“vmdisk2”-ovf-fileRef-“file1”-ovf-format-“http-www-vmware-com-interfaces-specifications-vmdk-html-streamOptimized”-vbox-uuid-“bf38c60b-49bd-48c9-9c03-55acfcec0141”-”">1. 删除“&lt;Disk ovf:capacity=“18103500800” ovf:diskId=“vmdisk2” ovf:fileRef=“file1” ovf:format=“<a target="_blank" rel="noopener" href="http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized">http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized</a>” vbox:uuid=“bf38c60b-49bd-48c9-9c03-55acfcec0141”/&gt;”</h4>
@@ -330,12 +330,12 @@
 <h3 id="三、配置-mf文件">三、配置.mf文件</h3>
 <p>随便找一个文件Hash值的在线计算网站，计算出更改后的.ovf文件的SHA1值，并对应地将.mf文件中的值修改即可，不然无法导入.ovf文件：</p>
 <div class="center">
-<style>.wqaqubwdhnwd{}</style><img src="/2025/05/05/md03/md03_pic04.png" srcset="/img/loading.gif" lazyload class="wqaqubwdhnwd">
+<style>.fyvguvhfrcvy{}</style><img src="/2025/05/05/md03/md03_pic04.png" srcset="/img/loading.gif" lazyload class="fyvguvhfrcvy">
 </div>
 <h3 id="四、导入-ovf文件">四、导入.ovf文件</h3>
 <p>全部完成之后使用VMware Workstation Pro打开修改过后的.ovf文件即可：</p>
 <div class="center">
-<style>.ybtpqxuuftfi{}</style><img src="/2025/05/05/md03/md03_pic05.png" srcset="/img/loading.gif" lazyload class="ybtpqxuuftfi">
+<style>.lyptwjqglmqh{}</style><img src="/2025/05/05/md03/md03_pic05.png" srcset="/img/loading.gif" lazyload class="lyptwjqglmqh">
 </div>
 <h2 id="Bingo！">Bingo！</h2>
 
