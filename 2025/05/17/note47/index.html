@@ -1,0 +1,778 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="谢斐">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="软考真题做题笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件设计师 知识点拾遗 操作系统知识">
+<meta property="og:url" content="http://example.com/2025/05/17/note47/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="软考真题做题笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic06.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic08.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic11.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic12.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note47/note47_pic13.png">
+<meta property="article:published_time" content="2025-05-17T09:44:41.000Z">
+<meta property="article:modified_time" content="2025-05-17T10:37:59.177Z">
+<meta property="article:author" content="谢斐">
+<meta property="article:tag" content="软考">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/17/note47/note47_pic02.png">
+  
+  
+  
+  <title>软件设计师 知识点拾遗 操作系统知识 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>My Loquat Tree</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="软件设计师 知识点拾遗 操作系统知识"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-17 17:44" pubdate>
+          2025年5月17日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">软件设计师 知识点拾遗 操作系统知识</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>软件设计师 知识点拾遗 操作系统知识</h1>
+<ol>
+<li>2017年下半年第34题</li>
+</ol>
+<div class="center">
+<style>.wdksqatnuagk{}</style><img src="/2025/05/17/note47/note47_pic02.png" srcset="/img/loading.gif" lazyload class="wdksqatnuagk">
+</div>
+<p>  再来复习一下各种耦合的概念：</p>
+<ul>
+<li>无直接耦合：两个模块之间没有直接的关系。</li>
+<li>数据耦合：两个模块之间存在简单的值传递。</li>
+<li>标记耦合：两个模块之间存在<strong>数据结构</strong>的传递。</li>
+<li>控制耦合：一个模块可以调用另一个模块中的某一个功能。</li>
+<li>外部耦合：模块间通过软件之外的环境连接。</li>
+<li>公共耦合：多个模块共享全局数据。</li>
+<li>内容耦合：一个模块直接使用另一个模块的内部数据，或者一个模块通过非正常入口转入另一个模块内部。</li>
+</ul>
+<hr>
+<ol start="2">
+<li>2017年上半年第17题和18题</li>
+</ol>
+<div class="center">
+<style>.ojskplntluvy{}</style><img src="/2025/05/17/note47/note47_pic03.png" srcset="/img/loading.gif" lazyload class="ojskplntluvy">
+</div>
+<p>  这道题目的要点在于第(18)题，要注意的是<strong>第几天</strong>开始。也就是说事件A的开始时间是第1天而非第0天。平常只注意项目完成时间的话可能会在这里犯错。</p>
+<hr>
+<ol start="3">
+<li>2017年上半年第29题</li>
+</ol>
+<div class="center">
+<style>.taslqpcfnulv{}</style><img src="/2025/05/17/note47/note47_pic04.png" srcset="/img/loading.gif" lazyload class="taslqpcfnulv">
+</div>
+<p>  螺旋模型是一种演化软件开发过程模型，它兼顾了快速原型的迭代特征以及瀑布模型的系统化与严格监控。螺旋模型最大的特点在于引入了其他模型不具备的风险分析，使软件在无法排除重大风险时有机会停止，以减小损失。同时，在每个迭代阶段构建原型是螺旋模型用以减小风险的途径。<strong>螺旋模型更适合大型、昂贵、系统级的软件应用</strong>。</p>
+<hr>
+<ol start="4">
+<li>2016年下半年第29题和30题</li>
+</ol>
+<div class="center">
+<style>.knpsbqrbshdb{}</style><img src="/2025/05/17/note47/note47_pic06.png" srcset="/img/loading.gif" lazyload class="knpsbqrbshdb">
+</div>
+<ul>
+<li>瀑布模型：瀑布模型是将开发阶段描述为从一个阶段瀑布般转换到另一个阶段的过程。<strong>作为一种阶段顺序固定​​且​​强调文档驱动的模型，瀑布模型最大的问题就是难以适应动态变化的需求</strong>。</li>
+<li>原型模型：在原型模型中，开发人员会快速地构造出整个系统或者系统的一部分以理解或澄清问题。</li>
+<li>增量模型：增量模型是把软件产品作为一系列的增量构件来设计、编码、集成和测试，每个构件由相互作用的模块组成。</li>
+<li>喷泉模型：喷泉模型开发过程中以用户需求为动力，以对象为驱动，适合于面向对象的开发方法。</li>
+</ul>
+<hr>
+<ol start="5">
+<li>2016年下半年第36题</li>
+</ol>
+<div class="center">
+<style>.frollbzjdccu{}</style><img src="/2025/05/17/note47/note47_pic08.png" srcset="/img/loading.gif" lazyload class="frollbzjdccu">
+</div>
+<p>  这次来复习内聚的类型：</p>
+<ul>
+<li>偶然内聚：一个模块内的各个处理元素之间没有任何联系。</li>
+<li>逻辑内聚：一个模块内执行若干个逻辑上相似的功能。</li>
+<li>时间内聚：把需要同时执行的动作组合在一起形成的模块。</li>
+<li>过程内聚：一个模块可以完成多个任务，且必须按照指定的过程执行。</li>
+<li>通信内聚：<strong>模块内的所有处理元素都在同一个数据结构上操作</strong>。</li>
+<li>顺序内聚：一个模块内的各个处理元素都密切相关于同一个过程且必须顺序执行，上一个元素的输出就是下一个元素的输入。</li>
+<li>功能内聚：模块内的所有元素共同作用于完成同一个功能，缺一不可。</li>
+</ul>
+<hr>
+<ol start="6">
+<li>2015年下半年第34题</li>
+</ol>
+<div class="center">
+<style>.siuyeqhmvlvh{}</style><img src="/2025/05/17/note47/note47_pic11.png" srcset="/img/loading.gif" lazyload class="siuyeqhmvlvh">
+</div>
+<p>  逆向工程这个概念比较好理解，就是对已有的代码、结构或者设计进行分析，恢复其逻辑或者文档。但是为什么是软件维护工具而不是软件开发工具呢？这是因为对工程进行逆向并不是从零开始的，而开发一定是从零开始的。</p>
+<hr>
+<ol start="7">
+<li>2015年上半年第16题</li>
+</ol>
+<div class="center">
+<style>.kvmkkxpmqsmx{}</style><img src="/2025/05/17/note47/note47_pic12.png" srcset="/img/loading.gif" lazyload class="kvmkkxpmqsmx">
+</div>
+<ul>
+<li>概要：<strong>题目描述的&quot;分解为子系统&quot;、&quot;建立体系结构&quot;正是概要设计的核心任务</strong>。</li>
+<li>详细：详细设计是在概要设计之后，主要进行模块内部的具体实现设计。</li>
+<li>结构化：这是设计方法，不是设计阶段。</li>
+<li>面向对象：这是编程范式，不是设计阶段。</li>
+</ul>
+<hr>
+<ol start="8">
+<li>2015年上半年第19题</li>
+</ol>
+<div class="center">
+<style>.focykwmuzlte{}</style><img src="/2025/05/17/note47/note47_pic13.png" srcset="/img/loading.gif" lazyload class="focykwmuzlte">
+</div>
+<ul>
+<li>风险影响：仅反映风险发生后可能造成的损失程度，但未考虑发生概率。</li>
+<li>风险概率: 仅反映风险发生的可能性，但未考虑实际影响程度。</li>
+<li>风险暴露：综合了风险影响和风险概率（通常计算公式：风险暴露=风险影响×风险概率），<strong>是设定优先级的科学依据</strong>。</li>
+<li>风险控制：这是风险应对措施，而非优先级评估依据。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/" class="category-chain-item">知识点拾遗</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AF%E8%80%83/" class="print-no-link">#软考</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>软件设计师 知识点拾遗 操作系统知识</div>
+      <div>http://example.com/2025/05/17/note47/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>谢斐</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月17日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/17/note46/" title="软件设计师 知识点拾遗 操作系统知识">
+                        <span class="hidden-mobile">软件设计师 知识点拾遗 操作系统知识</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
