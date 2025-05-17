@@ -19,24 +19,27 @@
   <meta name="author" content="谢斐">
   <meta name="keywords" content="">
   
-    <meta name="description" content="该问题一般出现为虚拟机扩容时">
+    <meta name="description" content="软考真题做题笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案">
-<meta property="og:url" content="http://example.com/2025/05/06/md06/index.html">
+<meta property="og:title" content="软件设计师 知识点拾遗 操作系统知识">
+<meta property="og:url" content="http://example.com/2025/05/17/note46/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="该问题一般出现为虚拟机扩容时">
+<meta property="og:description" content="软考真题做题笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/05/06/md06/md06.png">
-<meta property="article:published_time" content="2025-05-06T14:26:41.000Z">
-<meta property="article:modified_time" content="2025-05-06T14:31:06.046Z">
+<meta property="og:image" content="http://example.com/2025/05/17/note46/note46_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note46/note46_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note46/note46_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/17/note46/note46_pic07.png">
+<meta property="article:published_time" content="2025-05-17T07:06:32.000Z">
+<meta property="article:modified_time" content="2025-05-17T08:04:04.974Z">
 <meta property="article:author" content="谢斐">
-<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="软考">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/05/06/md06/md06.png">
+<meta name="twitter:image" content="http://example.com/2025/05/17/note46/note46_pic02.png">
   
   
   
-  <title>VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案 - Hexo</title>
+  <title>软件设计师 知识点拾遗 操作系统知识 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +208,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案"></span>
+            <span id="subtitle" data-typed-text="软件设计师 知识点拾遗 操作系统知识"></span>
           
         </div>
 
@@ -216,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-06 22:26" pubdate>
-          2025年5月6日 晚上
+        <time datetime="2025-05-17 15:06" pubdate>
+          2025年5月17日 下午
         </time>
       </span>
     
@@ -228,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          96 字
+          410 字
         
       </span>
     
@@ -239,7 +242,7 @@
         
         
         
-          1 分钟
+          4 分钟
         
       </span>
     
@@ -276,7 +279,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案</h1>
+            <h1 id="seo-header">软件设计师 知识点拾遗 操作系统知识</h1>
             
             
               <div class="markdown-body">
@@ -290,14 +293,38 @@
   margin-right: auto;
 }
 </style>
-<h1>VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案</h1>
-<p>在Windows命令提示符中依次执行以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd VMWare安装路径<br><br>vmware-vdiskmanager -R &quot;虚拟磁盘路径&quot;<br></code></pre></td></tr></table></figure>
-<p>以我的安装路径为例：</p>
+<h1>软件设计师 知识点拾遗 操作系统知识</h1>
+<ol>
+<li>2017年上半年第24题</li>
+</ol>
 <div class="center">
-<style>.ybbvxitdgbgq{}</style><img src="/2025/05/06/md06/md06.png" srcset="/img/loading.gif" lazyload class="ybbvxitdgbgq">
+<style>.dchfyibzqomv{}</style><img src="/2025/05/17/note46/note46_pic02.png" srcset="/img/loading.gif" lazyload class="dchfyibzqomv">
 </div>
-<p>当出现提示<code>The virtual disk, 'E:\VIT1204 Ass1 Lab3\Ass1 Lab3.vmdk', was corrupted and has been successfully repaired.</code>即为修复成功。</p>
+<p>  在有限的资源下，要保证系统不发生死锁，可以按照这种逻辑来分析：首先给每个进程分配所需资源数减一，然后再给系统保留一个资源，这种情况下是不可能发生死锁的。而对于本题来说，<strong>就是 3 × (5 - 1) + 1 = 13个资源</strong>。</p>
+<hr>
+<ol start="2">
+<li>2016年上半年第23题</li>
+</ol>
+<div class="center">
+<style>.woslqfocmtwy{}</style><img src="/2025/05/17/note46/note46_pic03.png" srcset="/img/loading.gif" lazyload class="woslqfocmtwy">
+</div>
+<p>  每当用户按下或者释放某一个键的时候，<strong>会产生一个中断</strong>，该中断激活键盘驱动程序KEYBOARD.DRV来对键盘中断进行处理。</p>
+<hr>
+<ol start="3">
+<li>2016年上半年第25题</li>
+</ol>
+<div class="center">
+<style>.dahvthoemhvb{}</style><img src="/2025/05/17/note46/note46_pic04.png" srcset="/img/loading.gif" lazyload class="dahvthoemhvb">
+</div>
+<p>  旋转延迟时间​​是指磁盘的盘片旋转到目标扇区所需的时间。当磁头移动到正确的磁道（寻道完成）后，需要等待目标扇区旋转到磁头下方才能开始读写数据，这段等待时间就是旋转延迟时间。</p>
+<hr>
+<ol start="3">
+<li>2014年下半年第28题</li>
+</ol>
+<div class="center">
+<style>.dqyamjfanamd{}</style><img src="/2025/05/17/note46/note46_pic07.png" srcset="/img/loading.gif" lazyload class="dqyamjfanamd">
+</div>
+<p>进程资源图能否化简取决于是否存在至少一个非阻塞进程，通过逐步模拟该进程获取资源、执行完成并释放资源的过程，若能最终移除所有进程，则图可化简；否则存在死锁。化简顺序应优先选择非阻塞进程或能解除最多阻塞的进程，必要时通过拓扑排序打破循环等待链。例如，若所有进程相互阻塞且无法释放资源，则系统处于死锁状态。</p>
 
                 
               </div>
@@ -316,8 +343,22 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="category-chain-item">疑难杂症解决方案</a>
+  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/" class="category-chain-item">知识点拾遗</a>
+  
+  
+
+  
+
   
 
       </span>
@@ -331,7 +372,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
+        <a href="/tags/%E8%BD%AF%E8%80%83/" class="print-no-link">#软考</a>
       
     </div>
   
@@ -343,8 +384,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>VMWare扩容虚拟机时“指定的虚拟磁盘需要进行修复”报错的解决方案</div>
-      <div>http://example.com/2025/05/06/md06/</div>
+      <div>软件设计师 知识点拾遗 操作系统知识</div>
+      <div>http://example.com/2025/05/17/note46/</div>
     </div>
     <div class="license-meta">
       
@@ -356,7 +397,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月6日</div>
+          <div>2025年5月17日</div>
         </div>
       
       
@@ -388,18 +429,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/05/07/md07/" title="访问Apache服务器时出现“403 Forbidden”的解决方案">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">访问Apache服务器时出现“403 Forbidden”的解决方案</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/05/06/md05/" title="CentOS 7 dnf命令“conflicting requests”报错的解决方案">
-                        <span class="hidden-mobile">CentOS 7 dnf命令“conflicting requests”报错的解决方案</span>
+                      <a href="/2025/05/15/note45/" title="软件设计师 知识点拾遗 2022年上半年部分并2021年下半年">
+                        <span class="hidden-mobile">软件设计师 知识点拾遗 2022年上半年部分并2021年下半年</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
