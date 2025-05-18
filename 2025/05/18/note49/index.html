@@ -1,0 +1,807 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="谢斐">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="软考真题做题笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件设计师 知识点拾遗 2021年上半年">
+<meta property="og:url" content="http://example.com/2025/05/18/note49/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="软考真题做题笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic06.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic08.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic09.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic10.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic11.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic12.png">
+<meta property="og:image" content="http://example.com/2025/05/18/note49/note49_pic14.png">
+<meta property="article:published_time" content="2025-05-18T07:54:08.000Z">
+<meta property="article:modified_time" content="2025-05-18T09:04:46.854Z">
+<meta property="article:author" content="谢斐">
+<meta property="article:tag" content="软考">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/18/note49/note49_pic01.png">
+  
+  
+  
+  <title>软件设计师 知识点拾遗 2021年上半年 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>My Loquat Tree</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="软件设计师 知识点拾遗 2021年上半年"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-18 15:54" pubdate>
+          2025年5月18日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">软件设计师 知识点拾遗 2021年上半年</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>软件设计师 知识点拾遗 2021年上半年</h1>
+<p>瓶颈期，依旧是20个</p>
+<h2 id="上午题">上午题</h2>
+<div class="center">
+<style>.xipwkekysdib{}</style><img src="/2025/05/18/note49/note49_pic01.png" srcset="/img/loading.gif" lazyload class="xipwkekysdib">
+<div>
+<p>  DMA方式传送数据时，数据直接在I/O设备与内存之间传输，无需CPU干预。<strong>每传送一个数据，DMA控制器需要占用一个​​存储周期来完成对内存的读写操作</strong>。其他选项与CPU执行指令或总线控制相关，而DMA的核心是绕过CPU直接访问内存，因此存储周期是最准确的描述。</p>
+<hr>
+<div class="center">
+<style>.xgkgdgwuiktn{}</style><img src="/2025/05/18/note49/note49_pic03.png" srcset="/img/loading.gif" lazyload class="xgkgdgwuiktn">
+<div>
+<p>  SQL注入攻击的核心是通过构造恶意的SQL输入，绕过应用程序的安全检查，直接操纵数据库，<strong>其​​首要目标​​是​​获取数据库的操作权限​</strong>​（如执行查询、删除数据等）。</p>
+<hr>
+<div class="center">
+<style>.jbjqbqodhsqc{}</style><img src="/2025/05/18/note49/note49_pic04.png" srcset="/img/loading.gif" lazyload class="jbjqbqodhsqc">
+<div>
+<p>  <strong>IPSec（Internet Protocol Security）是专门为​​IP数据报文​​提供加密、认证等安全服务的协议组</strong>，工作在网络层，可直接保护IP数据包的完整性和机密性。而HTTPS是加密HTTP流量的协议、TLS是加密TCP/UDP的协议。</p>
+<hr>
+<div class="center">
+<style>.vwryhwiihkeg{}</style><img src="/2025/05/18/note49/note49_pic06.png" srcset="/img/loading.gif" lazyload class="vwryhwiihkeg">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>目标</th>
+<th>关键活动/输出物</th>
+<th>相关工具/技术示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. 需求分析</strong></td>
+<td>明确用户需求和系统功能</td>
+<td>- 用户需求收集（访谈/问卷）<br>- 定义功能/非功能需求<br>- 输出《需求规格说明书》</td>
+<td>JIRA, Confluence, 用户故事地图</td>
+</tr>
+<tr>
+<td><strong>2. 系统设计</strong></td>
+<td>规划系统架构和实现方案</td>
+<td><strong>概要设计</strong>：<br>- 模块划分<br>- 技术栈选型<br><strong>详细设计</strong>：<br>- 数据结构/算法<br>- 数据库设计（ER图）</td>
+<td>UML工具（Lucidchart）, Visio, ERMaster</td>
+</tr>
+<tr>
+<td><strong>3. 编码实现</strong></td>
+<td>将设计转化为可执行代码</td>
+<td>- 编写代码<br>- 版本控制<br>- 单元测试</td>
+<td>Git, VS Code, IntelliJ, JUnit/pytest</td>
+</tr>
+<tr>
+<td><strong>4. 测试</strong></td>
+<td>验证系统功能和质量</td>
+<td>- 功能测试（黑盒）<br>- 性能测试<br>- 安全测试<br>- 用户验收测试（UAT）</td>
+<td>Selenium, JMeter, OWASP ZAP, Postman</td>
+</tr>
+<tr>
+<td><strong>5. 部署上线</strong></td>
+<td>发布系统到生产环境</td>
+<td>- 环境配置<br>- 自动化部署<br>- 数据迁移</td>
+<td>Docker, Kubernetes, Jenkins, Ansible</td>
+</tr>
+<tr>
+<td><strong>6. 运维与维护</strong></td>
+<td>保障系统稳定运行并持续优化</td>
+<td>- 性能监控<br>- Bug修复<br>- 功能迭代</td>
+<td>Prometheus, ELK, Grafana, Sentry</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p>  其中，<strong>模块之间的接口设计属于概要设计的主要内容</strong>。</p>
+<hr>
+<div class="center">
+<style>.dlnawujjytdx{}</style><img src="/2025/05/18/note49/note49_pic08.png" srcset="/img/loading.gif" lazyload class="dlnawujjytdx">
+<div>
+<p>  <strong>先前的笔记中关于这一项的内容应该写错了</strong>，但是我没找到具体是在哪篇笔记里，在此特别订正一下。正确的面向对象分析的五大活动顺序应该为：</p>
+<ol>
+<li>认定对象</li>
+<li>组织对象</li>
+<li>描述对象间的相互作用</li>
+<li>确定对象的操作</li>
+<li>定义对象的内部信息</li>
+</ol>
+<hr>
+<div class="center">
+<style>.uyjwhxfiatec{}</style><img src="/2025/05/18/note49/note49_pic09.png" srcset="/img/loading.gif" lazyload class="uyjwhxfiatec">
+<div>
+<ul>
+<li>单一责任原则：就一个类而言，应该仅有一个引起它变化的原因。即，当需要修改某个类的时候原因有且只有一个，让一个类只做一种类型责任。</li>
+<li>开放-封闭原则：软件实体应该是可以扩展的，即开放的；但是是不可修改的，即封闭的。</li>
+<li>里氏替换原则：子类型必须能够替换掉他们的基类型。即，在任何父类可以出现的地方，都可以用子类的实例来赋值给父类型的引用。</li>
+<li>依赖倒置原则：抽象不应该依赖于细节，细节应该依赖于抽象。即，高层模块不应该依赖于底层模块，二者都应该依赖于抽象。</li>
+<li>接口分离原则：<strong>不应该强迫客户依赖于它们不用的方法。接口属于客户，不属于它所在的类层次。即，依赖于抽象，不依赖于具体，同时在抽象级别不应该有对细节的依赖</strong>。这样做的好处就在于可以最大限度地应对可能的变化。</li>
+</ul>
+<hr>
+<div class="center">
+<style>.lhgtywwphuuq{}</style><img src="/2025/05/18/note49/note49_pic10.png" srcset="/img/loading.gif" lazyload class="lhgtywwphuuq">
+<div>
+<ul>
+<li>41题：UML状态图用于对​<strong>​反应型对象</strong>​​的动态行为建模。</li>
+<li>43题：这里混淆了状态和状态转换的概念，前者是指一个对象的稳定条件，是对象在某一时刻的静态属性。而<strong>状态转换才是由事件触发的</strong>，并导致对象从当前状态切换到新状态。</li>
+</ul>
+<hr>
+<div class="center">
+<style>.rtmtpxvjmnpi{}</style><img src="/2025/05/18/note49/note49_pic11.png" srcset="/img/loading.gif" lazyload class="rtmtpxvjmnpi">
+<div>
+<ul>
+<li>44题：
+<ul>
+<li>命令模式：<strong>命令模式将请求封装为独立的对象</strong>（命令），允许用户参数化客户端（调用者）与接收者（执行者），从而支持请求的排队、撤销、日志记录等操作。</li>
+<li>中介者模式：中介者模式的核心思想是“使用一个中介者来封装一系列对象之间的交互，使各个对象不需要显式地相互引用”，即通过引入中介对象来集中管理多个对象之间的交互，从而减少对象间的直接耦合，使系统更易于维护和扩展。</li>
+</ul>
+</li>
+<li>45题：在UML类图当中，一个圆圈即为接口的意思，在上图中只在<strong>Operation</strong>中出现了。</li>
+</ul>
+<hr>
+<div class="center">
+<style>.vikidyxfuvlt{}</style><img src="/2025/05/18/note49/note49_pic12.png" srcset="/img/loading.gif" lazyload class="vikidyxfuvlt">
+<div>
+<p>  使用线性探测法先求出关键字所在的位置，使用关键字key%m得出所存储的位置，如果遇到冲突则(key+di)%m的计算方式得到第二次关键字存储的位置，<strong>所以有可能第一个不是e的同义词</strong>。</p>
+<hr>
+<div class="center">
+<style>.jbyjxtjguqkz{}</style><img src="/2025/05/18/note49/note49_pic14.png" srcset="/img/loading.gif" lazyload class="jbyjxtjguqkz">
+<div>
+<p>  <strong>使用SMTP协议完成从客户端向服务器发送文件</strong>，使用POP3协议实现从客户端接收服务器的文件。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/" class="category-chain-item">知识点拾遗</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AF%E8%80%83/" class="print-no-link">#软考</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>软件设计师 知识点拾遗 2021年上半年</div>
+      <div>http://example.com/2025/05/18/note49/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>谢斐</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月18日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/18/note48/" title="软件设计师 知识点拾遗 结构化开发方法">
+                        <span class="hidden-mobile">软件设计师 知识点拾遗 结构化开发方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
