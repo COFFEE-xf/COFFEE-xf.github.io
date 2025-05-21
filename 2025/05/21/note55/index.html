@@ -1,0 +1,893 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="谢斐">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="软考真题做题笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件设计师 知识点拾遗 网络与信息安全基础知识">
+<meta property="og:url" content="http://example.com/2025/05/21/note55/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="软考真题做题笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic04.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic01.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic02.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic10.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic03.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic05.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic06.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic07.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic08.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic12.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic13.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic14.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic16.png">
+<meta property="og:image" content="http://example.com/2025/05/21/note55/note55_pic17.png">
+<meta property="article:published_time" content="2025-05-21T07:03:54.000Z">
+<meta property="article:modified_time" content="2025-05-21T08:30:14.481Z">
+<meta property="article:author" content="谢斐">
+<meta property="article:tag" content="软考">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/05/21/note55/note55_pic04.png">
+  
+  
+  
+  <title>软件设计师 知识点拾遗 网络与信息安全基础知识 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>My Loquat Tree</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="软件设计师 知识点拾遗 网络与信息安全基础知识"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-21 15:03" pubdate>
+          2025年5月21日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">软件设计师 知识点拾遗 网络与信息安全基础知识</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <style>
+.center 
+{
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<h1>软件设计师 知识点拾遗 网络与信息安全基础知识</h1>
+<div class="center">
+<style>.mgplbwrwbcjp{}</style><img src="/2025/05/21/note55/note55_pic04.png" srcset="/img/loading.gif" lazyload class="mgplbwrwbcjp">
+</div>
+<br>
+<hr>
+<hr>
+<ol>
+<li>2017年上半年第13题</li>
+</ol>
+<div class="center">
+<style>.yrjqwdaflovt{}</style><img src="/2025/05/21/note55/note55_pic01.png" srcset="/img/loading.gif" lazyload class="yrjqwdaflovt">
+</div>
+<p>  取样指每隔一定时间间隔，取模拟信号的当前值作为样本，该样本代表了模信号在某一时刻的瞬间值。经过一系列的取样，取得连续的样本可以用来代替模拟信号在某一区间随时间变化的值。那么究竟以什么样频率取样，就可以从取样脉冲信号中无失真地恢复出原来的信号?尼奎斯特取样定理认为：<strong>如果取样速率大于模拟信号最高频率的2倍，则可以用得到的样本中恢复原来的模拟信号</strong>。</p>
+<hr>
+<ol start="2">
+<li>2017年上半年第14题 &amp;&amp; 2016年上半年第14题</li>
+</ol>
+<div class="center">
+<style>.btzyxmtwntmg{}</style><img src="/2025/05/21/note55/note55_pic02.png" srcset="/img/loading.gif" lazyload class="btzyxmtwntmg">
+<style>.hkfzsqfwbrjl{}</style><img src="/2025/05/21/note55/note55_pic10.png" srcset="/img/loading.gif" lazyload class="hkfzsqfwbrjl">
+</div>
+<p>  像素总数 = （物理尺寸 × 分辨率）的乘积。例如，3英寸×4英寸的图片以300DPI扫描时，像素数=3×300（宽）×4×300（高）=900×1200像素。<strong>简言之，​​每英寸分辨率×对应方向的尺寸​​，分别计算宽高即可得到像素尺寸</strong>。<strong>此外，字节的多少大概是像素的八分之一</strong>。</p>
+<hr>
+<ol start="3">
+<li>2017年上半年第66题</li>
+</ol>
+<div class="center">
+<style>.oducepcgxoqe{}</style><img src="/2025/05/21/note55/note55_pic03.png" srcset="/img/loading.gif" lazyload class="oducepcgxoqe">
+</div>
+<p>  域名查询记录顺序为：</p>
+<ul>
+<li><strong>本地DNS缓存</strong></li>
+<li>HOSTS表（位于PC中的一个纯文本映射文件）</li>
+<li>本地DNS服务器</li>
+<li>根域名服务器</li>
+<li>顶级域名服务器</li>
+<li>权限域名服务器</li>
+</ul>
+<hr>
+<ol start="4">
+<li>2017年上半年第70题</li>
+</ol>
+<div class="center">
+<style>.gmworoewlobd{}</style><img src="/2025/05/21/note55/note55_pic05.png" srcset="/img/loading.gif" lazyload class="gmworoewlobd">
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>路由类型</th>
+<th>动态更新性</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静态路由</td>
+<td>静态配置</td>
+<td>不更新</td>
+<td>管理员手动配置，不随网络变化调整</td>
+</tr>
+<tr>
+<td>洪泛式</td>
+<td>特殊策略</td>
+<td>不更新</td>
+<td>向所有路径广播，无智能路由选择</td>
+</tr>
+<tr>
+<td>随机路由</td>
+<td>随机选择</td>
+<td>不更新</td>
+<td>随机选择路径，不考虑网络状态</td>
+</tr>
+<tr>
+<td>自适应路由</td>
+<td>动态路由</td>
+<td><strong>持续更新</strong></td>
+<td>实时监测网络状态（如延迟、拥塞）并动态调整，典型协议：OSPF、RIP、BGP</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<ol start="5">
+<li>2016年下半年第9题</li>
+</ol>
+<div class="center">
+<style>.jwipygjmncue{}</style><img src="/2025/05/21/note55/note55_pic06.png" srcset="/img/loading.gif" lazyload class="jwipygjmncue">
+</div>
+<p>  这里主要可以来区分一下网络安全和系统安全：</p>
+<ul>
+<li>网络安全：保护网络基础设施和数据传输过程的安全，防止网络层面的攻击或滥用。入侵检测和流量控制就是网络安全方面的内容。</li>
+<li>系统安全：关注计算机系统内部的安全防护，确保操作系统、应用程序和数据免受内部或外部的破坏、篡改或未授权访问。<strong>漏洞发现与补丁管理就属于系统安全的核心措施</strong>，通过识别系统漏洞并及时修复，直接提升系统自身的安全性。</li>
+</ul>
+<hr>
+<ol start="6">
+<li>2016年下半年第66题和67题</li>
+</ol>
+<div class="center">
+<style>.glytmsatmfyf{}</style><img src="/2025/05/21/note55/note55_pic07.png" srcset="/img/loading.gif" lazyload class="glytmsatmfyf">
+</div>
+<p>  ARP和ICMP是网络层协议，X.25是数据链路层协议，<strong>只有SNMP是应用层协议</strong>。<strong>SNMP协议的报文是封装在UDP协议中传送</strong>。</p>
+<hr>
+<ol start="7">
+<li>2016年下半年第69题</li>
+</ol>
+<div class="center">
+<style>.cgtwrqlfkpmg{}</style><img src="/2025/05/21/note55/note55_pic08.png" srcset="/img/loading.gif" lazyload class="cgtwrqlfkpmg">
+</div>
+<p>  对于多种不同的路由协议到一个目的地的路由信息，路由器首先<strong>根据管理距离选择相信哪一个协议</strong>。</p>
+<hr>
+<ol start="8">
+<li>2015年下半年第7题</li>
+</ol>
+<div class="center">
+<style>.gasewregymfz{}</style><img src="/2025/05/21/note55/note55_pic12.png" srcset="/img/loading.gif" lazyload class="gasewregymfz">
+<table>
+<thead>
+<tr>
+<th><strong>对比维度</strong></th>
+<th><strong>主动攻击（Active Attack）</strong></th>
+<th><strong>被动攻击（Passive Attack）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>定义</strong></td>
+<td>直接干预通信或系统，篡改/伪造/破坏数据</td>
+<td>隐蔽监听通信，窃取数据但不修改</td>
+</tr>
+<tr>
+<td><strong>攻击目标</strong></td>
+<td>数据完整性、系统可用性、身份真实性</td>
+<td>数据机密性</td>
+</tr>
+<tr>
+<td><strong>典型手段</strong></td>
+<td>- 中间人攻击<br>- DoS/DDoS<br>- SQL注入</td>
+<td>- 网络嗅探<br>- <strong>流量分析</strong><br>- 窃听</td>
+</tr>
+<tr>
+<td><strong>可检测性</strong></td>
+<td>较易被发现（产生异常流量/行为）</td>
+<td>极难检测（无直接痕迹）</td>
+</tr>
+<tr>
+<td><strong>防御措施</strong></td>
+<td>- 入侵检测系统（IDS）<br>- 数字签名<br>- WAF</td>
+<td>- 端到端加密<br>- VPN<br>- 流量混淆</td>
+</tr>
+<tr>
+<td><strong>攻击影响</strong></td>
+<td>直接造成数据损坏/服务中断</td>
+<td>导致信息泄露，无直接破坏</td>
+</tr>
+<tr>
+<td><strong>示例场景</strong></td>
+<td>篡改网页内容、伪造银行交易</td>
+<td>窃取未加密的聊天记录</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<ol start="9">
+<li>2015年下半年第13题</li>
+</ol>
+<div class="center">
+<style>.grxhlrxyrpuq{}</style><img src="/2025/05/21/note55/note55_pic13.png" srcset="/img/loading.gif" lazyload class="grxhlrxyrpuq">
+</div>
+<p>  图像颜色数n与颜色深度b的关系为n=<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">2^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span></span></span></span></span></span></span></span>，本题中的颜色深度为 8，故<strong>可表示的颜色数为2的8次方即256种</strong>。</p>
+<hr>
+<ol start="10">
+<li>2015年下半年第69题</li>
+</ol>
+<div class="center">
+<style>.sukvexwccoer{}</style><img src="/2025/05/21/note55/note55_pic14.png" srcset="/img/loading.gif" lazyload class="sukvexwccoer">
+</div>
+<ul>
+<li>远程网络路由：通常使用标准子网掩码（如255.255.255.0），覆盖整个远程网络，非单个主机。</li>
+<li>静态路由：由管理员手动配置，掩码取决于目标网络（可能是任意值，不固定为255.255.255.255）。</li>
+<li>默认路由：目标地址为0.0.0.0/0，掩码为0.0.0.0，表示“匹配所有未明确指定的流量”。</li>
+<li>主机路由：针对​​单一主机IP​​的路由，<strong>掩码必须为255.255.255.255</strong>。</li>
+</ul>
+<hr>
+<ol start="11">
+<li>2015年上半年第67题</li>
+</ol>
+<div class="center">
+<style>.qxmxcrhjnthk{}</style><img src="/2025/05/21/note55/note55_pic16.png" srcset="/img/loading.gif" lazyload class="qxmxcrhjnthk">
+</div>
+<p>  VLAN的主要作用是​​逻辑划分广播域​​，将物理网络划分为多个虚拟子网，实现更灵活的网络管理：</p>
+<ul>
+<li>A选项：<strong>VLAN的核心优势就是通过软件配置实现逻辑网段划分，无需更改物理布线</strong>。</li>
+<li>B选项：冲突域由交换机端口决定（每个端口是一个冲突域），与VLAN无关。</li>
+<li>C选项：VLAN不影响冲突域大小，冲突域取决于物理层设备。</li>
+<li>D选项：VLAN是​​增加广播域数量​​（将一个广播域划分为多个），而非减少。</li>
+</ul>
+<hr>
+<ol start="12">
+<li>2014年下半年第7题</li>
+</ol>
+<div class="center">
+<style>.cgqmxvuqgjlx{}</style><img src="/2025/05/21/note55/note55_pic17.png" srcset="/img/loading.gif" lazyload class="cgqmxvuqgjlx">
+</div>
+<p>  DMZ是为了解决安装防火墙后外部网络不能访问内部网络服务器的问题而设立的一个非安全系统与安全系统之间的缓冲区，这个缓冲区位于企业内部网络和外部网络之间的小网络区域内,<strong>在这个小网络区域内可以放置一些必须公开的服务器设施,如企业 Web服务器、FTP 服务器和论坛等</strong>。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%BD%AF%E8%80%83/" class="category-chain-item">软考</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" class="category-chain-item">软件设计师</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/" class="category-chain-item">知识点拾遗</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AF%E8%80%83/" class="print-no-link">#软考</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>软件设计师 知识点拾遗 网络与信息安全基础知识</div>
+      <div>http://example.com/2025/05/21/note55/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>谢斐</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/21/note54/" title="软件设计师 知识点拾遗 数据库技术基础">
+                        <span class="hidden-mobile">软件设计师 知识点拾遗 数据库技术基础</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
