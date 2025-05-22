@@ -293,13 +293,13 @@
 </style>
 <h1>访问Apache服务器时出现“403 Forbidden”的解决方案</h1>
 <div class="center">
-<style>.ixfzyqiwiksl{}</style><img src="/2025/05/07/md07/md07_pic01.png" srcset="/img/loading.gif" lazyload class="ixfzyqiwiksl">
+<style>.iwxeuxeeeafo{}</style><img src="/2025/05/07/md07/md07_pic01.png" srcset="/img/loading.gif" lazyload class="iwxeuxeeeafo">
 </div>
 <p>在配置Apache服务器时，如果修改了默认的根目录就可能出现被拒绝访问的情况，可以执行以下命令解决：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">确保目录可读</span><br>sudo chmod 755 /home/rhauser/public_html<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">确保文件可读</span><br>sudo chmod 644 /home/rhauser/public_html/*<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">确保Apache对父目录也有权限</span><br>sudo chmod +x /home /home/rhauser<br></code></pre></td></tr></table></figure>
 <p>成功解决：</p>
 <div class="center">
-<style>.lxusyajeehmz{}</style><img src="/2025/05/07/md07/md07_pic02.png" srcset="/img/loading.gif" lazyload class="lxusyajeehmz">
+<style>.lwgwfbowjfft{}</style><img src="/2025/05/07/md07/md07_pic02.png" srcset="/img/loading.gif" lazyload class="lwgwfbowjfft">
 </div>
 
                 
