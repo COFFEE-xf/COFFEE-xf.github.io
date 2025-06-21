@@ -26,11 +26,16 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="CNN, RNN, LSTM, GNN等基础概念的学习">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic01.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic02.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic03.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic04.png">
 <meta property="article:published_time" content="2025-06-21T07:47:57.000Z">
-<meta property="article:modified_time" content="2025-06-21T07:52:49.355Z">
+<meta property="article:modified_time" content="2025-06-21T13:58:46.484Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2025/06/21/ml01/ml01_pic01.png">
   
   
   
@@ -226,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          54 字
+          828 字
         
       </span>
     
@@ -237,7 +242,7 @@
         
         
         
-          1 分钟
+          7 分钟
         
       </span>
     
@@ -289,7 +294,32 @@
 }
 </style>
 <h1>机器学习基础</h1>
+<h2 id="参考资料">参考资料</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=OP5HcXJg2Aw">【機器學習2021】卷積神經網路 (Convolutional Neural Networks, CNN)</a></li>
+</ul>
 <h2 id="一、卷积神经网络-Convolutional-Neural-Network-CNN">一、卷积神经网络 (Convolutional Neural Network, CNN)</h2>
+<div>
+<style>.qpgqdfzuhpgo{}</style><img src="/2025/06/21/ml01/ml01_pic01.png" srcset="/img/loading.gif" lazyload class="qpgqdfzuhpgo">
+</div>
+<p>  卷积神经网络可以从两个方面来理解：</p>
+<h3 id="1-Neuron-Version">1. Neuron Version</h3>
+<p>  这种方法是从神经元的角度来解释卷积层的构成。首先，所谓神经元就是神经网路中的基本计算单元，在全连接层（Fully Connected Layer）中，每个神经元与前一层的所有神经元相连，也就是说，每个神经元都要对整张图像进行计算，这显然是大大增加计算量的。<strong>所以我们首先要为每个神经元分配一个合适的感受野</strong>（Receptive Field），每个神经元只负责计算自身感受野范围内的图像，这就增强了模型的效率。但是我们还不得不考虑的事情是，不同目标的相同特征不可能出现在完全相同的地方，也就是说它们很有可能出现在不同神经元的感受野中。但是它们所需的计算参数又显然是相同的，<strong>因此我们可以使这些不同的神经元共享参数</strong>（Parameter Sharing），使得同一特征可能出现在输入的不同位置，但都可以被神经元检测到。那么在这两个优化的基础上，我们就得到了将全连接层优化为了卷积层，神经元也即演变为了卷积核（Filter/Kernel）。</p>
+<div>
+<style>.wihbuiewewkk{}</style><img src="/2025/06/21/ml01/ml01_pic02.png" srcset="/img/loading.gif" lazyload class="wihbuiewewkk">
+</div>
+<h3 id="2-Filter-Version">2. Filter Version</h3>
+<p>  在这个版本的解释中，卷积层是由很多个卷积核（Filter）组成的。每一个卷积核的通道数（Channel）和待处理图像的通道数都是相同的，但是它们又只专注于某一个特定的特征。每一个卷积核通过微小的步长（Stride）移动遍历整个图像，最终就得到了一个特征图（Feature Map），如下图所示。多个卷积核并行处理输入，生成多通道特征图，每个通道对应不同特征的检测结果。随后，这些特征图作为下一层的输入，由新的卷积核进一步提取更高阶的特征。</p>
+<div>
+<style>.rbwsvetesxef{}</style><img src="/2025/06/21/ml01/ml01_pic03.png" srcset="/img/loading.gif" lazyload class="rbwsvetesxef">
+</div>
+<p>  此外，在CNN中还涉及池化（Pooling）和展平（Flatten）等操作。<br>
+  所谓池化，就是一种压缩特征图的空间尺寸、减少参数量，同时增强模型对局部微小变化的鲁棒性的方法。它可以将特征图按某种规则缩小，例如下图表示的就是一种只保留特定区域内最大值的池化方法（Max Pooling）。</p>
+<div>
+<style>.dmqhifulrpju{}</style><img src="/2025/06/21/ml01/ml01_pic04.png" srcset="/img/loading.gif" lazyload class="dmqhifulrpju">
+</div>
+<p>  而展平则是一种将多维数据转换为一维向量的操作，主要用于连接卷积层/池化层与全连接层。这是因为全连接层的神经元需固定长度的输入，而卷积层输出的特征图是3D结构，必须展平后才能匹配。<br>
+  最后，全连接层​通过将展平后的多维特征图与所有神经元进行全局加权连接，实现从局部特征到高层语义的映射，输出判定结果。</p>
 <h2 id="二、循环神经网络-Recurrent-Neural-Network-RNN">二、循环神经网络 (Recurrent Neural Network, RNN)</h2>
 <h2 id="三、长短期记忆网络-Long-Short-Term-Memory-LSTM">三、长短期记忆网络 (Long Short-Term Memory, LSTM)</h2>
 <h2 id="四、图神经网络-Graph-Neural-Network-GNN">四、图神经网络 (Graph Neural Network, GNN)</h2>
