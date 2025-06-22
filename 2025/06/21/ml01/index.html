@@ -30,8 +30,15 @@
 <meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic02.png">
 <meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic03.png">
 <meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic04.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic05.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic06.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic07.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic10.jpg">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic11.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic12.png">
+<meta property="og:image" content="http://example.com/2025/06/21/ml01/ml01_pic13.png">
 <meta property="article:published_time" content="2025-06-21T07:47:57.000Z">
-<meta property="article:modified_time" content="2025-06-21T13:58:46.484Z">
+<meta property="article:modified_time" content="2025-06-22T13:35:08.043Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -231,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          828 字
+          2k 字
         
       </span>
     
@@ -242,7 +249,7 @@
         
         
         
-          7 分钟
+          17 分钟
         
       </span>
     
@@ -297,32 +304,74 @@
 <h2 id="参考资料">参考资料</h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=OP5HcXJg2Aw">【機器學習2021】卷積神經網路 (Convolutional Neural Networks, CNN)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xCGidAeyS4M">ML Lecture 21-1: Recurrent Neural Network (Part I)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=eybCCtNKwzA">[TA 補充課] Graph Neural Network (1/2) (由助教姜成翰同學講授)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=M9ht8vsVEw8&amp;t=295s">[TA 補充課] Graph Neural Network (2/2) (由助教姜成翰同學講授)</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/123857569">LSTM - 长短期记忆递归神经网络</a></li>
 </ul>
 <h2 id="一、卷积神经网络-Convolutional-Neural-Network-CNN">一、卷积神经网络 (Convolutional Neural Network, CNN)</h2>
 <div>
-<style>.qpgqdfzuhpgo{}</style><img src="/2025/06/21/ml01/ml01_pic01.png" srcset="/img/loading.gif" lazyload class="qpgqdfzuhpgo">
+<style>.gowkfqpypmmv{}</style><img src="/2025/06/21/ml01/ml01_pic01.png" srcset="/img/loading.gif" lazyload class="gowkfqpypmmv">
 </div>
 <p>  卷积神经网络可以从两个方面来理解：</p>
 <h3 id="1-Neuron-Version">1. Neuron Version</h3>
 <p>  这种方法是从神经元的角度来解释卷积层的构成。首先，所谓神经元就是神经网路中的基本计算单元，在全连接层（Fully Connected Layer）中，每个神经元与前一层的所有神经元相连，也就是说，每个神经元都要对整张图像进行计算，这显然是大大增加计算量的。<strong>所以我们首先要为每个神经元分配一个合适的感受野</strong>（Receptive Field），每个神经元只负责计算自身感受野范围内的图像，这就增强了模型的效率。但是我们还不得不考虑的事情是，不同目标的相同特征不可能出现在完全相同的地方，也就是说它们很有可能出现在不同神经元的感受野中。但是它们所需的计算参数又显然是相同的，<strong>因此我们可以使这些不同的神经元共享参数</strong>（Parameter Sharing），使得同一特征可能出现在输入的不同位置，但都可以被神经元检测到。那么在这两个优化的基础上，我们就得到了将全连接层优化为了卷积层，神经元也即演变为了卷积核（Filter/Kernel）。</p>
 <div>
-<style>.wihbuiewewkk{}</style><img src="/2025/06/21/ml01/ml01_pic02.png" srcset="/img/loading.gif" lazyload class="wihbuiewewkk">
+<style>.yoxzkjscynsd{}</style><img src="/2025/06/21/ml01/ml01_pic02.png" srcset="/img/loading.gif" lazyload class="yoxzkjscynsd">
 </div>
 <h3 id="2-Filter-Version">2. Filter Version</h3>
 <p>  在这个版本的解释中，卷积层是由很多个卷积核（Filter）组成的。每一个卷积核的通道数（Channel）和待处理图像的通道数都是相同的，但是它们又只专注于某一个特定的特征。每一个卷积核通过微小的步长（Stride）移动遍历整个图像，最终就得到了一个特征图（Feature Map），如下图所示。多个卷积核并行处理输入，生成多通道特征图，每个通道对应不同特征的检测结果。随后，这些特征图作为下一层的输入，由新的卷积核进一步提取更高阶的特征。</p>
 <div>
-<style>.rbwsvetesxef{}</style><img src="/2025/06/21/ml01/ml01_pic03.png" srcset="/img/loading.gif" lazyload class="rbwsvetesxef">
+<style>.sipufryihtyt{}</style><img src="/2025/06/21/ml01/ml01_pic03.png" srcset="/img/loading.gif" lazyload class="sipufryihtyt">
 </div>
 <p>  此外，在CNN中还涉及池化（Pooling）和展平（Flatten）等操作。<br>
   所谓池化，就是一种压缩特征图的空间尺寸、减少参数量，同时增强模型对局部微小变化的鲁棒性的方法。它可以将特征图按某种规则缩小，例如下图表示的就是一种只保留特定区域内最大值的池化方法（Max Pooling）。</p>
 <div>
-<style>.dmqhifulrpju{}</style><img src="/2025/06/21/ml01/ml01_pic04.png" srcset="/img/loading.gif" lazyload class="dmqhifulrpju">
+<style>.zyrhnprqojny{}</style><img src="/2025/06/21/ml01/ml01_pic04.png" srcset="/img/loading.gif" lazyload class="zyrhnprqojny">
 </div>
 <p>  而展平则是一种将多维数据转换为一维向量的操作，主要用于连接卷积层/池化层与全连接层。这是因为全连接层的神经元需固定长度的输入，而卷积层输出的特征图是3D结构，必须展平后才能匹配。<br>
   最后，全连接层​通过将展平后的多维特征图与所有神经元进行全局加权连接，实现从局部特征到高层语义的映射，输出判定结果。</p>
 <h2 id="二、循环神经网络-Recurrent-Neural-Network-RNN">二、循环神经网络 (Recurrent Neural Network, RNN)</h2>
+<p>  显而易见，在人脑处理一段信息的时候一定是一个连续的过程，比如看视频的时候不可能是一帧一帧地去看，否则在一些场景下就不能获取正确的信息。比如我们想要知道别人旅行的目的地，如果对方说“我将要离开郑州前往北京”，只有当我们连续地处理“离开郑州”和“前往北京”时才能分辨郑州和北京这两个地名到底哪个是出发地哪个是目的地。这就是建立循环神经网络（RNN）的目的：处理序列数据（如文本、语音、时间序列）。</p>
+<div>
+<style>.vtvjznhquijc{}</style><img src="/2025/06/21/ml01/ml01_pic05.png" srcset="/img/loading.gif" lazyload class="vtvjznhquijc">
+</div>
+<p>  如图所示，RNN在处理信息时会将上一次的输出专门存进一个Memory当中，这个记忆单元将连同下一次的输入一起继续进行运算。这样一来就实现了记忆性。</p>
 <h2 id="三、长短期记忆网络-Long-Short-Term-Memory-LSTM">三、长短期记忆网络 (Long Short-Term Memory, LSTM)</h2>
+<p>  但是RNN的一个显著的问题就是其对长期信息的读取十分困难，因为这需要它多次连续相乘。尤其是当序列较长时，早期时间步的梯度会变得极其微弱，使得模型无法有效更新这些位置的权重，从而遗忘远距离的信息。所以人们就设计出了一种更加科学的机制，即长短期记忆网络（LSTM）。</p>
+<div>
+<style>.piwkekpxylig{}</style><img src="/2025/06/21/ml01/ml01_pic06.png" srcset="/img/loading.gif" lazyload class="piwkekpxylig">
+</div>
+<p>  如图所示，LSTM通过引入门控机制来实现对信息的动态控制，即输入门（Input Gate）、遗忘门（Forget Gate）和输出门（Output Gate），其具体控制机制如下图所示。</p>
+<div>
+<style>.ttbwzihkqfmh{}</style><img src="/2025/06/21/ml01/ml01_pic07.png" srcset="/img/loading.gif" lazyload class="ttbwzihkqfmh">
+</div>
+<p>  那么下面几幅图展示了LSTM的连续处理机制，其中第t-1次的输出和第t次的输入将一同构成新的输入向量参与运算。这两部分会分别通过不同的权重矩阵进行线性变换，然后将结果相加（或拼接后乘权重矩阵）来匹配LSTM的内部维度。而之前的所有神经元的“记忆”信息也将被传送进t时刻的神经元当中。</p>
+<div>
+<style>.vrujxtmpodbq{}</style><img src="/2025/06/21/ml01/ml01_pic10.jpg" srcset="/img/loading.gif" lazyload class="vrujxtmpodbq">
+<style>.kpemmuuopmol{}</style><img src="/2025/06/21/ml01/ml01_pic11.png" srcset="/img/loading.gif" lazyload class="kpemmuuopmol">
+</div>
 <h2 id="四、图神经网络-Graph-Neural-Network-GNN">四、图神经网络 (Graph Neural Network, GNN)</h2>
+<p>  恰如其名，图神经网络（GNN）主要用于处理具有图结构数据的场景，能够有效捕捉节点间的复杂关系和拓扑信息。基于处理图数据的方法和理论基础，GNN有两种主要的处理方法：基于空间（Spatial-based）和基于谱（Spectral-based）。</p>
+<h3 id="1-基于空间">1. 基于空间</h3>
+<p>  基于空间的核心思想是直接在图的拓扑结构上进行计算，通过聚合（aggregation）邻居信息来更新结点表示。比较主流的基于空间方法有以下几种：</p>
+<h4 id="1）GraphSAGE（Graph-Sample-and-AggregatE）">1）GraphSAGE（Graph Sample and AggregatE）</h4>
+<div>
+<style>.yjmkycnotvth{}</style><img src="/2025/06/21/ml01/ml01_pic12.png" srcset="/img/loading.gif" lazyload class="yjmkycnotvth">
+</div>
+<p>  GraphSAGE的核心思想是通过邻居采样和聚合函数分别来解决大规模图计算问题和结点嵌入的生成。其具体过程如上图所示：</p>
+<ul>
+<li>邻居采样（Sample Neighborhood）​：传统的GNN会要求聚合所有邻居，在大样本的情况下这显然会严重浪费算力。那么此方法的思路就是像街头采访一样在每一层只采样固定数量个邻居（图中的<code>k=1</code>和<code>k=2</code>表示的是采样深度）。</li>
+<li>特征聚合（Aggregate Neighbor Info）​：在上一步的邻居采样之后，GraphSAGE会将所有采样到的邻居信息聚合成一个向量，聚合方法任选<code>Mean</code>、<code>Max-Pooling</code>、<code>LSTM</code>等皆可。</li>
+<li>预测与更新（Predict &amp; Update）​：最后根据自身特征和聚合到的邻居信息就能生成新的嵌入。</li>
+</ul>
+<h4 id="2）GAT-Graph-Attention-Networks">2）GAT (Graph Attention Networks)</h4>
+<div>
+<style>.jyhywrsjdjgg{}</style><img src="/2025/06/21/ml01/ml01_pic13.png" srcset="/img/loading.gif" lazyload class="jyhywrsjdjgg">
+</div>
+<p>  首先，GAT中的每个结点会检查自己和邻居之间的“注意力”，如图中以<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>h</mi><mn>3</mn><mn>0</mn></msubsup></mrow><annotation encoding="application/x-tex">h_{3}^{0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0622em;vertical-align:-0.2481em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-2.4519em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2481em;"><span></span></span></span></span></span></span></span></span></span>为例，使用了一个小型神经网络<code>f</code>计算得出了它和三个邻居之间的<code>e</code>（energy）。并以此为基础，使用注意力权重对邻居特征加权求和，进而更新<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>h</mi><mn>3</mn><mn>0</mn></msubsup></mrow><annotation encoding="application/x-tex">h_{3}^{0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0622em;vertical-align:-0.2481em;"></span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-2.4519em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2481em;"><span></span></span></span></span></span></span></span></span></span>，使其既保留自身特征，又吸收了关键邻居信息。</p>
+<h3 id="2-基于谱">2. 基于谱</h3>
+<p>  基于谱的图卷积神经网络利用图信号处理中的谱理论（图的拉普拉斯矩阵特征分解）来定义图卷积，将图数据转换到谱域进行滤波操作。其数学理论非常严谨且复杂，但是在效率和灵活性上都远远不及基于空间的GNN，因此这里我们先只做了解。</p>
 
                 
               </div>
