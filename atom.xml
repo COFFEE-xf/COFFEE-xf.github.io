@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-05T12:00:07.623Z</updated>
+  <updated>2026-01-05T12:36:44.948Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2026/01/05/ml03/"/>
     <id>http://example.com/2026/01/05/ml03/</id>
     <published>2026-01-05T11:58:32.000Z</published>
-    <updated>2026-01-05T12:00:07.623Z</updated>
+    <updated>2026-01-05T12:36:44.948Z</updated>
     
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>机器学习期末复习——第一章</h1>]]></content>
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>机器学习期末复习——第一章</h1><h2 id="一、重点知识点回顾">一、重点知识点回顾</h2><h3 id="1-分类任务-vs-回归任务">1. 分类任务 vs 回归任务</h3><p>在机器学习当中，分类（Classification）和回归（Regression）是两种主要的<strong>监督学习方式</strong>，其核心区别在于预测目标的性质不同：</p><ul><li>分类：分类旨在预测离散的类别标签，例如判断一封邮件是“垃圾邮件”还是“非垃圾邮件”。</li><li>回归：回归用于预测连续的数值，例如预估房屋的价格或者明天的气温（预测的数值理论上可以取某个区间内的任意值）。</li></ul><h3 id="2-监督学习-vs-无监督学习">2. 监督学习 vs 无监督学习</h3><p>监督学习（Supervised Learning）和无监督学习（Unsupervised Learning）是机器学习中两种核心的学习范式，其根本区别在于<strong>训练数据是否包含预先定义的标签</strong>：</p><ul><li>监督学习：监督学习依赖于带标签的数据，其目标是让模型学习从输入到输出的映射关系，以解决<strong>分类</strong>或<strong>回归</strong>等预测性问题。</li><li>无监督学习：无监督学习则处理没有标签的原始数据，其核心任务是自主探索数据内在的分布规律与结构，例如通过<strong>聚类</strong>将数据分组。</li></ul><h3 id="3-特征-vs-标签">3. 特征 vs 标签</h3><p>以西瓜书中的一条记录为例：（（色泽=青绿；根蒂=蜷缩；敲声=浊响），<em>好瓜</em>）：</p><p>其中，“色泽”、“根蒂”和“敲声”等能够反映事件或对象在某方面的表现或性质的事项，被称之为属性（Attribute）或者<strong>特征（Feature）</strong>，而“青绿”“蜷缩”“浊响”等自然是对应的属性值或者特征值；而“好瓜”则是关于示例结果的信息，称之为<strong>标签（Label）</strong>。</p><p>By the way，形如（色泽=青绿；根蒂=蜷缩；敲声=浊响）的记录被称之为“示例”（Instance），而形如（（色泽=青绿；根蒂=蜷缩；敲声=浊响），<em>好瓜</em>）的记录被称之为“样例”（Example）。这个不是重点，但是觉得很好玩所以顺便记录一下。</p><h2 id="二、重点题目回顾">二、重点题目回顾</h2>]]></content>
     
     
     <summary type="html">第一章绪论的复习笔记</summary>
