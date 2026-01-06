@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-05T12:36:44.948Z</updated>
+  <updated>2026-01-05T13:59:55.757Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习期末复习——第二章</title>
+    <link href="http://example.com/2026/01/05/ml04/"/>
+    <id>http://example.com/2026/01/05/ml04/</id>
+    <published>2026-01-05T12:37:46.000Z</published>
+    <updated>2026-01-05T13:59:55.757Z</updated>
+    
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>机器学习期末复习——第二章</h1><h2 id="一、重点知识点回顾">一、重点知识点回顾</h2><h3 id="1-过拟合-vs-欠拟合">1. 过拟合 vs 欠拟合</h3><p>过拟合（Overfitting）和欠拟合（Underfitting）都是模型<strong>泛化（Generalization）能力不足</strong>的两种典型表现。</p><p>所谓泛化能力，就是指模型在未见新样本上的表现，泛化误差越小，模型的泛化能力就越好。而在我们训练模型时，我们当然希望模型在新样本上表现得很好，也就是说模型需要从训练样本中尽可能地学习到所有潜在样本的“普遍规律”，这样在遇到新样本时才能做出正确的判别。在恰到好处的拟合下，模型既足够复杂以学习数据中的关键模式，但又不会复杂到连随机噪声也学习到了，能够做到<strong>在训练集和测试集上的误差都很低，且两者接近</strong>。</p><p>然而，当模型将训练样本自身的一些特点当作了所有潜在样本都会具有的一般性质时，就会导致泛化性能下降，即<strong>过拟合</strong>；反之，如果模型尚未完全掌握潜在样本的一般性质，那么就产生了<strong>欠拟合</strong>。</p><div class="center"><style>.sviosghhtnqk{}</style></div><p>对于过拟合而言，其最常见的产生原因是学习器的学习能力过强，导致最终训练得到的模型过于复杂，将训练样本中的噪声及其他不太一般的特性都学习到了，从而导致模型<strong>在训练数据上表现极好，而在未见数据上的表现极具恶化</strong>；而对于欠拟合而言，产生原因就是学习器学习能力较弱，得到的模型过于简单，导致模型<strong>在训练数据上表现就很差</strong>。</p><p>过拟合的解决办法：</p><ul><li><strong>增加数据量</strong>：更多的数据能让模型难以记住所有样本的细节，从而被迫学习通用模式。</li><li><strong>数据增强</strong>：如果无法获取更多数据，可以采用数据增强技术，例如对图像进行旋转、翻转、添加噪声等操作，人工扩充数据集。</li><li><strong>特征工程</strong>：选择与目标变量相关性较高的特征，减少噪声和不相关的特征对模型的影响。</li><li><strong>正则化</strong>：所谓正则化是指：通过在模型的损失函数当中增加一个额外的“惩罚项”来限制模型的复杂度，防止模型过于依赖训练数据中的个别特征或噪声。常见的正则化方法有L1正则化和L2正则化：<ul><li><strong>L1正则化</strong>：L1正则化让特征变得稀疏，能够起到特征选择的作用。</li><li><strong>L2正则化</strong>：L2正则化让模型变得简单，但是没有特征选择的作用。</li></ul></li><li><strong>降低模型复杂度</strong>：例如在神经网络中减少层数或神经元数量，或在决策树模型中剪枝等。</li><li><strong>交叉验证</strong>：使用交叉验证来评估模型的泛化性能，选择最优的模型。将数据集分为k组（k倍交叉验证），将其中一个组作为测试集，其他作为训练集，然后重复此过程，直到每个单独的组都用作测试集。</li></ul><div class="center"><style>.eblvthylassu{}</style></div><p>欠拟合的解决办法：</p><ul><li><strong>增加模型复杂度</strong>：例如用深度神经网络替代线性模型，以捕捉数据中复杂的非线性关系。</li><li><strong>特征工程</strong>：如果输入模型的信息不足或代表性不强，模型将难以学习到一般规律。因此，需要增加更多有意义的特征，或通过特征交叉、多项式展开等创建新特征，为模型提供更丰富的信息。</li><li><strong>减少正则化</strong>：原因不再赘述。</li><li><strong>增加训练时间</strong>：例如在决策树学习中扩展分支、在神经网络学习中增加训练轮数等。</li></ul><p>此外，必须认识到的是：<strong>过拟合是无法彻底避免的，我们所能做的只是缓解或减少其风险</strong>。</p><h3 id="2-方差-vs-偏差">2. 方差 vs 偏差</h3><h3 id="3-常见的数据集划分方法">3. 常见的数据集划分方法</h3><p>在训练完毕一个模型之后，我们显然需要一个测试集测试其对新样本的判别能力，随后以在测试集上的“测试误差”来作为泛化误差的近似。为了使得测试集尽可能与训练集互斥，常见的将数据集D划分为训练集S和测试集T的方法有以下三种：</p><h4 id="（1）留出法">（1）留出法</h4><p>留出法（Hold-Out）是最直观、最常见的模型评估方法，它直接将原始数据集D一次性地划分为两个互斥的集合，即训练集S和测试集T。</p><p>需要注意的是，训练/测试集的划分要尽可能地<strong>保持数据分布的一致性</strong>，避免因为数据划分而引入额外的偏差。常见的采样方式有<strong>分层采样</strong>，例如通过对D进行分层采样而获得含70%样本的训练集S和含30%样本的测试集T，若D包含500个正例、500个反例，则分层采样得到的S应包含350个正例、350个反例，而T则包含150个正例和150个反例。</p><ul><li><strong>优点</strong>：实现简单，计算效率高，特别适合处理大规模数据集。</li><li><strong>缺点</strong>：单次划分的评估结果可能不够稳定（方差较大），且一部分数据未被用于训练，在数据量较小时会造成数据浪费。</li></ul><h4 id="（2）交叉验证法">（2）交叉验证法</h4><p>交叉验证法（Cross-Validation）</p><ul><li><strong>优点</strong>：</li><li><strong>缺点</strong>：</li></ul><h4 id="（3）自助法">（3）自助法</h4><p>自助法（Bootstrapping）</p><ul><li><strong>优点</strong>：</li><li><strong>缺点</strong>：</li></ul><h2 id="二、重点题目回顾">二、重点题目回顾</h2>]]></content>
+    
+    
+    <summary type="html">第二章模型的评估与选择的复习笔记</summary>
+    
+    
+    
+    <category term="机器学习" scheme="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习期末复习——第一章</title>
@@ -458,29 +479,6 @@
     
     
     <category term="软考" scheme="http://example.com/tags/%E8%BD%AF%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算机网络实验 配置IPv4静态路由和缺省路由</title>
-    <link href="http://example.com/2025/05/15/note43/"/>
-    <id>http://example.com/2025/05/15/note43/</id>
-    <published>2025-05-15T12:06:43.000Z</published>
-    <updated>2025-06-21T10:04:47.054Z</updated>
-    
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>计算机网络实验 配置IPv4静态路由和缺省路由</h1><h2 id="一、要求文档">一、要求文档</h2><div class="center'><style>.wqtmexnpkxsh{}</style><style>.ddpwwnftvwll{}</style><style>.shuhywlmpbca{}</style><style>.syniclfqgxdd{}</style><style>.megkqswmgvba{}</style><style>.ublsxhcqiynp{}</style><style>.souruhmpedui{}</style></div><h2 id="二、命令实现">二、命令实现</h2><h3 id="Part-2-基础设置配置">Part 2 基础设置配置</h3><h4 id="Step-2-路由器基础配置">Step 2 路由器基础配置</h4><p>  不再赘述，详情可以参见<a href="https://loquattree.xyz/2025/05/15/note42/">计算机网络实验 配置RIPv2动态网络</a></p><h4 id="Step-3-路由器IP配置">Step 3 路由器IP配置</h4><p>根据要求内容配置路由器的IP地址，以R3为例，执行以下命令：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs text">R3#configure t<br>Enter configuration commands, one per line.  End with CNTL/Z.<br><br>R3(config-if)#interface s0/0/0<br>R3(config-if)#ip address 10.1.1.2 255.255.255.252<br>R3(config-if)#clock rate 128000<br>R3(config-if)#no shutdown<br><br>R3(config-if)#<br>%LINK-5-CHANGED: Interface Serial0/0/0, changed state to up<br><br>R3(config-if)#exit<br>R3(config)#<br>%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up<br><br>R3(config)#interface g0/1<br>R3(config-if)#ip address 192.168.1.1 255.255.255.0<br>R3(config-if)#no shutdown<br><br>R3(config-if)#<br>%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up<br><br>%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up<br><br>R3(config-if)#exit<br><br>&lt;!-- 配置两个回环端口 --&gt;<br>R3(config)#interface loopback 0<br><br>R3(config-if)#<br>%LINK-5-CHANGED: Interface Loopback0, changed state to up<br><br>%LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up<br><br>R3(config-if)#ip address 209.165.200.225 255.255.255.224<br>R3(config-if)#no shutdown<br>R3(config-if)#interface loopback 1<br><br>R3(config-if)#<br>%LINK-5-CHANGED: Interface Loopback1, changed state to up<br><br>%LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up<br><br>R3(config-if)#ip address 198.133.219.1 255.255.255.0<br>R3(config-if)#no shutdown<br>R3(config-if)#end<br>R3#<br>%SYS-5-CONFIG_I: Configured from console by console<br><br>R3#wr<br>Building configuration...<br>[OK]<br></code></pre></td></tr></table></figure><h3 id="Part-3-配置静态路由">Part 3 配置静态路由</h3><h4 id="Step-1-配置递归静态路由">Step 1 配置递归静态路由</h4><p>以R1为例，执行以下命令：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs text">R1#configure t<br>Enter configuration commands, one per line.  End with CNTL/Z.<br><br>&lt;!-- IP地址 子网掩码 下一跳IP地址 --&gt;<br>R1(config)#ip route 192.168.1.0 255.255.255.0 10.1.1.2<br></code></pre></td></tr></table></figure><h4 id="Step-2-配置直连静态路由">Step 2 配置直连静态路由</h4><p>以R3为例，执行以下命令：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs text">R3#conf t<br>Enter configuration commands, one per line.  End with CNTL/Z.<br><br>&lt;!-- IP地址 子网掩码 出口端口名 --&gt;<br>R3(config)#ip route 192.168.0.0 255.255.255.0 s0/0/0<br>%Default route without gateway, if not a point-to-point interface, may impact performance<br></code></pre></td></tr></table></figure><p>此命令只在一个路由器执行即可，因为在简单的点对点连接中，单边配置静态路由即可实现双向通信，这是利用了路由器的直连路由特性和IP通信的对称性原理。</p><h3 id="Part-4-配置缺省路由">Part 4 配置缺省路由</h3><p>以R1为例，执行以下命令</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">&lt;!-- 缺省状态下前两个参数都是0.0.0.0 最后一个参数仍是下一跳地址 --&gt;<br>R1(config)#ip route 0.0.0.0 0.0.0.0 10.1.1.2<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">计算机网络实验命令行记录</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    <category term="实验" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AE%9E%E9%AA%8C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
