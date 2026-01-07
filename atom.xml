@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-06T16:13:56.222Z</updated>
+  <updated>2026-01-07T06:54:29.035Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>机器学习期末复习——第三章</title>
+    <link href="http://example.com/2026/01/07/ml05/"/>
+    <id>http://example.com/2026/01/07/ml05/</id>
+    <published>2026-01-07T06:46:09.000Z</published>
+    <updated>2026-01-07T06:54:29.035Z</updated>
+    
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>机器学习期末复习——第三章</h1><h2 id="一、重点知识点回顾">一、重点知识点回顾</h2><h2 id="二、重点题目回顾">二、重点题目回顾</h2>]]></content>
+    
+    
+    <summary type="html">第三章线性模型的复习笔记</summary>
+    
+    
+    
+    <category term="机器学习" scheme="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习期末复习——第二章</title>
@@ -440,31 +461,6 @@
     <updated>2025-05-23T07:25:53.254Z</updated>
     
     <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 2022年上半年部分并2021年下半年</h1><p>2022年的题做了30多道题之后才发现题不全，然后又重新做了下2021年下半年的题，今天错的是20个，又有一点进步~</p><h2 id="一、2022年上半年部分题">一、2022年上半年部分题</h2><div class="center"><style>.djpwvtbtivad{}</style><img src="/2025/05/15/note45/note45_pic01.png" class="djpwvtbtivad"></div><p>  不再赘述DRAM和SRAM的具体概念，要强调的是<strong>SRAM的功率要比DRAM更大</strong>，这是因为DRAM比SRAM更高的集成率使得其在相同容量下所用的芯片更少一些，降低了功率输出。</p><hr><div class="center"><style>.jyjbvghfoehh{}</style><img src="/2025/05/15/note45/note45_pic02.png" class="jyjbvghfoehh"></div><p>  首先，所谓的多级中断的含义是系统中存在多个不同优先级的中断源，当高优先级中断正在执行时，允许被更高优先级的中断打断，形成嵌套处理机制。因此，<strong>堆栈的“后进先出”特性完美匹配中断嵌套场景</strong>，每次中断只需压栈（PUSH）现场信息，返回时弹栈（POP）即可自动恢复。</p><hr><div class="center"><style>.ypqdlgenikbg{}</style><img src="/2025/05/15/note45/note45_pic03.png" class="ypqdlgenikbg"></div><ul><li>A选项，精简指令集的设计目标之一就是简化指令，<strong>使大多数指令能在​​单时钟周期​​内完成</strong>，提高执行效率。</li><li>B选项，由于在RISC中有更多的寄存器，因此硬布线控制器比较适合它；而CISC需要通过微代码解释复杂指令，所以普遍采用微程序控制器。</li><li>C选项，显而易见。</li><li>D选项，现代RISC和CISC架构<strong>均广泛采用​​流水线技术</strong>​​以提高指令吞吐量。</li></ul><hr><div class="center"><style>.xubepxepdrwg{}</style><img src="/2025/05/15/note45/note45_pic04.png" class="xubepxepdrwg"></div><ul><li>著作权：著作权的保护期一般为作者终生加上其死后的50年，<strong>不可延长</strong>。</li><li>专利权：发明专利保护期20年，实用新型/外观设计10年，均​<strong>​不可延长</strong>。</li><li>商标权：保护期10年，但​​可<strong>无限续展</strong>​​（每次续展延长10年），只需在到期前申请并缴纳费用。</li><li>商业秘密权：保护期理论上是​​永久的​​（只要信息保持秘密性），但一旦公开即失效，​<strong>​无需延长</strong>​​。</li></ul><hr><div class="center"><style>.ewbitgtpulyd{}</style><img src="/2025/05/15/note45/note45_pic05.png" class="ewbitgtpulyd"><table><thead><tr><th><strong>对比维度</strong></th><th><strong>边界值分析法</strong></th><th><strong>判定覆盖</strong></th></tr></thead><tbody><tr><td><strong>定义</strong></td><td>通过测试输入域的边界值及邻近值来发现错误。</td><td>确保程序中的每个逻辑判断（真/假）至少执行一次。</td></tr><tr><td><strong>核心目标</strong></td><td>验证边界条件的正确处理。</td><td>覆盖所有逻辑分支，保证条件完整性。</td></tr><tr><td><strong>典型示例</strong></td><td>测试&quot;年龄≥18&quot;时输入17、18、19。</td><td>测试<code>if (A &amp;&amp; B)</code>需覆盖A真/B真、A假/B假等组合。</td></tr><tr><td><strong>测试阶段</strong></td><td>黑盒测试</td><td>白盒测试</td></tr></tbody></table></div><hr><div class="center"><style>.apkmpkseoyqm{}</style><img src="/2025/05/15/note45/note45_pic06.png" class="apkmpkseoyqm"></div><p>  众所周知，视图是一个虚拟表，但是<strong>其中保存的是视图的查询逻辑，亦即视图定义</strong>，而非查询结果。视图每次会查询动态生成结果，数据字典不缓存结果，否则无法反映基表变化。</p><hr><div class="center"><style>.umjxzrjlxgro{}</style><img src="/2025/05/15/note45/note45_pic07.png" class="umjxzrjlxgro"></div><p>  经典记不清，在树中存在如下关系：</p><p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>n</mi><mn>3</mn></msub><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mrow><mo fence="true">(</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo fence="true">)</mo></mrow><msub><mi>n</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">n_0=1+n_2+2n_3+...+\left( m-1 \right) n_m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7944em;vertical-align:-0.15em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">...</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p><p>其中，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">n_m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>代表度为m的结点的个数。</p><h2 id="二、2021年下半年">二、2021年下半年</h2><div class="center"><style>.mbqfosfluock{}</style><img src="/2025/05/15/note45/note45_pic09.png" class="mbqfosfluock"></div><p>  当存在侵权行为时，赔偿责任通常仅由故意或者存在重大过失的侵权方承担，在本题中即由广大公司（经销商）承担，<strong>而鸿达公司这些善意使用者支付合理费用之后可以继续使用该软件</strong>。</p><hr><div class="center"><style>.klwcewupfvgf{}</style><img src="/2025/05/15/note45/note45_pic12.png" class="klwcewupfvgf"></div><p>  增量模型有以下不足之处：如果没有对用户的变更要求进行规划，那么产生的初始增量可能会造成后来增量的不稳定；如果需求不像早期思考的那样稳定和完整，那么一些增量就需要重新开发。<strong>综上所述，增量模型强调开发阶段性早期计划，并且有较高的系统管理成本</strong>。</p><hr><div class="center"><style>.bemxnrmlnzem{}</style><img src="/2025/05/15/note45/note45_pic13.png" class="bemxnrmlnzem"></div><p>  系统测试是软件测试的重要阶段，其目标是​​验证整个系统是否符合用户需求。因此，<strong>测试用例的设计必须基于​​需求分析阶段​​的输出</strong>，而非其他开发阶段的产物。</p><ul><li>概要设计：决定系统如何分解为模块，但系统测试关注的是整体功能，而非模块间交互（这是集成测试的范畴）。</li><li>详细设计：涉及具体算法或数据库设计，属于开发细节，系统测试不验证这些内容。</li><li>软件实现：代码是测试的执行对象，但测试目标仍需从需求中提取。</li></ul><hr><div class="center"><style>.pgshcpcevhpm{}</style><img src="/2025/05/15/note45/note45_pic14.png" class="pgshcpcevhpm"></div><ul><li>可行性研究报告：规划阶段核心文档，用于评估项目是否可行（用户需参与讨论）。</li><li>总体规划报告：规划阶段输出，明确系统目标和范围（用户需确认）。</li><li>项目开发计划：分析阶段可能制定初步开发计划（用户可能参与评审）。</li><li>用户使用手册：系统完成后编写，指导终端用户操作，​<strong>​不用于前期交流</strong>​​。</li></ul><hr><div class="center"><style>.kslzogiekanx{}</style><img src="/2025/05/15/note45/note45_pic16.png" class="kslzogiekanx"></div><p>  在面向对象当中，类之间的关系主要有以下4种，按耦合强度从弱到强排序：</p><ul><li>依赖：临时性使用，不具有长期持有关系。</li><li>关联：长期持有引用。</li><li>聚合：整体与部分可以独立存在。</li><li>组合：部分不可能脱离整体存在。</li></ul><p>  <em>注：本题答案众说纷纭，能够清晰认识概念即可。</em></p><hr><div class="center"><style>.modcxormdind{}</style><img src="/2025/05/15/note45/note45_pic18.png" class="modcxormdind"></div><p>  存储过程将SQL逻辑（如UPDATE user SET balance=…）隐藏在存储过程中，第三方仅调用sp_update_balance()，无需知道具体表名或字段。这样一来，可限制第三方直接操作表的权限，仅允许执行特定存储过程。也能避免SQL注入风险，且表结构变更时只需修改存储过程，不影响调用方。</p>]]></content>
-    
-    
-    <summary type="html">软考真题做题笔记</summary>
-    
-    
-    
-    <category term="软考" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/"/>
-    
-    <category term="软件设计师" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-    <category term="知识点拾遗" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/"/>
-    
-    
-    <category term="软考" scheme="http://example.com/tags/%E8%BD%AF%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件设计师 知识点拾遗 数据结构</title>
-    <link href="http://example.com/2025/05/15/note44/"/>
-    <id>http://example.com/2025/05/15/note44/</id>
-    <published>2025-05-15T12:37:33.000Z</published>
-    <updated>2025-05-23T07:25:18.901Z</updated>
-    
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 数据结构</h1><ol><li>2015年下半年第64题和65题</li></ol><div class="center"><style>.byvfmjmvquyb{}</style><img src="/2025/05/15/note44/note44_pic01.png" class="byvfmjmvquyb"></div><ul><li><strong>插入排序</strong>：其工作原理是将数组分为已排序和未排序的两部分，逐个将未排序元素插入到已排序部分的正确位置上。这种排序方法适用于小规模数据或者<strong>基本有序</strong>的数据。</li><li><strong>归并排序</strong>：归并排序是分治法的典型案例，其基本过程如下所述：将待排序的线性表不断地切分为若干个子表，直到每个子表只包含一个元素，这时，可以认为这是一个有序表。随后将子表两两合并，每合并一次就会产生一个新的且更长的有序表，如此循环往复即完成了排序。归并排序一般用于对大规模且需要稳定排序的数据进行排序。</li><li><strong>快速排序</strong>：快速排序也是一种应用分治法的排序方式，它首先从数组中选取一个基准值（这一基准值通常是待划分数组的中位数），随后将数组重新排列，使得基准值左侧的元素全部小于它而其右侧的元素全部大于它。然后继续对左右两侧子数组分别重复上述过程，直到子数组长度为1或者0。快速排序适合对大规模乱序数据排序。</li><li><strong>计数排序</strong>：计数排序会统计每个关键字的出现次数，通过累加计数确定元素的位置。这一排序方法适用于<strong>关键字范围小且密集</strong>的数据。</li></ul><ol start="2"><li>2015年上半年第61题</li></ol><div class="center"><style>.glgobnjbjnki{}</style><img src="/2025/05/15/note44/note44_pic02.png" class="glgobnjbjnki"></div><p>  简单选择排序的基本方法是:①从待排序序列中，找到关键字最小的元素;②如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换;③从余下的 N-1个元素中，找出关键字最小的元素，重复②步，直到排序结束。</p>]]></content>
     
     
     <summary type="html">软考真题做题笔记</summary>
