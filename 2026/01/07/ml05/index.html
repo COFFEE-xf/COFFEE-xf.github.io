@@ -27,7 +27,7 @@
 <meta property="og:description" content="第三章线性模型的复习笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-07T06:46:09.000Z">
-<meta property="article:modified_time" content="2026-01-07T06:54:29.035Z">
+<meta property="article:modified_time" content="2026-01-07T10:12:16.044Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          37 字
+          882 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          1 分钟
+          8 分钟
         
       </span>
     
@@ -290,6 +290,32 @@
 </style>
 <h1>机器学习期末复习——第三章</h1>
 <h2 id="一、重点知识点回顾">一、重点知识点回顾</h2>
+<h3 id="1-线性回归">1. 线性回归</h3>
+<p>线性回归（Linear Regression）是最为基础的机器学习模型之一，它试图学得一个线性模型来尽可能准确地预测实值输出标记。也就是说，对于线性回归方程$$f\left( x_i \right) =wx_i+b,$$其目标就是<strong>使得预测值<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo fence="true">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">f\left( x_i \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span>尽可能逼近实际值<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong>。</p>
+<p>那么，线性回归方程的<strong>损失函数</strong>即为：</p>
+<p>[<br>
+\begin{aligned}<br>
+E_{\left( w,b \right)} &amp;= \sum_{i=1}^m \left( y_i - f\left( x_i \right) \right)^2 \<br>
+&amp;= \sum_{i=1}^m \left( y_i - \left( wx_i + b \right) \right)^2 \<br>
+&amp;= \sum_{i=1}^m \left( y_i - wx_i - b \right)^2<br>
+\end{aligned}<br>
+]</p>
+<h3 id="2-多分类学习">2. 多分类学习</h3>
+<p>多分类学习不难理解，不失一般性，将其考虑为N个类别：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、…、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">C_N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，那么常见的多分类学习策略就是将这N个类别进行拆解，将其拆解为若干组两个类别的组合，也就是将<strong>多分类任务拆为若干个二分类任务求解</strong>。这里的关键就是如何对多分类任务进行拆分，以及如何对多个分类器的结果进行集成，常见的拆分策略有以下几种：</p>
+<h4 id="1）一对一（One-vs-One，OvO）">1）一对一（One vs One，OvO）</h4>
+<p>OvO是将上述N个类别两两进行配对，从而<strong>产生N（N-1）/2个二分类任务</strong>，继而得到N（N-1）/2个二分类结果。那么最终结果可通过投票产生，把被预测得最多的类别作为最终的分类结果。</p>
+<h4 id="2）一对其余（One-vs-Rest，OvR）">2）一对其余（One vs Rest，OvR）</h4>
+<p>OvR则是每次将一个类的样例作为正例、所有其他类的样例作为反例来训练N个分类器（也就是得到N个二分类结果）。在测试时若仅有一个分类器预测为正类，则对应的类别标记作为最终分类结果（如图3.4所示）；若有多个分类器预测结果都为正类，则需要结合其置信度进一步考虑。</p>
+<div class="center">
+<style>.tglunaxrblzf{}</style>
+</div>
+<h4 id="3）多对多（Many-vs-Many，MvM）">3）多对多（Many vs Many，MvM）</h4>
+<p>MvM是一种更为一般的策略，它每次将若干个类别作为正类，另外若干个类别作为反类来构建二分类任务。同样的，其核心也是如何系统地设计这些正反类的组合，最常用的技术是<strong>纠错输出码（ECOC）</strong>：</p>
+<ul>
+<li><strong>编码</strong>：对N个类别进行M次划分，每次划分将一部分类别标记为+1（正类），另一部分标记为-1（反类），这样就形成了M个二分类训练集，可以训练出M个分类器。这M次划分构成了一个N×M的编码矩阵，每一行可以看作一个类别的“唯一身份证”。</li>
+<li><strong>解码</strong>：预测时，用M个分类器对样本进行预测，得到一个长度为M的预测编码。然后，将这个预测编码与每个类别固有的编码（N×M编码矩阵中的每一行）进行比较。最终，选择距离最小的那个类别作为预测结果。</li>
+</ul>
+<p>这样一来就实现了对分类器错误的容忍和修正能力（即使某个或某几个分类器预测错误，但只要大部分预测正确，最终的类别编码仍然最接近真实类别，从而得出正确结果），编码越长，纠错能力越强。</p>
 <h2 id="二、重点题目回顾">二、重点题目回顾</h2>
 
                 
@@ -380,6 +406,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2026/01/07/ml06/" title="机器学习期末复习——第四章">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">机器学习期末复习——第四章</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
