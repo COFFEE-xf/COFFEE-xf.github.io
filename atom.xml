@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-01-07T12:52:34.631Z</updated>
+  <updated>2026-01-09T03:34:56.002Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件工程期末复习——第二章</title>
+    <link href="http://example.com/2026/01/09/se02/"/>
+    <id>http://example.com/2026/01/09/se02/</id>
+    <published>2026-01-09T03:31:15.000Z</published>
+    <updated>2026-01-09T03:34:56.002Z</updated>
+    
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件工程期末复习——第二章</h1><h2 id="一、重要知识点">一、重要知识点</h2><h3 id="1-什么是软件生命周期">1. 什么是软件生命周期</h3><h3 id="2-软件生命周期的阶段划分">2. 软件生命周期的阶段划分</h3><h3 id="3-什么是软件过程模型">3. 什么是软件过程模型</h3><h3 id="4-瀑布模型">4. 瀑布模型</h3><h3 id="5-原型模型">5. 原型模型</h3><h2 id="二、次重要知识点">二、次重要知识点</h2><h3 id="1-螺旋模型">1. 螺旋模型</h3><h3 id="2-喷泉模型">2. 喷泉模型</h3><h3 id="3-增量模型">3. 增量模型</h3><h3 id="4-构件组装模型">4. 构件组装模型</h3><h3 id="5-RUP模型">5. RUP模型</h3>]]></content>
+    
+    
+    <summary type="html">第二章软件生命周期和过程模型概述的复习笔记</summary>
+    
+    
+    
+    <category term="软件工程" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件工程期末复习——第一章</title>
+    <link href="http://example.com/2026/01/09/se01/"/>
+    <id>http://example.com/2026/01/09/se01/</id>
+    <published>2026-01-09T03:24:15.000Z</published>
+    <updated>2026-01-09T07:49:26.663Z</updated>
+    
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件工程期末复习——第一章</h1><h2 id="一、重要知识点">一、重要知识点</h2><h3 id="1-软件的定义">1. 软件的定义</h3><p>软件是计算机系统中与硬件相互依存的另一个重要部分，是包括<strong>程序</strong>、<strong>数据</strong>及其相关<strong>文档</strong>的完整集合。其中：</p><ul><li>程序是依据事先设计的功能和性能要求研制、执行的一组指令序列；</li><li>数据是使程序能够正常操纵信息的数据结构；</li><li>文档是与程序开发、维护和使用相关的一系列图文材料。</li></ul><h3 id="2-软件危机的六个表现">2. 软件危机的六个表现</h3><p>所谓软件危机，是指在计算机软件的开发和维护过程中所遇到的一系列严重问题。这些严重问题绝不仅仅是某些失败的软件才具有的，几乎所有软件都不同程度地存在这类问题。具体来说，软件危机主要有以下表现：</p><ul><li>开发成本和进度的估计常常不准确；</li><li>用户对交付的软件系统不满意的现象经常发生；</li><li>软件质量无保证、可靠性差；</li><li>软件常常是不可维护的；</li><li>软件通常没有适当的文档资料；</li><li>软件成本在计算机系统总成本中所占比例逐年上升；</li><li><em>软件开发生产率提高的速度，远远跟不上计算机应用迅速普及深入的趋势</em>。</li></ul><h3 id="3-软件工程定义">3. 软件工程定义</h3><p>软件工程本质上是一种应对软件危机的对策，Fritz Bauer首次提出了软件工程的概念，他认为：<strong>软件工程是为了经济地获得能够在实际机器上高效运行的可靠软件而建立和使用的一系列好的工程化原则</strong>。</p><p>而1993年IEEE提出的定义是：<strong>软件工程是将系统化、规范化、可度量的方法应用于软件的开发、运行和维护过程，即将工程化应用于软件中的方法的研究</strong>。</p><h3 id="4-软件工程三要素">4. 软件工程三要素</h3><p>如下图所示，软件工程的三要素分别是：<strong>过程、方法和工具</strong>。</p><div class="center"><style>.yeqggwnuvjbr{}</style></div><ul><li>过程：支持软件开发各个环节的控制和管理；</li><li>方法：完成软件开发任务的技术手段；</li><li>工具：为软件开发方法提供自动的或半自动的软件支撑环境。</li></ul><h3 id="5-软件开发方法">5. 软件开发方法</h3><p>这里来详细展开方法层的内容，软件工程中的开发方法又称为软件工程方法论，是指软件开发过程中所应该遵循的方法和步骤，既有局部软件开发方法，也有全局软件开发方法。最主要的软件开发方法有以下三种：</p><h4 id="（1）结构化方法">（1）结构化方法</h4><p>结构化方法总的指导思想是<strong>自顶向下、逐步求精</strong>，基本原则是<strong>功能的分解与抽象</strong>。具体而言，其采用<strong>结构化分析</strong>方法对软件进行需求分析，然后用<strong>结构化设计</strong>方法进行总体设计和详细设计，最后是进行<strong>结构化编程</strong>。</p><div class="center"><style>.jhdgduvsohwo{}</style></div><ul><li>结构化分析（Structured Analysis, SA）：按照功能分解的原则，自顶向下、逐步求精，直到实现软件功能为止。在分析问题时，系统分析人员一般利用图表的方式描述用户需求。</li><li>结构化设计（Structured Design, SD）：以结构化分析为基础，将分析得到的数据流图推导为描述系统模块之间关系的结构图。</li></ul><p>结构化方法的主要问题是构造的软件系统不够稳定：1）SA阶段以功能分解为基础，但<strong>用户的功能是经常改变的</strong>，会导致系统的框架不稳定；2）SD阶段需要实现的<strong>从数据流图到软件结构图的过渡会产生断层</strong>，从而影响从设计到需求的回溯。</p><h4 id="（2）面向数据结构的开发方法">（2）面向数据结构的开发方法</h4><p>面向数据结构的开发方法的基本思想是：<strong>从目标系统的输入/输出数据结构入手，导出程序的基本框架结构，在此基础上，对细节进行设计，得到完整的程序结构图</strong>。</p><p>系统开发面向数据结构的设计方法的最终目标是得出对程序处理过程的描述，这种方法最适合于在<strong>详细设计阶段</strong>使用，也就是说，在完成了软件结构设计之后，可以<strong>使用面向数据结构的方法来设计每个模块的处理过程</strong>。</p><h4 id="（3）面向对象的开发方法">（3）面向对象的开发方法</h4><p>面向对象的开发方法（Object-Oriented Software Development，OOSD）<strong>以对象作为最基本的元素</strong>，将其视作分析和解决问题的核心。其基本思想是：对问题领域进行自然分割，以更接近人类通常思维的方式建立问题领域的模型，以便对客观的信息实体进行结构和行为的模拟，从而使设计的软件更直接地表现问题的求解过程。</p><p>此外，面向对象的软件系统的结构是根据实际问题域的模型建立起来的，它<strong>以数据为中心，而不是基于对功能的分解</strong>，因此，当系统功能发生变化时不会引起软件结构的整体变化，往往只需要进行一些局部的修改即可。相对来说，软件的重用性、可靠性和可维护性等特性都较好。</p><h2 id="二、次重要知识点">二、次重要知识点</h2><h3 id="1-软件的特点">1. 软件的特点</h3><ul><li>是一种逻辑实体，具有抽象性</li><li>软件的生产不存在明显的制造过程</li><li>运行和使用的过程中不会存在机械磨损老化问题</li><li>受限于具体的计算机系统</li><li>采用手工开发方式，还不能完全采用组装的方式进行软件开发</li><li>作为提高人类工作效率的逻辑产品，本身是非常复杂的</li><li>软件成本相当昂贵</li><li>相当多的软件工作涉及到社会因素</li></ul><h3 id="2-软件的分类">2. 软件的分类</h3><ul><li>按功能特征划分：<ul><li>系统软件</li><li>支撑软件</li><li>应用软件</li></ul></li><li>按软件规模大小进行划分：</li></ul><div class="center"><style>.maijhipypdli{}</style></div><h3 id="3-产生软件危机的原因">3. 产生软件危机的原因</h3><ul><li>用户对软件需求的描述常常是不精确的</li><li>开发出来的软件产品不符合用户的要求</li><li>大型软件项目需要组织一定的人力共同完成</li><li>软件项目开发人员容易产生一些疏漏和错误</li><li>缺乏有力的方法学和工具支撑</li><li>人类智力的局限性，导致人们无力处理“复杂问题”</li></ul><h3 id="4-如何解决软件危机">4. 如何解决软件危机</h3><p>经过不断的实践和总结，最后得出一个结论：按工程化的原则和方法组织软件开发工作是有效的，是摆脱软件危机的一个主要出路。</p><h3 id="5-软件工程目标">5. 软件工程目标</h3><p>软件工程的目标是组织实施软件工程项目，最终希望得到项目的成功，主要体现为以下几个目标：</p><ul><li>付出较低的开发成本；</li><li>达到所需的软件功能；</li><li>取得较好的软件性能；</li><li>开发的软件易于移植；</li><li>需要较低的维护费用；</li><li>能按时完成开发工作，及时交付使用。</li></ul><h3 id="6-软件工程原则">6. 软件工程原则</h3><ul><li>抽象</li><li>信息隐蔽</li><li>模块化</li><li>局部化</li><li>确定性</li><li>一致性</li><li>完备性</li><li>可验证性</li></ul><h3 id="7-软件工程原理">7. 软件工程原理</h3><ul><li>用分阶段的生命周期计划严格管理</li><li>坚持进行阶段评审</li><li>实行严格的产品控制</li><li>采纳现代程序设计技术</li><li>结果应能清楚地审查</li><li>开发小组的人员应少而精</li><li>承认不断改进软件工程实践的必要性</li></ul>]]></content>
+    
+    
+    <summary type="html">第一章软件工程概述的复习笔记</summary>
+    
+    
+    
+    <category term="软件工程" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+    <category term="软件工程" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习期末复习——第五章</title>
+    <link href="http://example.com/2026/01/08/ml07/"/>
+    <id>http://example.com/2026/01/08/ml07/</id>
+    <published>2026-01-08T00:40:45.000Z</published>
+    <updated>2026-01-09T03:24:45.685Z</updated>
+    
+    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>机器学习期末复习——第五章</h1><h2 id="一、重点知识点回顾">一、重点知识点回顾</h2><h3 id="1-感知机模型">1. 感知机模型</h3><p>恰如之前我们所了解过的各种机器学习方法，感知机模型本质上就是一个为了<strong>找到一个能够将训练数据中的正例和负例完全正确分开的一个分离超平面</strong>的新方法。</p><div class="center"><style>.wuyegmskuhmc{}</style></div><p>如上图所示，一个最基本的感知机模型就长这个样子。唯一需要特别说明的是，对于神经元（图中的圆圈，感知机/神经网络的最基本单元）而言，只有当输入信号的总和超过了某个界限的时候，才会输入1，这里将这个界限称之为<strong>阈值</strong>，用符号<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span></span></span></span>表示。上述内容的数学形式可定义为：</p><p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.16em" columnalign="left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mrow><mo fence="true">(</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>≤</mo><mi>θ</mi><mo fence="true">)</mo></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mrow><mo fence="true">(</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>&gt;</mo><mi>θ</mi><mo fence="true">)</mo></mrow></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex"> y=\left\{ \begin{array}{l}0\left( w_1x_1+w_2x_2\le \theta \right)\\ \\1\left( w_1x_1+w_2x_2&gt;\theta \right)\\\end{array} \right.  </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.6em;vertical-align:-1.55em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-2.5em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.492em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.8889em" height="0.016em" style="width:0.8889em" viewBox="0 0 888.89 16" preserveAspectRatio="xMinYMin"><path d="M384 0 H504 V16 H384z M384 0 H504 V16 H384z"/></svg></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.292em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.8889em" height="0.016em" style="width:0.8889em" viewBox="0 0 888.89 16" preserveAspectRatio="xMinYMin"><path d="M384 0 H504 V16 H384z M384 0 H504 V16 H384z"/></svg></span></span><span style="top:-4.3em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p><p>对于上述这种比较简单的、仅含输入层和输出层的感知机而言，它在完成“<strong>找到一个能够将训练数据中的正例和负例完全正确分开的一个分离超平面</strong>”这一任务时，仅能够处理与、或、非等简单的线性可分问题，而无法处理非线性可分问题，哪怕是最基础的异或也不行：</p><div class="center"><style>.gceviecwwpku{}</style></div><p>而要解决非线性可分问题，就需要考虑使用多层功能神经元，如下图所示：</p><div class="center"><style>.htqhgwwwagja{}</style></div><p>在这种神经网络结构当中，输入层仅接受输入而不进行函数处理，由隐层和输出层神经元对信号进行加工，最终结果由输出层神经元输出。</p><h3 id="2-误差逆传播算法">2. 误差逆传播算法</h3><p>误差逆传播（Error BackPropagation）算法，亦称之为反向传播算法</p><h2 id="二、重点题目回顾">二、重点题目回顾</h2>]]></content>
+    
+    
+    <summary type="html">第五章神经网络的复习笔记</summary>
+    
+    
+    
+    <category term="机器学习" scheme="http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="机器学习" scheme="http://example.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习期末复习——第四章</title>
@@ -382,81 +445,6 @@
     <updated>2025-05-23T07:28:15.506Z</updated>
     
     <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 2021年上半年</h1><p>瓶颈期，依旧是20个</p><h2 id="上午题">上午题</h2><div class="center"><style>.epvoxmwqhgbx{}</style><img src="/2025/05/18/note49/note49_pic01.png" class="epvoxmwqhgbx"><div><p>  DMA方式传送数据时，数据直接在I/O设备与内存之间传输，无需CPU干预。<strong>每传送一个数据，DMA控制器需要占用一个​​存储周期来完成对内存的读写操作</strong>。其他选项与CPU执行指令或总线控制相关，而DMA的核心是绕过CPU直接访问内存，因此存储周期是最准确的描述。</p><hr><div class="center"><style>.mkmxkqudpcsq{}</style><img src="/2025/05/18/note49/note49_pic03.png" class="mkmxkqudpcsq"><div><p>  SQL注入攻击的核心是通过构造恶意的SQL输入，绕过应用程序的安全检查，直接操纵数据库，<strong>其​​首要目标​​是​​获取数据库的操作权限​</strong>​（如执行查询、删除数据等）。</p><hr><div class="center"><style>.kqfusyzngipv{}</style><img src="/2025/05/18/note49/note49_pic04.png" class="kqfusyzngipv"><div><p>  <strong>IPSec（Internet Protocol Security）是专门为​​IP数据报文​​提供加密、认证等安全服务的协议组</strong>，工作在网络层，可直接保护IP数据包的完整性和机密性。而HTTPS是加密HTTP流量的协议、TLS是加密TCP/UDP的协议。</p><hr><div class="center"><style>.pelvivbjfqhq{}</style><img src="/2025/05/18/note49/note49_pic06.png" class="pelvivbjfqhq"><table><thead><tr><th>阶段</th><th>目标</th><th>关键活动/输出物</th><th>相关工具/技术示例</th></tr></thead><tbody><tr><td><strong>1. 需求分析</strong></td><td>明确用户需求和系统功能</td><td>- 用户需求收集（访谈/问卷）<br>- 定义功能/非功能需求<br>- 输出《需求规格说明书》</td><td>JIRA, Confluence, 用户故事地图</td></tr><tr><td><strong>2. 系统设计</strong></td><td>规划系统架构和实现方案</td><td><strong>概要设计</strong>：<br>- 模块划分<br>- 技术栈选型<br><strong>详细设计</strong>：<br>- 数据结构/算法<br>- 数据库设计（ER图）</td><td>UML工具（Lucidchart）, Visio, ERMaster</td></tr><tr><td><strong>3. 编码实现</strong></td><td>将设计转化为可执行代码</td><td>- 编写代码<br>- 版本控制<br>- 单元测试</td><td>Git, VS Code, IntelliJ, JUnit/pytest</td></tr><tr><td><strong>4. 测试</strong></td><td>验证系统功能和质量</td><td>- 功能测试（黑盒）<br>- 性能测试<br>- 安全测试<br>- 用户验收测试（UAT）</td><td>Selenium, JMeter, OWASP ZAP, Postman</td></tr><tr><td><strong>5. 部署上线</strong></td><td>发布系统到生产环境</td><td>- 环境配置<br>- 自动化部署<br>- 数据迁移</td><td>Docker, Kubernetes, Jenkins, Ansible</td></tr><tr><td><strong>6. 运维与维护</strong></td><td>保障系统稳定运行并持续优化</td><td>- 性能监控<br>- Bug修复<br>- 功能迭代</td><td>Prometheus, ELK, Grafana, Sentry</td></tr></tbody></table><div><p>  其中，<strong>模块之间的接口设计属于概要设计的主要内容</strong>。</p><hr><div class="center"><style>.mggpjrlqiyud{}</style><img src="/2025/05/18/note49/note49_pic08.png" class="mggpjrlqiyud"><div><p>  <strong>先前的笔记中关于这一项的内容应该写错了</strong>，但是我没找到具体是在哪篇笔记里，在此特别订正一下。正确的面向对象分析的五大活动顺序应该为：</p><ol><li>认定对象</li><li>组织对象</li><li>描述对象间的相互作用</li><li>确定对象的操作</li><li>定义对象的内部信息</li></ol><hr><div class="center"><style>.irelrqeypold{}</style><img src="/2025/05/18/note49/note49_pic09.png" class="irelrqeypold"><div><ul><li>单一责任原则：就一个类而言，应该仅有一个引起它变化的原因。即，当需要修改某个类的时候原因有且只有一个，让一个类只做一种类型责任。</li><li>开放-封闭原则：软件实体应该是可以扩展的，即开放的；但是是不可修改的，即封闭的。</li><li>里氏替换原则：子类型必须能够替换掉他们的基类型。即，在任何父类可以出现的地方，都可以用子类的实例来赋值给父类型的引用。</li><li>依赖倒置原则：抽象不应该依赖于细节，细节应该依赖于抽象。即，高层模块不应该依赖于底层模块，二者都应该依赖于抽象。</li><li>接口分离原则：<strong>不应该强迫客户依赖于它们不用的方法。接口属于客户，不属于它所在的类层次。即，依赖于抽象，不依赖于具体，同时在抽象级别不应该有对细节的依赖</strong>。这样做的好处就在于可以最大限度地应对可能的变化。</li></ul><hr><div class="center"><style>.iifneojupbtf{}</style><img src="/2025/05/18/note49/note49_pic10.png" class="iifneojupbtf"><div><ul><li>41题：UML状态图用于对​<strong>​反应型对象</strong>​​的动态行为建模。</li><li>43题：这里混淆了状态和状态转换的概念，前者是指一个对象的稳定条件，是对象在某一时刻的静态属性。而<strong>状态转换才是由事件触发的</strong>，并导致对象从当前状态切换到新状态。</li></ul><hr><div class="center"><style>.kjxsfeuhtgon{}</style><img src="/2025/05/18/note49/note49_pic11.png" class="kjxsfeuhtgon"><div><ul><li>44题：<ul><li>命令模式：<strong>命令模式将请求封装为独立的对象</strong>（命令），允许用户参数化客户端（调用者）与接收者（执行者），从而支持请求的排队、撤销、日志记录等操作。</li><li>中介者模式：中介者模式的核心思想是“使用一个中介者来封装一系列对象之间的交互，使各个对象不需要显式地相互引用”，即通过引入中介对象来集中管理多个对象之间的交互，从而减少对象间的直接耦合，使系统更易于维护和扩展。</li></ul></li><li>45题：在UML类图当中，一个圆圈即为接口的意思，在上图中只在<strong>Operation</strong>中出现了。</li></ul><hr><div class="center"><style>.donwxpofmofs{}</style><img src="/2025/05/18/note49/note49_pic12.png" class="donwxpofmofs"><div><p>  使用线性探测法先求出关键字所在的位置，使用关键字key%m得出所存储的位置，如果遇到冲突则(key+di)%m的计算方式得到第二次关键字存储的位置，<strong>所以有可能第一个不是e的同义词</strong>。</p><hr><div class="center"><style>.ctfgnuodlsqe{}</style><img src="/2025/05/18/note49/note49_pic14.png" class="ctfgnuodlsqe"><div><p>  <strong>使用SMTP协议完成从客户端向服务器发送文件</strong>，使用POP3协议实现从客户端接收服务器的文件。</p>]]></content>
-    
-    
-    <summary type="html">软考真题做题笔记</summary>
-    
-    
-    
-    <category term="软考" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/"/>
-    
-    <category term="软件设计师" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-    <category term="知识点拾遗" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/"/>
-    
-    
-    <category term="软考" scheme="http://example.com/tags/%E8%BD%AF%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件设计师 知识点拾遗 结构化开发方法</title>
-    <link href="http://example.com/2025/05/18/note48/"/>
-    <id>http://example.com/2025/05/18/note48/</id>
-    <published>2025-05-18T06:43:45.000Z</published>
-    <updated>2025-05-23T07:27:42.809Z</updated>
-    
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 结构化开发方法</h1><ol><li>2016年上半年第19题</li></ol><div class="center"><style>.wiginldgqsvs{}</style><img src="/2025/05/18/note48/note48_pic01.png" class="wiginldgqsvs"></div><p>软件体系结构图属于系统设计阶段的输出，用于定义模块划分、组件关系等高层结构，<strong>不属于需求分析阶段的直接产物</strong>。</p><hr><ol start="2"><li>2015年上半年第34题</li></ol><div class="center"><style>.mfsjermxhwhk{}</style><img src="/2025/05/18/note48/note48_pic03.png" class="mfsjermxhwhk"></div><p>​​桩程序​​是软件测试中的一种模拟组件，主要用于在​​模块测试​​或​​集成测试​​中替代尚未开发或不可用的依赖模块。例如当测试某个模块（A）时，如果它调用了另一个未完成的模块（B），可以用桩程序临时替代B，返回预设的测试数据，确保A能独立测试。<strong>而自底向上测试时显然不可能用到桩程序</strong>。</p><hr><ol start="3"><li>2014年下半年第15题</li></ol><div class="center"><style>.eigvzglheuww{}</style><img src="/2025/05/18/note48/note48_pic04.png" class="eigvzglheuww"></div><p>结构化方法​​在大规模、高复杂度项目中易出现​​模块间耦合高、灵活性不足​​的问题。而<strong>​面向对象方法​通过封装、继承、多态等特性更适应复杂需求，成为现代大规模项目的首选</strong>。</p>]]></content>
-    
-    
-    <summary type="html">软考真题做题笔记</summary>
-    
-    
-    
-    <category term="软考" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/"/>
-    
-    <category term="软件设计师" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-    <category term="知识点拾遗" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/"/>
-    
-    
-    <category term="软考" scheme="http://example.com/tags/%E8%BD%AF%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件设计师 知识点拾遗 软件工程基础知识</title>
-    <link href="http://example.com/2025/05/17/note47/"/>
-    <id>http://example.com/2025/05/17/note47/</id>
-    <published>2025-05-17T09:44:41.000Z</published>
-    <updated>2025-05-23T07:27:10.879Z</updated>
-    
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 软件工程基础知识</h1><ol><li>2017年下半年第34题</li></ol><div class="center"><style>.njmzcsghudoo{}</style><img src="/2025/05/17/note47/note47_pic02.png" class="njmzcsghudoo"></div><p>  再来复习一下各种耦合的概念：</p><ul><li>无直接耦合：两个模块之间没有直接的关系。</li><li>数据耦合：两个模块之间存在简单的值传递。</li><li>标记耦合：两个模块之间存在<strong>数据结构</strong>的传递。</li><li>控制耦合：一个模块可以调用另一个模块中的某一个功能。</li><li>外部耦合：模块间通过软件之外的环境连接。</li><li>公共耦合：多个模块共享全局数据。</li><li>内容耦合：一个模块直接使用另一个模块的内部数据，或者一个模块通过非正常入口转入另一个模块内部。</li></ul><hr><ol start="2"><li>2017年上半年第17题和18题</li></ol><div class="center"><style>.mcdcfniigqqx{}</style><img src="/2025/05/17/note47/note47_pic03.png" class="mcdcfniigqqx"></div><p>  这道题目的要点在于第(18)题，要注意的是<strong>第几天</strong>开始。也就是说事件A的开始时间是第1天而非第0天。平常只注意项目完成时间的话可能会在这里犯错。</p><hr><ol start="3"><li>2017年上半年第29题</li></ol><div class="center"><style>.llhqfbgltreo{}</style><img src="/2025/05/17/note47/note47_pic04.png" class="llhqfbgltreo"></div><p>  螺旋模型是一种演化软件开发过程模型，它兼顾了快速原型的迭代特征以及瀑布模型的系统化与严格监控。螺旋模型最大的特点在于引入了其他模型不具备的风险分析，使软件在无法排除重大风险时有机会停止，以减小损失。同时，在每个迭代阶段构建原型是螺旋模型用以减小风险的途径。<strong>螺旋模型更适合大型、昂贵、系统级的软件应用</strong>。</p><hr><ol start="4"><li>2016年下半年第29题和30题</li></ol><div class="center"><style>.cunhtyxqvqfx{}</style><img src="/2025/05/17/note47/note47_pic06.png" class="cunhtyxqvqfx"></div><ul><li>瀑布模型：瀑布模型是将开发阶段描述为从一个阶段瀑布般转换到另一个阶段的过程。<strong>作为一种阶段顺序固定​​且​​强调文档驱动的模型，瀑布模型最大的问题就是难以适应动态变化的需求</strong>。</li><li>原型模型：在原型模型中，开发人员会快速地构造出整个系统或者系统的一部分以理解或澄清问题。</li><li>增量模型：增量模型是把软件产品作为一系列的增量构件来设计、编码、集成和测试，每个构件由相互作用的模块组成。</li><li>喷泉模型：喷泉模型开发过程中以用户需求为动力，以对象为驱动，适合于面向对象的开发方法。</li></ul><hr><ol start="5"><li>2016年下半年第36题</li></ol><div class="center"><style>.xoyegdwlfhvf{}</style><img src="/2025/05/17/note47/note47_pic08.png" class="xoyegdwlfhvf"></div><p>  这次来复习内聚的类型：</p><ul><li>偶然内聚：一个模块内的各个处理元素之间没有任何联系。</li><li>逻辑内聚：一个模块内执行若干个逻辑上相似的功能。</li><li>时间内聚：把需要同时执行的动作组合在一起形成的模块。</li><li>过程内聚：一个模块可以完成多个任务，且必须按照指定的过程执行。</li><li>通信内聚：<strong>模块内的所有处理元素都在同一个数据结构上操作</strong>。</li><li>顺序内聚：一个模块内的各个处理元素都密切相关于同一个过程且必须顺序执行，上一个元素的输出就是下一个元素的输入。</li><li>功能内聚：模块内的所有元素共同作用于完成同一个功能，缺一不可。</li></ul><hr><ol start="6"><li>2015年下半年第34题</li></ol><div class="center"><style>.lipfwcauhsfk{}</style><img src="/2025/05/17/note47/note47_pic11.png" class="lipfwcauhsfk"></div><p>  逆向工程这个概念比较好理解，就是对已有的代码、结构或者设计进行分析，恢复其逻辑或者文档。但是为什么是软件维护工具而不是软件开发工具呢？这是因为对工程进行逆向并不是从零开始的，而开发一定是从零开始的。</p><hr><ol start="7"><li>2015年上半年第16题</li></ol><div class="center"><style>.lmenlgtjzall{}</style><img src="/2025/05/17/note47/note47_pic12.png" class="lmenlgtjzall"></div><ul><li>概要：<strong>题目描述的&quot;分解为子系统&quot;、&quot;建立体系结构&quot;正是概要设计的核心任务</strong>。</li><li>详细：详细设计是在概要设计之后，主要进行模块内部的具体实现设计。</li><li>结构化：这是设计方法，不是设计阶段。</li><li>面向对象：这是编程范式，不是设计阶段。</li></ul><hr><ol start="8"><li>2015年上半年第19题</li></ol><div class="center"><style>.losjnucazfue{}</style><img src="/2025/05/17/note47/note47_pic13.png" class="losjnucazfue"></div><ul><li>风险影响：仅反映风险发生后可能造成的损失程度，但未考虑发生概率。</li><li>风险概率: 仅反映风险发生的可能性，但未考虑实际影响程度。</li><li>风险暴露：综合了风险影响和风险概率（通常计算公式：风险暴露=风险影响×风险概率），<strong>是设定优先级的科学依据</strong>。</li><li>风险控制：这是风险应对措施，而非优先级评估依据。</li></ul>]]></content>
-    
-    
-    <summary type="html">软考真题做题笔记</summary>
-    
-    
-    
-    <category term="软考" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/"/>
-    
-    <category term="软件设计师" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"/>
-    
-    <category term="知识点拾遗" scheme="http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%8B%BE%E9%81%97/"/>
-    
-    
-    <category term="软考" scheme="http://example.com/tags/%E8%BD%AF%E8%80%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件设计师 知识点拾遗 操作系统知识</title>
-    <link href="http://example.com/2025/05/17/note46/"/>
-    <id>http://example.com/2025/05/17/note46/</id>
-    <published>2025-05-17T07:06:32.000Z</published>
-    <updated>2025-05-23T07:26:31.941Z</updated>
-    
-    <content type="html"><![CDATA[<style>.center {  width: auto;  display: table;  margin-left: auto;  margin-right: auto;}</style><h1>软件设计师 知识点拾遗 操作系统知识</h1><ol><li>2017年上半年第24题</li></ol><div class="center"><style>.kadjbunzeyka{}</style><img src="/2025/05/17/note46/note46_pic02.png" class="kadjbunzeyka"></div><p>  在有限的资源下，要保证系统不发生死锁，可以按照这种逻辑来分析：首先给每个进程分配所需资源数减一，然后再给系统保留一个资源，这种情况下是不可能发生死锁的。而对于本题来说，<strong>就是 3 × (5 - 1) + 1 = 13个资源</strong>。</p><hr><ol start="2"><li>2016年上半年第23题</li></ol><div class="center"><style>.ikqqhmhzcnkk{}</style><img src="/2025/05/17/note46/note46_pic03.png" class="ikqqhmhzcnkk"></div><p>  每当用户按下或者释放某一个键的时候，<strong>会产生一个中断</strong>，该中断激活键盘驱动程序KEYBOARD.DRV来对键盘中断进行处理。</p><hr><ol start="3"><li>2016年上半年第25题</li></ol><div class="center"><style>.kwzvbrogobrv{}</style><img src="/2025/05/17/note46/note46_pic04.png" class="kwzvbrogobrv"></div><p>  旋转延迟时间​​是指磁盘的盘片旋转到目标扇区所需的时间。当磁头移动到正确的磁道（寻道完成）后，需要等待目标扇区旋转到磁头下方才能开始读写数据，这段等待时间就是旋转延迟时间。</p><hr><ol start="3"><li>2014年下半年第28题</li></ol><div class="center"><style>.cjncnqfogcmd{}</style><img src="/2025/05/17/note46/note46_pic07.png" class="cjncnqfogcmd"></div><p>进程资源图能否化简取决于是否存在至少一个非阻塞进程，通过逐步模拟该进程获取资源、执行完成并释放资源的过程，若能最终移除所有进程，则图可化简；否则存在死锁。化简顺序应优先选择非阻塞进程或能解除最多阻塞的进程，必要时通过拓扑排序打破循环等待链。例如，若所有进程相互阻塞且无法释放资源，则系统处于死锁状态。</p>]]></content>
     
     
     <summary type="html">软考真题做题笔记</summary>

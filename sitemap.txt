@@ -1,3 +1,6 @@
+http://example.com/2026/01/09/se01/
+http://example.com/2026/01/09/se02/
+http://example.com/2026/01/08/ml07/
 http://example.com/2026/01/07/ml06/
 http://example.com/2026/01/07/ml05/
 http://example.com/2026/01/05/ml04/
@@ -115,6 +118,7 @@ http://example.com/tags/%E5%90%8E%E7%AB%AF/
 http://example.com/tags/%E8%BD%AF%E4%BB%B6/
 http://example.com/tags/%E5%89%8D%E7%AB%AF/
 http://example.com/tags/linux/
+http://example.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/
 http://example.com/categories/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/
 http://example.com/categories/%E8%BD%AF%E8%80%83/
 http://example.com/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/
@@ -139,3 +143,4 @@ http://example.com/categories/%E8%BD%AF%E8%80%83/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%
 http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AE%9E%E9%AA%8C/
 http://example.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/PHP/
 http://example.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%AE%BA%E6%96%87%E5%AD%A6%E4%B9%A0/
+http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/
