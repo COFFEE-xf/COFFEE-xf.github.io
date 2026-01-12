@@ -19,22 +19,22 @@
   <meta name="author" content="谢斐">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第二章软件生命周期和过程模型概述的复习笔记">
+    <meta name="description" content="第八章集成学习的复习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件工程期末复习——第二章">
-<meta property="og:url" content="http://example.com/2026/01/09/se02/index.html">
+<meta property="og:title" content="机器学习期末复习——第八章">
+<meta property="og:url" content="http://example.com/2026/01/12/ml10/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第二章软件生命周期和过程模型概述的复习笔记">
+<meta property="og:description" content="第八章集成学习的复习笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-01-09T03:31:15.000Z">
-<meta property="article:modified_time" content="2026-01-11T13:47:16.808Z">
+<meta property="article:published_time" content="2026-01-12T04:53:47.000Z">
+<meta property="article:modified_time" content="2026-01-12T07:42:56.683Z">
 <meta property="article:author" content="谢斐">
-<meta property="article:tag" content="软件工程">
+<meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>软件工程期末复习——第二章 - Hexo</title>
+  <title>机器学习期末复习——第八章 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="软件工程期末复习——第二章"></span>
+            <span id="subtitle" data-typed-text="机器学习期末复习——第八章"></span>
           
         </div>
 
@@ -214,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-01-09 11:31" pubdate>
-          2026年1月9日 中午
+        <time datetime="2026-01-12 12:53" pubdate>
+          2026年1月12日 下午
         </time>
       </span>
     
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.4k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          10 分钟
+          12 分钟
         
       </span>
     
@@ -274,7 +274,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">软件工程期末复习——第二章</h1>
+            <h1 id="seo-header">机器学习期末复习——第八章</h1>
             
             
               <div class="markdown-body">
@@ -288,59 +288,37 @@
   margin-right: auto;
 }
 </style>
-<h1>软件工程期末复习——第二章</h1>
-<h2 id="一、重要知识点">一、重要知识点</h2>
-<h3 id="1-什么是软件生命周期">1. 什么是软件生命周期</h3>
-<p>软件生命周期是指<strong>软件产品从考虑其概念开始到交付使用，直至最终退役为止的整个过程</strong>。</p>
-<h3 id="2-软件生命周期的阶段划分">2. 软件生命周期的阶段划分</h3>
+<h1>机器学习期末复习——第八章</h1>
+<h2 id="一、重点知识点回顾">一、重点知识点回顾</h2>
+<h3 id="1-个体与集成">1. 个体与集成</h3>
+<p>集成学习（Ensemble Learning）通过构建并结合多个学习器来完成学习任务，有时候也被称之为多分类器系统、基于委员会的学习等。</p>
 <div class="center">
-<style>.jdybugoxcfhx{}</style>
+<style>.xqlntmtwibxm{}</style>
 </div>
-<h3 id="3-什么是软件过程模型">3. 什么是软件过程模型</h3>
-<p>软件过程模型是对软件开发全部过程的抽象，也是对软件全部开发过程中所设计的活动（或者任务）、以及活动之间的关系的抽象，明确规定了要完成的主要活动、任务和开发策略。软件过程模型能够告诉人们应该去遵循一个什么样的过程去开发软件系统。</p>
-<h3 id="4-瀑布模型">4. 瀑布模型</h3>
-<p>瀑布模型包含了各项软件工程活动，规定了各项软件工程活动自上而下、相互衔接的固定次序，如同瀑布流水，逐级下落，各个活动之间具有严格的<strong>顺序性</strong>和<strong>依赖性</strong>。总体来说，瀑布模型具有以下特点：</p>
-<ul>
-<li>强调了每一阶段的<strong>严格性</strong>，强调推迟实现；</li>
-<li>强调质量保证，即每个阶段需要通过严格的<strong>阶段评审与确认</strong>，进而得到一致、完整、准确、无二义性的<strong>文档</strong>，并“冻结”文档为该阶段结束的标志；</li>
-<li>是一种整体开发模型，在开发过程中，用户看不到系统什么样，只有开发完成提交整个系统时，用户才能看到。</li>
-</ul>
+<p>上图展示了集成学习的一般结构：先生产一组“个体学习器”，随后再用某种策略将他们结合起来。其实这也反映了集成学习所代表的思想，通过将多个学习器进行结合，常常可以获得比单一学习器显著优越的泛化性能，对“弱学习器”而言尤为明显。</p>
+<p>根据个体学习器的生成方式，目前的集成学习方法大致可分为两类：1）个体学习器之间<strong>存在强依赖关系、必须串行生成</strong>的序列化方法，以Boosting为代表；2）个体学习器之间<strong>不存在强依赖关系、可同时生成</strong>的并行化方法，以Bagging和随机森林为代表。</p>
+<h3 id="2-Boosting">2. Boosting</h3>
+<p>Boosting类算法的工作机制大概满足这样一个框架：先从初始训练集中训练出一个基学习器，再根据基学习器的表现对训练样本进行调整，使得先前基学习器做错的训练样本在后续收到更多关注，然后基于调整后的样本分布来训练下一个基学习器，如此循环往复…直至基学习器的数目达到事先设定的值<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>，最终再将这<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>个基学习器进行加权结合。</p>
+<p>这类算法的具体动画讲解可以参考这份学习资料：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1qQkgYTEN4?vd_source=f84298da6c2248c7cd9cbde123b0f09c">【到底什么是AdaBoost？用动画和代码的方式，最清晰讲解！】</a>，在此不再赘述。</p>
+<p>Boosting族算法最著名的代表即为AdaBoost算法，其训练过程的伪代码如下图所示：</p>
 <div class="center">
-<style>.sjdbclcdywqn{}</style>
+<style>.sprytpxxapcw{}</style>
 </div>
-<p>此外，不难发现，在通常情况下，瀑布模型中的运行/维护阶段，是一个具有最长生命周期的阶段。</p>
-<p>当然，瀑布模型也具有以下缺陷：</p>
-<ul>
-<li><strong>在软件开发的初期阶段就要求做出正确、全面、完整的需求分析</strong>对许多应用软件来说是极其困难的；</li>
-<li>是一种线性开发模式，阶段划分完全固定，因此<strong>缺乏灵活性</strong>，无法解决需求不明确或不准确的问题；</li>
-<li>产生了<strong>大量文档</strong>，极大地增加了工作量；</li>
-<li>在需求分析阶段，当需求确定之后，<strong>无法及时验证需求</strong>是否正确、完整，开始阶段的<strong>小错误将会被逐级放大</strong>，最终可能导致软件产品报废。</li>
-</ul>
-<p>综上所述，瀑布模型适合在软件需求比较明确、开发技术比较成熟、工程管理比较严格的场合下使用。</p>
-<h3 id="5-原型模型">5. 原型模型</h3>
-<p>所谓原型，一般是指对某种产品进行模拟的初始版本或者原始版本，例如发展核潜艇之间先做出来的微缩模型。同样地，在软件开发过程中，原型表示软件的一个早期可运行的版本，能够反映最终系统的部分重要特征，用户能够在使用原型的过程中<strong>更加准确地反映自己的需求</strong>。</p>
+<p>AdaBoost算法的流程<strong>始于初始化训练样本的权重，使每个样本的初始权重相等；随后进行多轮迭代，在每一轮中，算法基于当前的样本权重分布训练一个弱分类器，并计算该分类器在训练集上的错误率，依据错误率为该分类器分配一个权重（错误率越低则权重越高）；接着，算法根据本轮分类结果更新样本权重，增加被错误分类样本的权重，减少正确分类样本的权重，使得后续的弱分类器更关注难以处理的样本；最终，将所有弱分类器按其权重进行加权组合，形成强分类器。</strong></p>
+<h3 id="3-Bagging与随机森林">3. Bagging与随机森林</h3>
+<p>如果我们想要得到泛化性能强的集成，那么集成中的个体学习器应该尽可能地相互独立，虽然在现实中无法完全实现，但是我们可以设法使基学习器尽可能具有较大的差异。同时，各个基学习器又不能完全不一样，因为这会使得每个个体学习器只用到了一小部分训练数据，甚至有可能不足以进行有效学习。因此，我们可以考虑<strong>使用相互有交叠的采样子集</strong>。</p>
+<h4 id="（1）Bagging">（1）Bagging</h4>
+<p>Bagging算法的算法基础即为我们在<a target="_blank" rel="noopener" href="https://loquattree.xyz/2026/01/05/ml04/">第二章中学习过的自助采样法</a>。<strong>给定包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span>个样本的初始数据集，通过自助采样法，我们可以采样出<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>个含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span>个训练样本的采样集，然后基于每个采样集训练出一个基学习器，再将这些基学习器的结果进行结合（简单投票法）</strong>，这就是Bagging的基本流程。</p>
 <div class="center">
-<style>.vnbliyufluei{}</style>
+<style>.zkzywxvfjgfo{}</style>
 </div>
-<p>原型模型的优点有：</p>
-<ul>
-<li>用户参与到软件的开发过程当中，能够尽早揭示软件中可能存在的风险及不确定因素，尤其是关于用户需求一致性方面的风险；</li>
-<li>开发过程与用户培训过程同步，系统易维护，对用户更友好，产品柔性好。</li>
-</ul>
-<p>原型模型的缺陷性有：</p>
-<ul>
-<li>对于大型项目而言，不经过系统分析，一开始构造原型比较困难；</li>
-<li>对于那些不是与用户密切交互的软件，应用原型模型有一定的困难，因为比较难获取用户的评价；</li>
-<li>原型的快速构造特点导致项目文档容易被忽略，给原型的后期改进和维护造成困难；</li>
-<li>在原型建立的过程中许多工作进展会被浪费掉（尤其对于丢弃性策略），在一定程度上增加了系统的开发成本。</li>
-</ul>
-<p>综上所述，原型模型适用于那些需求不确定、已有类似原型、有原型开发工具或需要进行产品升级的软件。</p>
-<h2 id="二、次重要知识点">二、次重要知识点</h2>
-<h3 id="1-螺旋模型">1. 螺旋模型</h3>
-<h3 id="2-喷泉模型">2. 喷泉模型</h3>
-<h3 id="3-增量模型">3. 增量模型</h3>
-<h3 id="4-构件组装模型">4. 构件组装模型</h3>
-<h3 id="5-RUP模型">5. RUP模型</h3>
+<p>与标准AdaBoost只适用于二分类任务不同，Bagging能够不经修改地用于多分类、回归等任务。</p>
+<h4 id="（2）随机森林">（2）随机森林</h4>
+<p>随机森林（Random Forest，RF）是Bagging的一个扩展变体，这种方法<strong>将决策树作为基学习器</strong>，并且在决策树的训练过程中进一步引入了随机属性选择。具体来说，传统决策树在选择划分属性时是在当前结点的属性集合（假定有d个属性）中选择一个最优属性，而在RF中，对于基决策树的每个结点，需要<strong>先从该结点的属性集合中随机选择一个包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>个属性的子集，然后再从这个子集中选择一个最优属性用于划分</strong>。一般来说，推荐<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mi>d</mi></mrow><annotation encoding="application/x-tex">k=\log _2d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9386em;vertical-align:-0.2441em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span></span></span></span>。</p>
+<p>RF在很多现实任务当中展现出了强大的性能，和Bagging中基学习器的多样性仅来自样本扰动不同，随机森林中的基学习器的多样性<strong>不仅来自样本扰动，还来自属性扰动</strong>，使得最终集成的泛化性能可以通过基学习器之间差异度的增加而进一步提升。</p>
+<h3 id="4-方差和偏差视角">4. 方差和偏差视角</h3>
+<p>从偏差-方差分解的角度来看，<strong>Boosting主要关注降低偏差</strong>，因此Boosting能够基于泛化性能相当弱的学习器构建出很强的集成；而<strong>Bagging主要关注降低方差</strong>，因此它在不剪枝决策树、神经网络等易受样本扰动的学习器上效用更为明显。</p>
+<h2 id="二、重点题目回顾">二、重点题目回顾</h2>
 
                 
               </div>
@@ -359,7 +337,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="category-chain-item">软件工程</a>
+  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-chain-item">机器学习</a>
   
   
 
@@ -374,7 +352,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" class="print-no-link">#软件工程</a>
+        <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="print-no-link">#机器学习</a>
       
     </div>
   
@@ -386,8 +364,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>软件工程期末复习——第二章</div>
-      <div>http://example.com/2026/01/09/se02/</div>
+      <div>机器学习期末复习——第八章</div>
+      <div>http://example.com/2026/01/12/ml10/</div>
     </div>
     <div class="license-meta">
       
@@ -399,7 +377,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年1月9日</div>
+          <div>2026年1月12日</div>
         </div>
       
       
@@ -431,9 +409,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/01/09/ml08/" title="机器学习期末复习——第六章">
+                      <a href="/2026/01/12/ml11/" title="机器学习期末复习——第九章">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">机器学习期末复习——第六章</span>
+                        <span class="hidden-mobile">机器学习期末复习——第九章</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -441,8 +419,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/01/09/se01/" title="软件工程期末复习——第一章">
-                        <span class="hidden-mobile">软件工程期末复习——第一章</span>
+                      <a href="/2026/01/09/ml09/" title="机器学习期末复习——第七章">
+                        <span class="hidden-mobile">机器学习期末复习——第七章</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
