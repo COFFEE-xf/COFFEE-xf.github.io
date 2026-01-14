@@ -27,7 +27,7 @@
 <meta property="og:description" content="第五章结构化分析方法的复习笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-12T12:34:46.000Z">
-<meta property="article:modified_time" content="2026-01-12T15:09:32.663Z">
+<meta property="article:modified_time" content="2026-01-13T09:18:33.567Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="软件工程">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          568 字
+          1.6k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          5 分钟
+          14 分钟
         
       </span>
     
@@ -297,22 +297,87 @@
 <h3 id="3-Data-Flow-Diagram的作用">3. Data Flow Diagram的作用</h3>
 <p>数据流图<strong>描述了输入数据流到输出数据流的变换过程，也即加工过程，能够用于对系统的功能进行建模</strong>。</p>
 <div class="center">
-<style>.ucygcybxleci{}</style>
+<style>.stcutyzerifg{}</style>
 </div>
 <h3 id="4-数据流图的主要图形结构">4. 数据流图的主要图形结构</h3>
 <div class="center">
-<style>.ljrbykitstku{}</style>
+<style>.uxswlwnczbpi{}</style>
 </div>
 <ul>
-<li>外部实体：</li>
-<li>加工：</li>
-<li>数据流：</li>
-<li>数据存储：</li>
+<li>外部实体：外部实体表示<strong>数据的外部来源和去处</strong>，是系统之外的人、物、部门或其它系统，不受本系统的控制。实际上外部实体显示了系统的边界以及系统是怎样和外部世界联系的；</li>
+<li>加工：加工也可以被称之为数据处理或数据变换，是<strong>对数据进行处理的逻辑单元</strong>；</li>
+<li>数据流：表示系统处理的数据对象和数据<strong>流动的方向</strong>；</li>
+<li>数据存储：数据存储在数据流图中起到<strong>保存数据</strong>的作用。</li>
 </ul>
 <h3 id="5-绘制分层数据流图">5. 绘制分层数据流图</h3>
 <h3 id="6-绘制数据流图的注意事项">6. 绘制数据流图的注意事项</h3>
+<ul>
+<li><strong>父图与子图平衡</strong>：任何一个数据流子图必须与它上一层父图的某个加工对应，两者的输入数据流和输出数据流必须保持一致，此即父图与子图平衡。</li>
+</ul>
+<div class="center">
+<style>.cdswgvnwzleh{}</style>
+</div>
+<ul>
+<li><strong>局部数据存储</strong>：如图5-6所示，虽然子图中的数据存储W并没有在父图中出现，但父图和子图也是平衡的。这是由于对数据存储W的读写完全局限在数据处理3.3之内，在父图中各个数据处理之间的界面上不出现，该数据存储是子图的局部数据存储或为临时数据存储。</li>
+</ul>
+<div class="center">
+<style>.reltfcibizbv{}</style>
+</div>
+<ul>
+<li>
+<p><strong>合理的编号</strong>：</p>
+<ul>
+<li>子图中的编号为父图号和子数据处理的编号组成；</li>
+<li>子图的父图号就是父图中相应数据处理的编号；</li>
+<li>数据流图中的所有元素都要编号，因为<strong>所有元素都可以分解</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>尽量简化加工之间的联系</strong>：在图5-7(a)中，加工3与其他加工之间的联系比较复杂，输入/输出流多达4个，这样的分解是不合适的；图5-7(b)中对其进行了重新分解，这样的分解才是合适的。</p>
+</li>
+</ul>
+<div class="center">
+<style>.iilcvqfhyfed{}</style>
+</div>
+<ul>
+<li>
+<p><strong>分解的程度</strong>：</p>
+<ul>
+<li>分解应自然，概念上要合理、清晰；</li>
+<li>上层可分解地快一些，而下层应该分解地慢一些；</li>
+<li>在不影响可读性的前提下，应适当多分解成几部分，以减少分解层数，一个数据处理的分解个数应该在7个左右，上下浮动2个。</li>
+</ul>
+</li>
+<li>
+<p><strong>数据守恒</strong>：</p>
+<ul>
+<li>处理有输入就应该有输出</li>
+<li>处理有输出就肯定有输入</li>
+<li>输入的数据应该全部流出该处理</li>
+<li>输出的所有数据必须曾经流入过该处理</li>
+</ul>
+</li>
+</ul>
 <h3 id="7-什么是数据字典">7. 什么是数据字典</h3>
+<p>在数据流图的基础上，还需对其中的每个数据流、数据存储、数据加工和外部实体加以定义，把这些定义所组成的集合称为数据字典。</p>
+<p>系统分析人员应把不便在数据流图上注明但对于系统分析应该获得，<strong>对整个系统开发以至将来系统运行与维护是必需的信息尽可能地放到数据字典</strong>，如关于数据流与数据处理发生频率、出现时间、高峰期、低谷期、加工的优先次序、加工周期与安全保密等方面的信息。</p>
 <h3 id="8-数据字典的定义符号和编写格式">8. 数据字典的定义符号和编写格式</h3>
+<ul>
+<li>定义符号：在数据字典中，描述数据元素之间的关系时，可以使用自然语言，但为了更加清晰简洁，可以采用如表5-1所示的定义符号。</li>
+</ul>
+<div class="center">
+<style>.ogsbrkpdibxt{}</style>
+</div>
+<ul>
+<li>编写格式：数据字典中包括了5类条目：数据项、数据流、加工逻辑、数据存储和外部实体，为了使各个条目的编写、维护和使用更为方便，我们需要对其编写格式加以规范：</li>
+</ul>
+<div class="center">
+<style>.ntttjvlylxqg{}</style>
+<style>.dkiuxfpcwyuh{}</style>
+<style>.qifnmrvvwtrn{}</style>
+<style>.fqbfnrpgjevv{}</style>
+<style>.voctozgxqpdt{}</style>
+</div>
 <h3 id="9-绘制判定表">9. 绘制判定表</h3>
 <h2 id="二、次重要知识点">二、次重要知识点</h2>
 <h3 id="1-结构化分析过程">1. 结构化分析过程</h3>
@@ -329,9 +394,26 @@
 </li>
 </ul>
 <h3 id="3-数据流的方向的要求">3. 数据流的方向的要求</h3>
+<p>数据流的方向可以是：</p>
+<ul>
+<li>从一个加工流向另一个加工；</li>
+<li>从加工刘翔数据存储，或数据存储流向加工；</li>
+<li>从源点流向加工，或从加工流向终点。</li>
+</ul>
 <h3 id="4-数据流的表示的约定">4. 数据流的表示的约定</h3>
+<ul>
+<li>数据流至少有一个端点必须与数据处理符号连接；</li>
+<li>对流入或流出数据存储的数据流可以不标注名字；</li>
+<li>同一个加工的输入、输出数据流不允许同名；</li>
+<li>两个数据处理之间可以有几股不同的数据流；</li>
+<li>数据流图描述的是数据流而不是控制流。</li>
+</ul>
 <h3 id="5-数据流与加工之间的关系">5. 数据流与加工之间的关系</h3>
+<div class="center">
+<style>.wxsrnqeeecbo{}</style>
+</div>
 <h3 id="6-数据字典中的五类条目">6. 数据字典中的五类条目</h3>
+<p>数据字典中包括了5类条目：数据项、数据流、加工逻辑、数据存储和外部实体。</p>
 <h3 id="7-判定树">7. 判定树</h3>
 
                 
