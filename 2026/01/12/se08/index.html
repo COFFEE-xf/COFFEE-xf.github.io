@@ -27,7 +27,7 @@
 <meta property="og:description" content="第八章软件设计基础的复习笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-12T12:35:04.000Z">
-<meta property="article:modified_time" content="2026-01-12T12:46:31.667Z">
+<meta property="article:modified_time" content="2026-01-14T08:40:22.497Z">
 <meta property="article:author" content="谢斐">
 <meta property="article:tag" content="软件工程">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          128 字
+          1.7k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          2 分钟
+          14 分钟
         
       </span>
     
@@ -291,16 +291,101 @@
 <h1>软件工程期末复习——第八章</h1>
 <h2 id="一、重要知识点">一、重要知识点</h2>
 <h3 id="1-软件设计的目标">1. 软件设计的目标</h3>
+<p>软件设计的最终目标是产生一个设计规约，该规约包括体系结构、描述数据、接口和构件的设计模型，能够解决“<strong>系统应该怎么做</strong>”的问题。</p>
 <h3 id="2-软件设计的任务">2. 软件设计的任务</h3>
+<p>软件设计的任务是<strong>将需求分析阶段产生的需求规格说明转换为软件设计文档</strong>。</p>
 <h3 id="3-结构化软件设计内容">3. 结构化软件设计内容</h3>
+<ul>
+<li>从项目管理的角度：
+<ul>
+<li><strong>概要设计</strong>：根据需求确定软件和数据的总体框架；</li>
+<li><strong>详细设计</strong>：将概要设计的结果进一步精化成算法和数据结构。</li>
+</ul>
+</li>
+<li>从技术的角度：
+<ul>
+<li><strong>体系结构设计</strong>：确定程序各个主要部件之间的关系；</li>
+<li><strong>接口设计</strong>：系统的用户接口、内部与外部接口；</li>
+<li><strong>数据设计</strong>：把信息描述转换为实现软件所要求的数据结构；</li>
+<li><strong>过程设计</strong>：完成每一部件的过程化描述。</li>
+</ul>
+</li>
+</ul>
 <h3 id="4-什么是模块和模块化">4. 什么是模块和模块化</h3>
+<p>模块是一个<strong>拥有明确定义的输入、输出和特性的程序实体</strong>，它一般具有如下4个基本属性：</p>
+<ul>
+<li>接口：指模块的输入与输出；</li>
+<li>功能：指该模块实现什么功能，做什么事情；</li>
+<li>逻辑：描述模块内部怎么做；</li>
+<li>状态：该模块使用时的环境和条件。</li>
+</ul>
+<p>而模块化是指<strong>解决一个复杂问题时自顶向下逐层把软件划分成若干个模块</strong>的过程。每个模块完成一个特定的子功能，所有模块按某种方法组装起来，成为一个整体，完成整个系统所要求的功能。</p>
 <h3 id="5-什么是模块的独立性">5. 什么是模块的独立性</h3>
+<p>模块的独立性是指<strong>软件系统中每个模块只涉及软件要求的具体的子功能，而和软件系统中其他的模块的接口是简单的</strong>。例如，如果一个模块只具有单一的功能且与其他模块没有太多的联系，那么，称此模块具有模块独立性。</p>
 <h3 id="6-衡量模块独立性的两个准则">6. 衡量模块独立性的两个准则</h3>
-<h3 id="7-内聚的种类">7. 内聚的种类</h3>
-<h3 id="8-耦合的种类">8. 耦合的种类</h3>
+<p>一般采用两个准则度量模块的独立性，即模块的内聚性和模块间的耦合性。</p>
+<h4 id="（1）内聚性">（1）内聚性</h4>
+<p>内聚是模块功能强度的度量，也就是一个模块内部各个元素彼此结合的紧密程度的度量。根据模块内部构成情况，模块的内聚可以划分成7种类型：</p>
+<div class="center">
+<style>.xnchkpdgrelo{}</style>
+</div>
+<ul>
+<li><strong>功能内聚</strong>：一个模块内的所有元素都密切相关于完成一个功能，<strong>缺一不可</strong>；</li>
+<li><strong>顺序内聚</strong>：一个模块内的各个处理元素都密切相关于完成一个功能且<strong>必须顺序执行</strong>；</li>
+<li><strong>通信内聚</strong>：模块内的所有元素都在<strong>同一个数据结构</strong>上操作，这样一来大体的效果就是各个处理在使用<strong>相同的输入</strong>时会产生<strong>相同的输出</strong>；</li>
+<li><strong>过程内聚</strong>：一个模块完成多个任务，且这些任务必须<strong>按指定的过程执行</strong>；</li>
+<li><strong>时间内聚</strong>：把需要<strong>同时执行</strong>的动作组合在一起；</li>
+<li><strong>逻辑内聚</strong>：一个模块能够执行若干个<strong>逻辑上相似</strong>的功能。这种模块将几种相关或者相似的功能组合在一起，每次调用时，由传递给模块的参数来确定具体完成哪一种功能；</li>
+<li><strong>巧合内聚</strong>：一个模块内的各个元素之间<strong>没有任何联系</strong>。</li>
+</ul>
+<h4 id="（2）耦合性">（2）耦合性</h4>
+<p>和内聚性相对，耦合是模块之间的相对独立性的度量，也即模块互相连接的紧密程度的度量。耦合性也可以被分成7种类型：</p>
+<div class="center">
+<style>.aohmosleascw{}</style>
+</div>
+<ul>
+<li><strong>内容耦合</strong>：一个模块<strong>直接使用另一个模块的内部数据</strong>，或者一个模块通过<strong>非正常入口</strong>转入另一个模块内部，或者两个模块之间<strong>有一部分程序代码重叠</strong>了；</li>
+<li><strong>公共耦合</strong>：多个模块<strong>共享全局数据</strong>；</li>
+<li><strong>外部耦合</strong>：模块间<strong>通过软件之外的环境连接</strong>，比如I/O将模块耦合到特定的设备上。外部耦合与公共耦合的区别在于前者访问的是同一全局变量，而后者访问的是同一全局数据结构；</li>
+<li><strong>控制耦合</strong>：一个模块<strong>调用另一个模块中的某一功能</strong>，也就是说，一个模块能够通过传送开关、标志、名字等控制信息，明显地控制选择另一模块的功能；</li>
+<li><strong>标记耦合</strong>：两个模块之间存在<strong>数据结构</strong>的传递；</li>
+<li><strong>数据耦合</strong>：两个模块之间存在<strong>值</strong>传递；</li>
+<li><strong>非直接耦合</strong>：两个模块之间没有直接的关系。</li>
+</ul>
 <h2 id="二、次重要知识点">二、次重要知识点</h2>
 <h3 id="1-结构化设计过程">1. 结构化设计过程</h3>
+<div class="center">
+<style>.loioqbuclfew{}</style>
+</div>
 <h3 id="2-几种典型的软件体系结构风格">2. 几种典型的软件体系结构风格</h3>
+<h4 id="（1）管道-过滤器">（1）管道-过滤器</h4>
+<p>过滤器从输入端口接收数据流，从输出端口发送数据流。过滤器对输入的数据进行变换和处理，把结果输出给下一个过滤器进行相应的处理。这其中输送的途径称之为管道。</p>
+<div class="center">
+<style>.vjctyeesfmsk{}</style>
+</div>
+<h4 id="（2）仓库体系结构">（2）仓库体系结构</h4>
+<p>在仓库风格中，有两种不同的构件：中央数据结构说明当前状态，独立构件在中央数据上执行，仓库与外构件间的相互作用在系统中会有大的变化。</p>
+<div class="center">
+<style>.vxgxduryhlzx{}</style>
+</div>
+<h4 id="（3）分层体系结构">（3）分层体系结构</h4>
+<p>在层次结构中，每一层向上层提供服务，并作为客户向下层请求服务。</p>
+<div class="center">
+<style>.ajwnqcicvngq{}</style>
+</div>
+<h4 id="（4）MVC体系结构">（4）MVC体系结构</h4>
+<p>MVC(模型−视图−控制)结构就是将一个交互式应用程序划分成3 个相对独立的部分，它们分别是模型、视图和控制。模型包含系统的核心功能和数据；视图向用户显示数据；控制处理用户的输入，视图和控制共同构成了用户界面。</p>
+<div class="center">
+<style>.crbxmftupmir{}</style>
+</div>
+<h4 id="（5）三层C-S体系结构">（5）三层C/S体系结构</h4>
+<p>三层C/S 结构将应用功能分成表示层、功能层和数据层3 个部分。优点如下：</p>
+<ul>
+<li>在逻辑上保持相对的独立；</li>
+<li>更灵活地选用相应的平台和硬件系统；</li>
+<li>各层也可以选择各自最适合的开发语言；</li>
+<li>功能层隔开表示层与数据层，为安全管理奠定了坚实的基础。</li>
+</ul>
 
                 
               </div>
